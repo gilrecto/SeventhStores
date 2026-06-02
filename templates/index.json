@@ -1,0 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Desktop_Home_New_13_5ac556a1-88be-42b0-a9a5-4e5ba844bd76.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_LwrNB6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HrigPX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join Our Mailing List",
+            "heading_size": "h2"
+          }
+        },
+        "text_VqWRyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Early access to new drops, community moments, and things we don't share with everyone.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HrigPX",
+        "text_VqWRyF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_b4Bzga": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-VqJUmp\"></div>",
+        "color_scheme": "",
+        "padding_top": 12,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_LwrNB6",
+    "custom_liquid_b4Bzga"
+  ]
+}
