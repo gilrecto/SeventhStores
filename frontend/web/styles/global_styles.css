@@ -1,5 +1,5 @@
 .page-width {
-	@apply ts:md:px-20! ts:px-8!;
+	@apply ts:md:px-16! ts:px-6!;
 }
 .page-width-full {
 	@apply ts:px-0!
@@ -30,8 +30,14 @@ header .header__menu-item {
 header .header__heading-link {
 	@apply ts:p-0;
 }
+header .header__icons {
+	@apply ts:pr-0 ts:gap-x-[0.7rem]
+}
 header  .header__icon .icon {
 	@apply ts:w-6 ts:h-6;
+}
+header .header__icon--cart {
+	@apply ts:mr-0;
 }
 
 swiper-slider .bordered-card .swiper-slide .card-wrapper .card__inner {
