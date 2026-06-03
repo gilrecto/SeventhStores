@@ -22,8 +22,14 @@
 button, a, .button, .btn {
 	@apply ts:transition-all ts:duration-300 ts:ease-linear;
 }
+html {
+	@apply ts:overflow-x-hidden;
+}
 
 /* Header */
+.section-header.shopify-section-group-header-group {
+	@apply ts:z-4;
+}
 header .header__menu-item {
 	@apply ts:text-[rgba(var(--color-foreground))] ts:text-base ts:uppercase ts:font-semibold;
 }
@@ -38,6 +44,15 @@ header  .header__icon .icon {
 }
 header .header__icon--cart {
 	@apply ts:mr-0;
+}
+header header-drawer {
+	@apply ts:ml-0 ts:justify-self-auto;
+}
+header header-drawer .header__icon--summary {
+	@apply ts:w-auto ts:flex ts:gap-x-[1.2rem] ts:no-underline ts:text-[1.1rem];
+}
+header header-drawer .header__icon--summary > span:last-of-type {
+	@apply ts:w-6;
 }
 
 swiper-slider .bordered-card .swiper-slide .card-wrapper .card__inner {

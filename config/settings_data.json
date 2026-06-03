@@ -10,12 +10,14 @@
 {
   "current": {
     "logo": "shopify://shop_images/Seventh_logo_black.png",
-    "logo_width": 230,
+    "logo_width": 200,
+    "favicon": "shopify://shop_images/favicon.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
     "page_width": 1000,
+    "fluid": true,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -168,7 +170,7 @@
       },
       "18128612654622612671": {
         "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },

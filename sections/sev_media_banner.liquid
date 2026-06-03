@@ -1,0 +1,702 @@
+{%- assign setting = section.settings -%}
+
+{% style %}
+	#shopify-section-{{ section.id }} {
+		--text-align: {{ setting.text_alignment_mobile | default: 'center' }};
+		--overlay-opacity: {{ setting.overlay_opacity | default: 0.5 }};
+		{% if setting.top_spacing != 0 and setting.top_spacing_mobile != 0 -%}
+			--top-spacing: clamp({{ setting.top_spacing_mobile }}rem, 10vw, {{ setting.top_spacing }}rem);
+		{% else %}
+			--top-spacing: 0;
+		{%- endif %}
+		{%- if setting.bottom_spacing != 0 and setting.bottom_spacing_mobile != 0 -%}
+			--bottom-spacing: clamp({{ setting.bottom_spacing_mobile }}rem, 10vw, {{ setting.bottom_spacing }}rem);
+		{% else %}
+			--bottom-spacing: 0;
+		{%- endif -%}
+	}
+
+	{% if section.index == 1 -%}
+		@media only screen and (min-width: 1200px) {
+			.page-main-banner {
+				height: calc(100dvh - 5.5vw);
+			}
+		}
+	{%- endif %}
+
+	@media only screen and (min-width: 768px) {
+		#shopify-section-{{ section.id }} {
+			--text-align: {{ setting.text_alignment | default: 'center' }};
+		}
+	}
+
+	{% if setting.banner_img_mb != blank %}
+		@media only screen and (max-width: 767px) {
+			.media-banner {
+				aspect-ratio: {{ setting.banner_img_mb.aspect_ratio }} !important;
+			}
+		}
+	{% endif %}
+{% endstyle %}
+
+<div class="color-{{ section.settings.color_scheme }} media-banner ts:relative ts:w-full ts:md:aspect-video ts:aspect-3/4 ts:overflow-hidden ts:grid ts:grid-rows-1 ts:grid-cols-1{% if section.index == 1 %} page-main-banner{% endif %}">
+	{%- if setting.add_overlay -%}
+		<div class="overlay ts:relative ts:z-1 ts:row-span-full ts:col-span-full ts:bg-black ts:opacity-(--overlay-opacity) ts:pointer-events:none">&nbsp;</div>
+	{%- endif -%}
+
+	{%- if section.settings.banner_link != blank -%}
+		<a href="{{ section.settings.banner_link }}" title="{{ section.settings.link_label | escape }}" aria-label="{{ section.settings.link_label | escape }}" class="ts:absolute ts:w-full ts:h-full ts:left-0 ts:top-0 ts:opacity-0 ts:z-3">
+			{{ section.settings.link_label | escape }}
+		</a>
+	{%- endif -%}
+
+	{%- for block in section.blocks -%}
+		{%- if block.type == 'caption_link' and block.settings.label != blank -%}
+			<div class="caption-wrapper ts:absolute ts:xl:top-28 ts:md:top-20 ts:top-16 ts:w-full ts:z-3 ts:text-center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+				<a href="{{ block.settings.link }}" class="caption ts:text-sm! ts:font-semibold">
+					{{ block.settings.label }}
+				</a>
+			</div>
+		{%- endif -%}
+	{%- endfor -%}
+
+	<div class="banner-media banner-media--{{ setting.banner_type }} ts:relative ts:w-full ts:h-auto ts:row-span-full ts:col-span-full ts:pointer-events:none">
+		{%- if setting.banner_type == 'video' and setting.video != blank -%}
+			{%- if setting.poster != blank -%}
+				{% assign poster = setting.poster | image_url: width: setting.poster.width %}
+			{%- endif -%}
+			{%- assign video_source = setting.video.sources[1].url -%}
+			<video class="lazy video-player ts:w-full ts:h-full ts:object-cover" autoplay muted loop playsinline poster="{{ poster }}">
+				<source data-src="{{ video_source }}" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		{%- elsif setting.banner_type == 'image' and setting.banner_image != blank -%}
+			{%- liquid
+				assign image = setting.banner_image
+				assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+				assign image_class = 'motion-reduce ts:w-full ts:max-w-full ts:h-auto'
+				assign fetch_priority = 'auto'
+				assign mobile_image = image | image_url: width: image.width
+
+				if section.index == 1
+					assign fetch_priority = 'high'
+				endif
+
+				if setting.banner_img_mb != blank
+					assign mobile_image = setting.banner_img_mb | image_url: width: setting.banner_img_mb.width
+				endif
+			-%}
+
+			<div class="banner-img-wrapper ts:w-full ts:h-full ts:overflow-hidden">
+				<picture class="media ts:w-full ts:h-full{% if setting.enable_anim %} scroll-trigger animate--zoom-out scroll-trigger--offscreen{% endif %}">
+						<source srcset="{{ mobile_image }}" media="(max-width: 767px)"/>
+						{{
+							image
+							| image_url: width: 3840
+							| image_tag: height: image.height, sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: image_class, alt: image.alt | default: 'Banner Image'
+						}}
+					</picture>
+			</div>
+		{%- endif -%}
+	</div>
+
+	<div class="banner-contents ts:relative ts:z-2 ts:flex ts:flex-col {{ setting.content_alignment_h }} {{ setting.content_alignment_h_mobile }} {{ setting.content_alignment_v }} {{ setting.content_alignment_v_mobile }} ts:pt-(--top-spacing) ts:pb-(--bottom-spacing) text-align ts:row-span-full ts:col-span-full ts:px-8">
+		<div class="contents-wrapper ts:w-auto ts:md:p-8 ts:p-4{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+			{%- for block in section.blocks -%}
+				{% case block.type %}
+					{% when 'heading' %}
+						{%- if block.settings.type == 'title' -%}
+							<h2 class="{{ block.settings.text_transform }} {{ block.settings.heading_size }} ts:leading-none ts:font-normal" {{ block.shopify_attributes }}>
+								{{ block.settings.heading_text }}
+							</h2>
+						{% elsif block.settings.type == 'body' %}
+								<p class="{{ block.settings.text_transform }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading_text }}</p>
+						{% elsif block.settings.type == 'caption' %}
+								<p class="caption {{ block.settings.text_transform }} ts:text-size_sm" {{ block.shopify_attributes }}>{{ block.settings.heading_text }}</p>
+						{%- endif -%}
+					{% when 'richtext' %}
+						<div class="rte ts:mt-6" {{ block.shopify_attributes }}>{{ block.settings.richtext_content }}</div>
+					{%  when 'image' %}
+						{%- if block.settings.image != blank -%}
+							{% liquid
+								assign image_width = block.settings.image.width
+								assign image_height = block.settings.image.height
+								assign image_class = 'motion-reduce ts:w-[var(--img-width)] ts:h-auto'
+								assign fetch_priority = 'auto'
+								assign justify_md = ' ts:md:justify-center'
+								assign justify_sm = ' ts:justify-center'
+								assign desktop_width = block.settings.image_width | append: 'rem'
+								assign mobile_width = block.settings.image_width_mobile |append: 'rem'
+
+								if section.index == 1
+									assign fetch_priority = 'high'
+								endif
+
+								if setting.text_alignment == 'left'
+									assign justify_md = ' ts:md:justify-start'
+								elsif setting.text_alignment == 'right'
+									assign justify_md = ' ts:md:justify-end'
+								endif
+								if setting.text_alignment_mobile == 'left'
+									assign justify_sm = ' ts:justify-start'
+								elsif setting.text_alignment_mobile == 'right'
+									assign justify_sm = ' ts:justify-end'
+								endif
+								assign justify = justify_md | append: justify_sm
+							%}
+
+							<div class="img-wrapper ts:lg:mb-20 ts:mb-12 ts:flex{{ justify }}" style="--img-width: clamp({{ mobile_width }}, {{ block.settings.image_width }}vw, {{ desktop_width }});" {{ block.shopify_attributes }}>
+								{{
+									block.settings.image
+									| image_url: width: 3840
+									| image_tag: height: image_height, class: image_class, fetchpriority: fetch_priority, width: image_width, height: image_height
+								}}
+							</div>
+						{%- endif -%}
+				{% endcase %}
+			{%- endfor -%}
+
+			{%- liquid
+				assign justify_md = 'ts:md:justify-center'
+				assign justify_sm = ' ts:justify-center'
+
+				if setting.text_alignment == 'left'
+					assign justify_md = 'ts:md:justify-start'
+				elsif setting.text_alignment == 'right'
+					assign justify_md = 'ts:md:justify-end'
+				endif
+
+				if setting.text_alignment_mobile == 'left'
+					assign justify_sm = ' ts:justify-start'
+				elsif setting.text_alignment_mobile == 'right'
+					assign justify_sm = ' ts:justify-end'
+				endif
+
+				assign justify = justify_md | append: justify_sm
+			-%}
+
+			<div class="btn-wrapper ts:flex ts:flex-wrap ts:items-center {{ justify }} ts:gap-4 ts:w-full ts:mt-8 ts:align-middle ts:md:px-5">
+				{%- for block in section.blocks -%}
+					{%- if block.type == 'buttons' -%}
+						{%- if block.settings.button_text != blank -%}
+							<a href="{{ block.settings.button_url | default: '#' }}" class="button {{ block.settings.btn_style }}" {{ block.shopify_attributes }}>
+								{{ block.settings.button_text }}
+							</a>
+						{%- endif -%}
+					{%- endif -%}
+				{%- endfor -%}
+			</div>
+		</div>
+	</div> 
+</div>
+
+{%- if setting.mb_video != blank -%}
+  {% assign poster_mob = setting.mb_poster | image_url: width: setting.mb_poster.width %}
+  {% if setting.mb_poster == blank %}
+    {% assign poster_mob = setting.poster | image_url: width: setting.poster.width %}
+  {% endif %}
+	
+  <script type="text/javascript" async>
+    document.addEventListener("DOMContentLoaded", function() {
+      const loadMobileMedia = () => {
+        let mobileView = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+
+        if(!mobileView.matches) {
+          return
+        } else {
+          let mb_video = '{{ setting.mb_video.sources[1].url }}',
+              mb_poster = '{{ poster_mob }}',
+              video_player = document.querySelector("video.video-player");
+
+
+          video_player.children[0].dataset.src = mb_video
+          video_player.poster = mb_poster
+        }
+      }
+
+      loadMobileMedia();
+      window.addEventListener('resize', loadMobileMedia);
+    });
+  </script>
+{%- endif -%}
+
+{% schema %}
+	{
+		"name": "[Sev] Banner",
+		"class": "sev-banner",
+		"tag": "section",
+		"settings": [
+			{
+				"type": "color_scheme",
+				"id": "color_scheme",
+				"label": "t:sections.all.colors.label",
+				"default": "scheme-1"
+			},
+			{
+				"type": "select",
+				"id": "banner_type",
+				"label": "Banner Type",
+				"options": [
+					{
+						"value": "image",
+						"label": "Image"
+					},
+					{
+						"value": "video",
+						"label": "Video"
+					}
+				],
+				"default": "image"
+			},
+			{
+        "type": "checkbox",
+        "id": "add_overlay",
+        "label": "Show Overlay",
+        "default": false
+      },
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"label": "Overlay Opacity",
+				"default": 0.5,
+				"min": 0,
+				"max": 1,
+				"step": 0.1,
+				"visible_if": "{{ section.settings.add_overlay == true }}"
+			},
+			{
+				"type": "checkbox",
+				"id": "enable_anim",
+				"label": "Animate Image",
+				"default": false
+			},
+			{
+				"type": "header",
+				"content": "Image Banner",
+				"visible_if": "{{ section.settings.banner_type == 'image' }}"
+			},
+			{
+				"type": "image_picker",
+				"id": "banner_image",
+				"label": "Banner Image",
+				"info": "Desktop",
+				"visible_if": "{{ section.settings.banner_type == 'image' }}"
+			},
+			{
+				"type": "image_picker",
+				"id": "banner_img_mb",
+				"label": "Banner Image",
+				"info": "Mobile",
+				"visible_if": "{{ section.settings.banner_type == 'image' }}"
+			},
+			{
+				"type": "header",
+				"content": "Video Banner",
+				"visible_if": "{{ section.settings.banner_type == 'video' }}"
+			},
+			{
+        "type": "video",
+        "id": "video",
+        "label": "Banner Video",
+        "info": "A Shopify-hosted video",
+				"visible_if": "{{ section.settings.banner_type == 'video' }}"
+      },
+      {
+        "type": "image_picker",
+        "id": "poster",
+        "label": "Banner Video Poster",
+        "info": "Video fallback image",
+				"visible_if": "{{ section.settings.banner_type == 'video' }}"
+      },
+			{
+        "type": "header",
+        "content": "Mobile Video Banner",
+				"visible_if": "{{ section.settings.banner_type == 'video' }}"
+      },
+      {
+        "type": "video",
+        "id": "mb_video",
+        "label": "Mobile Banner Video",
+        "info": "A Shopify-hosted video",
+				"visible_if": "{{ section.settings.banner_type == 'video' }}"
+      },
+      {
+        "type": "image_picker",
+        "id": "mb_poster",
+        "label": "Mobile Banner Video Poster",
+        "info": "Video fallback image",
+				"visible_if": "{{ section.settings.banner_type == 'video' }}"
+      },
+			{
+				"type": "url",
+				"id": "banner_link",
+				"label": "Banner Link",
+				"info": "Add link to the entire banner. This will make the whole section clickable."
+			},
+			{
+				"type": "text",
+				"id": "link_label",
+				"label": "Link Label",
+				"info": "Add a short text describing the link for accessibility complaince.",
+				"visible_if": "{{ section.settings.banner_link != blank }}"
+			},
+			{
+				"type": "header",
+				"content": "Content Settings"
+			},
+			{
+				"type": "select",
+				"id": "content_alignment_h",
+				"label": "Content Alignment",
+				"info": "Horizontal alignment of the contents.",
+				"options": [
+					{
+						"value": "ts:md:items-start",
+						"label": "Left"
+					},
+					{
+						"value": "ts:md:items-center",
+						"label": "Center"
+					},
+					{
+						"value": "ts:md:items-end",
+						"label": "Right"
+					}
+				],
+				"default": "ts:md:items-center"
+			},
+			{
+				"type": "select",
+				"id": "content_alignment_v",
+				"label": "Content Alignment",
+				"info": "Vertical alignment of the contents.",
+				"options": [
+					{
+						"value": "ts:md:justify-start",
+						"label": "Top"
+					},
+					{
+						"value": "ts:md:justify-center",
+						"label": "Middle"
+					},
+					{
+						"value": "ts:md:justify-end",
+						"label": "Bottom"
+					}
+				],
+				"default": "ts:md:justify-center"
+			},
+			{
+				"type": "text_alignment",
+				"id": "text_alignment",
+				"label": "Text Alignment",
+				"default": "center"
+			},
+			{
+				"type": "header",
+				"content": "Mobile Content Settings"
+			},
+			{
+				"type": "select",
+				"id": "content_alignment_h_mobile",
+				"label": "Content Alignment",
+				"info": "Horizontal alignment of the contents.",
+				"options": [
+					{
+						"value": "ts:items-start",
+						"label": "Left"
+					},
+					{
+						"value": "ts:items-center",
+						"label": "Center"
+					},
+					{
+						"value": "ts:items-end",
+						"label": "Right"
+					}
+				],
+				"default": "ts:items-center"
+			},
+			{
+				"type": "select",
+				"id": "content_alignment_v_mobile",
+				"label": "Content Alignment",
+				"info": "Vertical alignment of the contents.",
+				"options": [
+					{
+						"value": "ts:justify-start",
+						"label": "Top"
+					},
+					{
+						"value": "ts:justify-center",
+						"label": "Middle"
+					},
+					{
+						"value": "ts:justify-end",
+						"label": "Bottom"
+					}
+				],
+				"default": "ts:justify-center"
+			},
+			{
+				"type": "text_alignment",
+				"id": "text_alignment_mobile",
+				"label": "Text Alignment",
+				"default": "center"
+			},
+			{
+				"type": "header",
+				"content": "Spacing",
+				"info": "Top and bottom spacing."
+			},
+			{
+				"type": "range",
+				"id": "top_spacing",
+				"label": "Top Spacing",
+				"default": 0,
+				"min": 0,
+				"max": 25,
+				"step": 0.5,
+				"unit": "rem"
+			},
+			{
+				"type": "range",
+				"id": "bottom_spacing",
+				"label": "Bottom Spacing",
+				"default": 0,
+				"min": 0,
+				"max": 25,
+				"step": 0.5,
+				"unit": "rem"
+			},
+			{
+				"type": "range",
+				"id": "top_spacing_mobile",
+				"label": "Mobile Top Spacing",
+				"default": 0,
+				"min": 0,
+				"max": 10,
+				"step": 0.1,
+				"unit": "rem"
+			},
+			{
+				"type": "range",
+				"id": "bottom_spacing_mobile",
+				"label": "Mobile Bottom Spacing",
+				"default": 0,
+				"min": 0,
+				"max": 10,
+				"step": 0.1,
+				"unit": "rem"
+			}
+		],
+		"blocks": [
+			{
+				"type": "heading",
+				"name": "Heading",
+				"limit": 3,
+				"settings": [
+					{
+						"type": "select",
+						"id": "type",
+						"label": "Type",
+						"options": [
+							{
+								"value": "title",
+								"label": "Title"
+							},
+							{
+								"value": "body",
+								"label": "Body"
+							},
+							{
+								"value": "caption",
+								"label": "Caption"
+							}
+						],
+						"default": "title"
+					},
+					{
+						"type": "inline_richtext",
+						"id": "heading_text",
+						"label": "Heading Text",
+						"default": "Banner Heading"
+					},
+					{
+						"type": "select",
+						"id": "heading_size",
+						"label": "Heading Size",
+						"options": [
+							{
+								"value": "ts:!text-big",
+								"label": "Big"
+							},
+							{
+								"value": "ts:!text-3xl",
+								"label": "3X Large"
+							},
+							{
+								"value": "ts:!text-2xl",
+								"label": "2X Large"
+							},
+							{
+								"value": "ts:!text-xl",
+								"label": "Extra Large"
+							},
+							{
+								"value": "ts:!text-lg",
+								"label": "Large"
+							},
+							{
+								"value": "ts:!text-base",
+								"label": "Medium"
+							},
+							{
+								"value": "ts:!text-sm",
+								"label": "Small"
+							},
+							{
+								"value": "ts:!text-xs",
+								"label": "Extra Small"
+							}
+						],
+						"default": "ts:!text-2xl"
+					},
+					{
+						"type": "select",
+						"id": "text_transform",
+						"label": "Text Transform",
+						"options": [
+							{
+								"value": "ts:uppercase",
+								"label": "Uppercase"
+							},
+							{
+								"value": "ts:capitalize",
+								"label": "Capitalize"
+							},
+							{
+								"value": "ts:lowercase",
+								"label": "Lowercase"
+							},
+							{
+								"value": "ts:normal-case",
+								"label": "None"
+							}
+						],
+						"default": "ts:uppercase"
+					}
+				]
+			},
+			{
+				"type": "richtext",
+				"name": "Rich Text",
+				"limit": 1,
+				"settings": [
+					{
+						"type": "richtext",
+						"id": "richtext_content",
+						"label": "Rich Text Content",
+						"default": "<p>Rich Text Content</p>"
+					}
+				]
+			},
+			{
+				"type": "buttons",
+				"name": "Button",
+				"limit": 2,
+				"settings": [
+					{
+						"type": "url",
+						"id": "button_url",
+						"label": "Button URL"
+					},
+					{
+						"type": "text",
+						"id": "button_text",
+						"label": "Button Text",
+						"default": "Button"
+					},
+					{
+						"type": "select",
+						"id": "btn_style",
+						"label": "Button Style",
+						"options": [
+							{
+								"value": "button--primary",
+								"label": "Primary"
+							},
+							{
+								"value": "button--secondary",
+								"label": "Secondary"
+							}
+						],
+						"default": "button--primary"
+					}
+				]
+			},
+			{
+				"type": "caption_link",
+				"name": "Caption",
+				"limit": 1,
+				"settings": [
+					{
+						"type": "text",
+						"id": "label",
+						"label": "Caption Text",
+						"default": "Caption"
+					},
+					{
+						"type": "url",
+						"id": "link",
+						"label": "Caption URL"
+					}
+				]
+			},
+			{
+				"type": "image",
+				"name": "Image",
+				"limit": 1,
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					},
+					{
+						"type": "range",
+						"id": "image_width",
+						"min": 5,
+						"max": 100,
+						"step": 1,
+						"unit": "rem",
+						"label": "Width",
+						"default": 25,
+						"info": "Desktop width of the image. 1rem = 10px."
+					},
+					{
+						"type": "range",
+						"id": "image_width_mobile",
+						"min": 5,
+						"max": 100,
+						"step": 1,
+						"unit": "rem",
+						"label": "Mobile Width",
+						"default": 25,
+						"info": "Mobile width of the image. 1rem = 10px."
+					}
+				]
+			}
+		],
+		"presets": [
+			{
+				"name": "Media Banner",
+				"blocks": [
+					{ "type": "heading" },
+					{ "type": "buttons" },
+					{ "type": "buttons" }
+				]
+			}
+		]
+	}
+{% endschema %}
