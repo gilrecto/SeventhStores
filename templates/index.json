@@ -55,18 +55,26 @@
         "heading_HrigPX",
         "text_VqWRyF"
       ],
+      "custom_css": [
+        ".rich-text__wrapper {max-width: 43rem;}",
+        ".rich-text__heading {font-size: 1.8rem;}",
+        ".rich-text__text {font-size: 1.1rem;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 60,
         "padding_bottom": 0
       }
     },
     "custom_liquid_b4Bzga": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".klaviyo-form {max-width: 32rem; margin: 0 auto;}"
+      ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-VqJUmp\"></div>",

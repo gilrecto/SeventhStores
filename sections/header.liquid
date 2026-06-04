@@ -244,7 +244,7 @@
         {%- endif -%}
       </div>
 
-      <div class="header__icon header__icon--wishlist">
+      <div class="header__icon header__icon--wishlist small-hide">
         <a href="/a/wishlist" class="link focus-inset" rel="nofollow">
           <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
         </a>
@@ -253,7 +253,7 @@
       {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-          class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
+          class="header__icon header__icon--account link focus-inset"
           rel="nofollow"
         >
           {%- if section.settings.enable_customer_avatar -%}
