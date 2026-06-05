@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  padding-top: 1rem;
 }
 
 .active-facets-mobile {
@@ -202,6 +201,10 @@
 .facets__summary .svg-wrapper {
   height: auto;
   width: auto;
+}
+
+.facet-checkbox.active svg {
+  background-color: #27ccf8;
 }
 
 .facets__disclosure fieldset {
@@ -526,6 +529,10 @@
   height: 0.7rem;
 }
 
+.mobile-facets .facet-checkbox .svg-wrapper {
+  top: 0.4rem;
+}
+
 .facet-checkbox > input[type='checkbox']:checked ~ .svg-wrapper > .icon-checkmark {
   visibility: visible;
 }
@@ -760,6 +767,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 .mobile-facets__wrapper {
   margin-left: 0;
   display: flex;
+  flex: 1;
 }
 
 .mobile-facets__wrapper .disclosure-has-popup[open] > summary::before {
@@ -769,13 +777,13 @@ a.active-facets__button.focused .active-facets__button-inner {
 
 .mobile-facets__inner {
   background-color: rgb(var(--color-background));
-  width: calc(100% - 5rem);
+  width: 100%;
   margin-left: auto;
   height: 100%;
   overflow-y: auto;
   pointer-events: all;
   transition: transform var(--duration-default) ease;
-  max-width: 37.5rem;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   border-color: rgba(var(--color-foreground), var(--drawer-border-opacity));
@@ -796,9 +804,8 @@ a.active-facets__button.focused .active-facets__button-inner {
 }
 
 .mobile-facets__header {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  padding: 1rem 2.5rem;
-  text-align: center;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground));
+  padding: 1.6rem;
   display: flex;
   position: sticky;
   top: 0;
@@ -833,8 +840,7 @@ a.active-facets__button.focused .active-facets__button-inner {
 .mobile-facets__open {
   text-align: left;
   width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  gap: 0.8rem;
   display: flex;
   align-items: center;
   color: rgba(var(--color-link), var(--alpha-link));
@@ -851,19 +857,13 @@ a.active-facets__button.focused .active-facets__button-inner {
 
 .mobile-facets__open-label {
   transition: text-decoration var(--duration-short) ease;
-}
-
-.mobile-facets__open:hover .mobile-facets__open-label {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-.mobile-facets__open > * + * {
-  margin-left: 1rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .mobile-facets__open .svg-wrapper {
-  width: 2rem;
+  width: 1.4rem;
 }
 
 .mobile-facets__open line,
@@ -876,10 +876,10 @@ a.active-facets__button.focused .active-facets__button-inner {
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 0.7rem;
-  right: 1rem;
-  width: 4.4rem;
-  height: 4.4rem;
+  top: 2rem;
+  right: 1.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
   z-index: 101;
   opacity: 0;
   transition: opacity var(--duration-short) ease;
@@ -954,7 +954,7 @@ details.menu-opening .mobile-facets__close .svg-wrapper {
 }
 
 .mobile-facets__summary {
-  padding: 1.3rem 2.5rem;
+  padding: 1.6rem;
 }
 
 .mobile-facets__summary .svg-wrapper {
@@ -992,9 +992,9 @@ details.menu-opening .mobile-facets__close .svg-wrapper {
   overflow-y: auto;
 }
 
-.js .mobile-facets .submenu-open {
-  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
-}
+/* .js .mobile-facets .submenu-open {
+  visibility: hidden; hide menus from screen readers when hidden by submenu
+} */
 
 .mobile-facets__item {
   position: relative;
@@ -1050,7 +1050,7 @@ input.mobile-facets__checkbox {
 
 .mobile-facets__footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  padding: 2rem;
+  padding: 1.6rem;
   bottom: 0;
   position: sticky;
   display: flex;
@@ -1060,12 +1060,8 @@ input.mobile-facets__checkbox {
   background: var(--gradient-background);
 }
 
-.mobile-facets__footer > * + * {
-  margin-left: 1rem;
-}
-
 .mobile-facets__footer > * {
-  width: 50%;
+  width: 100%;
 }
 
 .mobile-facets__sort {
@@ -1226,11 +1222,6 @@ input.mobile-facets__checkbox {
     column-gap: 0;
   }
 
-  .facets-container-drawer .mobile-facets__wrapper {
-    margin-right: 2rem;
-    flex-grow: 1;
-  }
-
   .facets-container-drawer .product-count {
     margin: 0 0 0.5rem 3.5rem;
   }
@@ -1241,6 +1232,20 @@ input.mobile-facets__checkbox {
 
   .facets-container-drawer .facets__form {
     display: block;
+  }
+
+  .mobile-facets__wrapper {
+    justify-content: center;
+  }
+
+  .mobile-facets__open-wrapper {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid;
+  }
+
+  .mobile-facets__inner {
+    width: calc(100% - 5rem);
+    max-width: 37.5rem;
   }
 }
 

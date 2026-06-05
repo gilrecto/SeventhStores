@@ -42,7 +42,9 @@
       "label": "Pagination",
       "page": "Page {{ number }}",
       "next": "Next page",
-      "previous": "Previous page"
+      "previous": "Previous page",
+      "loading": "Loading...",
+      "load_more": "Load More"
     },
     "search": {
       "search": "Search",
@@ -197,9 +199,9 @@
       "filter_and_operator_subtitle": "Match all",
       "apply": "Apply",
       "clear": "Clear",
-      "clear_all": "Remove all",
+      "clear_all": "Clear all",
       "from": "From",
-      "filter_and_sort": "Filter and sort",
+      "filter_and_sort": "Filter & Sort",
       "filter_by_label": "Filter:",
       "filter_button": "Filter",
       "filters_selected": {

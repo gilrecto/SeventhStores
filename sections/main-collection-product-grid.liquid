@@ -36,7 +36,7 @@
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}" data-section-id="{{ section.id }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -183,7 +183,31 @@
             </ul>
 
             {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
+              {%- if section.settings.pagination_type == 'infinite_scroll' -%}
+                <div class="ts:flex ts:justify-center ts:mt-6 ts:mb-10">
+                  <infinite-scrolling
+                    class="infinite-scrolling"
+                    data-autoload="true"
+                    data-item-grid="#product-grid"
+                    data-section="{{ section.id }}"
+                  >
+                    {%- if paginate.next -%}
+                      <button
+                        aria-label="{{ 'general.pagination.load_more' | t }}"
+                        aria-hidden="false"
+                        aria-busy="false"
+                        data-url="{{ page.url }}{{ paginate.next.url }}"
+                        class="button button--primary"
+                      >
+                        <span class="ts:leading-none loading">{{ 'general.pagination.loading' | t }}</span>
+                        <span class="ts:leading-none default">{{ 'general.pagination.load_more' | t }}</span>
+                      </button>
+                    {%- endif -%}
+                  </infinite-scrolling>
+                </div>
+              {%- else -%}
+                {%- render 'pagination', paginate: paginate, anchor: '' -%}
+              {%- endif -%}
             {%- endif -%}
           </div>
         {%- endif -%}
@@ -194,6 +218,25 @@
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
 </div>
+
+{%- if section.settings.pagination_type == 'infinite_scroll' -%}
+  {%- style -%}
+    infinite-scrolling [aria-busy="true"] .loading {
+      display: inline-block;
+    }
+    infinite-scrolling .loading,
+    infinite-scrolling [aria-busy="true"] .loading ~ *,
+    infinite-scrolling [aria-hidden="true"],
+    infinite-scrolling .is--hidden {
+      display: none;
+    }
+    infinite-scrolling [aria-hidden="false"] {
+      display: block;
+    }
+  {%- endstyle -%}
+
+  <script src="{{ 'component-infinite-scrolling.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -208,6 +251,22 @@
       "step": 4,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+    },
+    {
+      "type": "select",
+      "id": "pagination_type",
+      "label": "Pagination Type",
+      "options": [
+        {
+          "value": "page",
+          "label": "Paging"
+        },
+        {
+          "value": "infinite_scroll",
+          "label": "Infinite Scrolling"
+        }
+      ],
+      "default": "page"
     },
     {
       "type": "range",

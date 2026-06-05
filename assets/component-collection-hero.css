@@ -36,26 +36,18 @@
 }
 
 .collection-hero__title {
-  margin: 2.5rem 0;
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .collection-hero__title + .collection-hero__description {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
+  font-weight: 300;
 }
 
 @media screen and (min-width: 750px) {
-  .collection-hero__title + .collection-hero__description {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .collection-hero__description {
-    max-width: 66.67%;
-  }
 
   .collection-hero--with-image .collection-hero__description {
     max-width: 100%;
