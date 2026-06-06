@@ -923,7 +923,7 @@ details.menu-opening .mobile-facets__close .svg-wrapper {
 }
 
 .mobile-facets__main {
-  padding: 2.7rem 0 0;
+  padding: 0;
   position: relative;
   z-index: 1;
   flex-grow: 1;
@@ -1245,7 +1245,7 @@ input.mobile-facets__checkbox {
 
   .mobile-facets__inner {
     width: calc(100% - 5rem);
-    max-width: 37.5rem;
+    max-width: 40rem;
   }
 }
 

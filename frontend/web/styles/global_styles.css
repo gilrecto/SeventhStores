@@ -93,3 +93,34 @@ footer .footer-block__details-content .list-menu__item {
 .badge {
 	@apply ts:py-2 ts:px-[0.8rem] ts:text-[1.1rem] ts:font-light;
 }
+
+/* Custom sort */
+.mobile-facets__sort {
+	@apply ts:w-full;
+}
+.mobile-facets__sort .facet-filters__sort{
+	@apply ts:flex ts:flex-wrap ts:items-center ts:p-0 ts:pt-[1.6rem] ts:w-full ts:gap-[0.8rem];
+}
+.mobile-facets__sort .facet-filters__sort li:first-of-type {
+	@apply ts:basis-full;
+}
+.mobile-facets__sort .facet-filters__sort li {
+	@apply ts:relative ts:flex-1 ts:basis-[calc(50%-0.8rem)];
+}
+.mobile-facets__sort .facet-filters__sort li input.filter-radio-button {
+	-webkit-appearance: none;
+	@apply ts:appearance-none ts:absolute ts:w-full ts:h-full ts:top-0 ts:left-0 ts:cursor-pointer;
+}
+.mobile-facets__sort .facet-filters__sort li label {
+	@apply ts:block ts:text-sm ts:font-medium ts:p-[1.2rem] ts:text-center ts:text-[rgba(var(--color-foreground),0.6)] ts:border ts:border-solid ts:border-[rgba(var(--color-foreground),0.15)] ts:transition-all ts:duration-300 ts:ease-linear;
+}
+.mobile-facets__sort .facet-filters__sort li input[type="radio"]:checked ~ label {
+	@apply ts:bg-[rgba(var(--color-foreground),0.08)];
+}
+.mobile-facets__main .active-facets,
+.mobile-facets__main .active-facets .active-facets__button-wrapper {
+	@apply ts:max-[990px]:m-0;
+}
+.mobile-facets__main .active-facets .active-facets__button-wrapper a {
+	@apply ts:max-[990px]:px-0;
+}
