@@ -37,7 +37,15 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}" data-section-id="{{ section.id }}">
-  {%- paginate collection.products by section.settings.products_per_page -%}
+  {%- liquid
+    assign products_per_page = section.settings.products_per_page
+
+    if section.settings.pagination_type == 'none'
+      assign products_per_page = 1000
+    endif
+  -%}
+
+  {%- paginate collection.products by products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -172,6 +180,7 @@
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
                     show_rating: section.settings.show_rating,
+                    show_swarches: section.settings.show_related_swatches,
                     lazy_load: lazy_load,
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
@@ -238,6 +247,55 @@
   <script src="{{ 'component-infinite-scrolling.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+{%- if section.settings.show_related_swatches -%}
+  <script src="{{ 'custom_product_swatches.js' | asset_url }}" defer="defer"></script>
+  {%- paginate collections.all.products by 1000 -%}
+    <script type="application/json" id="product-groups-data">
+      {
+      {%- assign rendered_groups = '' -%}
+      {%- assign first_group = true -%}
+  
+      {%- for product in collections.all.products -%}
+        {%- assign group = product.metafields.custom.product_colour_group.value.system.handle -%}
+  
+        {%- if group != blank -%}
+          {%- capture token -%}|{{ group }}|{%- endcapture -%}
+  
+          {%- unless rendered_groups contains token -%}
+            {%- unless first_group -%},{%- endunless -%}
+            {%- assign first_group = false -%}
+  
+            "{{- group -}}": [
+              {%- assign first_product = true -%}
+  
+              {%- for related_product in collections.all.products -%}
+                {%- assign related_group = related_product.metafields.custom.product_colour_group.value.system.handle -%}
+  
+                {%- if related_group == group -%}
+                  {%- unless first_product -%},{%- endunless -%}
+                  {%- assign first_product = false -%}
+  
+                  {
+                    "handle": {{ related_product.handle | json }},
+                    "url": {{ related_product.url | json }},
+                    "title": {{ related_product.title | json }},
+                    "swatch": "{{ related_product.metafields.color.swatch }}"
+                  }
+                {%- endif -%}
+              {%- endfor -%}
+            ]
+  
+            {%- capture rendered_groups -%}
+              {{ rendered_groups }}{{ token }}
+            {%- endcapture -%}
+          {%- endunless -%}
+        {%- endif -%}
+      {%- endfor -%}
+      }
+    </script>
+  {%- endpaginate -%}
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
@@ -250,7 +308,8 @@
       "max": 36,
       "step": 4,
       "default": 16,
-      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label",
+      "visible_if": "{{ section.settings.pagination_type != 'none' }}"
     },
     {
       "type": "select",
@@ -264,6 +323,10 @@
         {
           "value": "infinite_scroll",
           "label": "Infinite Scrolling"
+        },
+        {
+          "value": "none",
+          "label": "No Pagination"
         }
       ],
       "default": "page"
@@ -382,6 +445,12 @@
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
       "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_related_swatches",
+      "default": false,
+      "label": "Show Related Product Swatches"
     },
     {
       "type": "select",

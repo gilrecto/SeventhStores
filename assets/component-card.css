@@ -136,7 +136,7 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
+  padding: 1.6rem 1rem;
 }
 
 .card:not(.ratio) > .card__content {
@@ -263,13 +263,6 @@
   }
 }
 
-@media screen and (min-width: 750px) {
-  .card__information {
-    padding-bottom: 1.7rem;
-    padding-top: 1.7rem;
-  }
-}
-
 .card__badge {
   align-self: flex-end;
   grid-row-start: 3;
@@ -303,6 +296,13 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.card__heading,
+.card-information .price {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .card__heading:last-child {

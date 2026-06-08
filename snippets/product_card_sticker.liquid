@@ -1,0 +1,24 @@
+{%- liquid
+  assign has_sticker = false
+  assign sticker = ''
+-%}
+
+{%- for tag in product.tags -%}
+  {%- if tag contains 'sticker:' -%}
+    {%- assign has_sticker = true -%}
+    {%- capture sticker -%}
+            {{ tag | split: ":" | last }}
+        {%- endcapture -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- unless product.metafields.display.sticker == blank -%}
+  {%- assign has_sticker = true -%}
+  {%- assign sticker = product.metafields.display.sticker -%}
+{%- endunless -%}
+
+{%- if has_sticker -%}
+ <span id="NoMediaStandardBadge-{{ section_id }}-{{ product.id }}" class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
+		{{ sticker | strip_newlines }}
+	</span>
+{%- endif -%}
