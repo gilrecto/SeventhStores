@@ -58,7 +58,7 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if card_product.featured_media -%}
-          <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="ts:absolute ts:w-full ts:h-full ts:z-1" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
+          <a href="{{ card_product.url | within: collection }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="ts:absolute ts:w-full ts:h-full ts:z-1" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
             <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
@@ -156,7 +156,7 @@
             {% endif %}
           >
             <a
-              href="{{ card_product.url }}"
+              href="{{ card_product.url | within: collection }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link ts:relative"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"

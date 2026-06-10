@@ -124,3 +124,26 @@ footer .footer-block__details-content .list-menu__item {
 .mobile-facets__main .active-facets .active-facets__button-wrapper a {
 	@apply ts:max-[990px]:px-0;
 }
+
+/* Product Page */
+product-info .product--stacked .product__media-list {
+	@apply ts:min-[1025px]:pl-16 ts:min-[1025px]:pr-[4.85rem];
+}
+product-info .product--stacked .product__media-item {
+	@apply ts:max-w-full ts:w-full;
+}
+product-info .product__info-wrapper {
+	@apply ts:min-[1025px]:pl-[clamp(4rem,7.039vw-3.215rem,10.3rem)];
+}
+product-info .product__info-container {
+	@apply ts:max-w-full;
+}
+product-info .product__title {
+	@apply ts:mt-[1.6rem] ts:mb-[1.2rem];
+}
+product-info .product__title > * {
+	@apply ts:text-[clamp(1.4rem,0.342vw+1.144rem,1.8rem)];
+}
+product-info .price {
+	@apply ts:text-base;
+}

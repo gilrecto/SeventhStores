@@ -1,0 +1,38 @@
+{% if product.metafields.custom.product_colour_group %}
+  <div class="ts:my-[0.8rem]! ts:lg:my-[1.6rem]! ts:flex ts:lg:block ts:items-center">
+    {%- if product.metafields.filters.colour -%}
+      <p class="product-single__color-swatch ts:text-[1.1rem] ts:leading-none ts:font-light ts:lg:pb-[0.8rem]">{{ product.metafields.filters.colour }}</p>
+    {%- endif -%}
+
+    {% paginate collections.all.products by 1000 %}
+      <ul class="ts:flex">
+        {%- unless product.metafields.color.swatch == blank -%}
+          <li class="ts:pr-[0.4rem]">
+            <span class="ts:h-[1.6rem] ts:w-[1.6rem] ts:block ts:border ts:border-black ts:p-px ts:rounded-full">
+              <span
+                class="ts:h-[1.2rem] ts:w-[1.2rem] ts:block ts:rounded-full"
+                style="background-color: {{ product.metafields.color.swatch }}"
+              ></span>
+            </span>
+          </li>
+        {%- endunless -%}
+      {% for relatedProduct in collections.all.products %}
+        {% unless relatedProduct.handle == product.handle %}
+          {% if relatedProduct.metafields.custom.product_colour_group.value == product.metafields.custom.product_colour_group.value %}
+            <li class="ts:px-[0.4rem]">
+              <a class="ts:block" href="{{ relatedProduct.url }}">
+                <span class="ts:h-[1.6rem] ts:w-[1.6rem] ts:block ts:border ts:border-black ts:p-px ts:rounded-full">
+                  <span
+                    class="ts:h-[1.2rem] ts:w-[1.2rem] ts:block ts:rounded-full"
+                    style="background-color: {{ relatedProduct.metafields.color.swatch }}"
+                  ></span>
+                </span>
+              </a>
+            </li>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+      </ul>
+    {% endpaginate %}
+  </div>
+{% endif %}

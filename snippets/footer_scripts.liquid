@@ -52,8 +52,8 @@
 {%- endif -%}
 
 {%- if request.page_type == 'product' or request.page_type == 'collection' -%}
-	<script defer src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
-	<script defer>
+	<script src="https://a.klaviyo.com/media/js/onsite/onsite.js" defer="defer"></script>
+	<script defer="defer">
 			var klaviyo = klaviyo || [];
 			klaviyo.init({
 				account: "YeaEtH",

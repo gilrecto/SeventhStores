@@ -1,0 +1,200 @@
+{%- assign t = template | split: '.' | first -%}
+<div class="ts:mx-auto">
+  <nav class="ts:flex" aria-label="Breadcrumb">
+    <ol class="ts:flex ts:w-full ts:space-x-1">
+      <li class="ts:flex">
+        <div class="ts:flex ts:items-center">
+          <a href="/" class="ts:ml-1 ts:text-[1.1rem] ts:font-light ts:text-gray-400 ts:hover:text-gray-500">
+            {{ 'accessibility.breadcrumbs.home' | t }}
+          </a>
+        </div>
+      </li>
+      {%- case t -%}
+				{%- when 'page' -%}
+					<li class="ts:flex">
+						<div class="ts:flex ts:items-center">
+							<svg
+								class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+							>
+								<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+							</svg>
+							<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ page.url }}" aria-current="page">
+								{{- page.title -}}
+							</a>
+						</div>
+					</li>
+				{%- when 'product' -%}
+					{%- if collection.url -%}
+						<li class="ts:flex">
+							<div class="ts:flex ts:items-center">
+								<svg
+									class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ collection.url }}" aria-current="page">
+									{{- collection.title -}}
+								</a>
+							</div>
+						</li>
+					{%- endif -%}
+					<li class="ts:flex">
+						<div class="ts:flex ts:items-center">
+							<svg
+								class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+							>
+								<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+							</svg>
+							<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ product.url }}">{{ product.title }}</a>
+						</div>
+					</li>
+				{%- when 'collection' and collection.handle -%}
+					{%- if current_tags -%}
+						<li class="ts:flex">
+							<div class="ts:flex ts:items-center">
+								<svg
+									class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ collection.url }}">
+									{{- collection.title -}}
+								</a>
+							</div>
+						</li>
+						<li class="ts:flex">
+							<div class="ts:flex ts:items-center">
+								<svg
+									class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								{%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+" }}{%- endcapture -%}
+								<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ tag_url }}">
+									{{- current_tags | join: ' + ' -}}
+								</a>
+							</div>
+						</li>
+					{%- else -%}
+						<li class="ts:flex">
+							<div class="ts:flex ts:items-center">
+								<svg
+									class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ collection.url }}">
+									{{- collection.title -}}
+								</a>
+							</div>
+						</li>
+					{%- endif -%}
+				{%- when 'blog' -%}
+					{%- if current_tags -%}
+						<li class="flex">
+							<div class="flex items-center">
+								<svg
+									class="flex-shrink-0 h-3 w-3"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								<a class="ml-1" aria-current="page" href="{{ blog.url }}">{{ blog.title }}</a>
+							</div>
+						</li>
+						<li class="flex">
+							<div class="flex items-center">
+								<svg
+									class="flex-shrink-0 h-3 w-3"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								{%- capture tag_url -%}{{ blog.url }}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+								<a class="ml-1" aria-current="page" href="{{ tag_url }}">
+									{{- current_tags | join: ' + ' -}}
+								</a>
+							</div>
+						</li>
+					{%- else -%}
+						<li class="ts:flex">
+							<div class="ts:flex ts:items-center">
+								<svg
+									class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+								>
+									<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+								</svg>
+								<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ blog.url }}">{{ blog.title }}</a>
+							</div>
+						</li>
+					{%- endif -%}
+				{%- when 'article' -%}
+					<li class="ts:flex">
+						<div class="ts:flex ts:items-center">
+							<svg
+								class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+							>
+								<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+							</svg>
+							<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" aria-current="page" href="{{ blog.url }}">{{ blog.title }}</a>
+						</div>
+					</li>
+					<li class="ts:flex">
+						<div class="ts:flex ts:items-center">
+							<svg
+								class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+							>
+								<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+							</svg>
+							<a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+						</div>
+					</li>
+				{%- else -%}
+          <li class="ts:flex">
+            <div class="ts:flex ts:items-center">
+              <svg
+                class="ts:shrink-0 ts:h-3-[1.2rem] ts:w-[1.2rem]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+              </svg>
+              <a class="ts:ml-1 ts:text-[1.1rem] ts:font-light" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+            </div>
+          </li>
+      {%- endcase -%}
+    </ol>
+  </nav>
+</div>

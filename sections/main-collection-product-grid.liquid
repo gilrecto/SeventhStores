@@ -277,7 +277,7 @@
   
                   {
                     "handle": {{ related_product.handle | json }},
-                    "url": {{ related_product.url | json }},
+                    "url": {{ related_product.url | within: collection | json }},
                     "title": {{ related_product.title | json }},
                     "swatch": "{{ related_product.metafields.color.swatch }}"
                   }
