@@ -1,0 +1,104 @@
+{% style %}
+  size-guide div[data-tab] {
+    display: none;
+  }
+
+  size-guide div[data-tab].active {
+    display: flex;
+  }
+
+  size-guide button.active {
+    text-decoration: underline;
+  }
+{% endstyle %}
+
+<div class="ts:flex ts:flex-wrap ts:items-center ts:justify-center">
+  {%- assign size_guide_image = product.metafields.measurements.size_guide_image -%}
+  {%- unless size_guide_image == blank -%}
+    <div class="ts:md:px-[1.6rem] ts:max-w-lg ts:mx-auto ts:mb-[1.6rem] ts:flex-1">
+      <img loading="lazy" height="" width="" src="{{ size_guide_image | file_url }}">
+    </div>
+  {%- endunless -%}
+
+  <div class="ts:flex-1">
+    <p class="ts:md:text-[1.6rem] ts:text-base ts:text-center ts:md:pb-8 ts:pb-6">{{ 'products.product.select_size' | t }}</p>
+    <size-guide class="ts:flex ts:items-center ts:flex-col">
+      <div class="ts:flex ts:items-center ts:justify-center ts:md:pb-8 ts:pb-6">
+        {%- for variant in product.variants -%}
+          <button
+            type="button"
+            data-tab="{{ forloop.index }}"
+            class="{% if forloop.first %}active{% endif %} ts:md:px-[1.2rem] ts:px-3 ts:text-sm ts:cursor-pointer"
+          >
+            {{ variant.title }}
+          </button>
+        {%- endfor -%}
+      </div>
+
+      {%- for variant in product.variants -%}
+        {%- assign has_measurements = false -%}
+        <div
+          data-tab="{{ forloop.index }}"
+          class="{% if forloop.first %}active{% endif %} ts:flex ts:flex-wrap ts:items-center ts:justify-center ts:w-full"
+        >
+          {%- assign measurements = variant.metafields.measurements -%}
+          {%- for measurement in measurements -%}
+            {%- if measurement[0] != blank -%}
+              {%- assign has_measurements = true -%}
+              <div class="ts:text-[1.1rem] ts:px-[0.8rem] ts:text-center">
+                <p>{{ measurement[0] | replace: '_', ' ' | capitalize }}</p>
+                <p class="ts:font-medium">
+                  {{ measurement[1].value }}
+                  {{ measurement[1].unit }}
+                </p>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if has_measurements == false -%}
+            <div class="ts:text-[1.1rem] ts:px-[0.8rem] ts:text-center">
+              <p>
+                <strong>{{ 'products.product.no_measurements' | t }}</strong>
+              </p>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </size-guide>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    class SizeGuide extends HTMLElement {
+      constructor() {
+        super();
+
+        const _this = this;
+
+        this.buttons = this.querySelectorAll('button');
+        this.tabs = this.querySelectorAll('div[data-tab]');
+
+        this.buttons.forEach((button) => {
+          button.addEventListener('click', (event) => {
+            this.updateVariant(event);
+          });
+        });
+      }
+
+      updateVariant(event) {
+        const newTab = Array.from(this.tabs).find((tab) => tab.dataset.tab == event.currentTarget.dataset.tab);
+        const active = Array.from(this.tabs).find((tab) => tab.classList.contains('active'));
+        const activeButton = Array.from(this.buttons).find((button) => button.classList.contains('active'));
+
+        if (active) active.classList.remove('active');
+        if (activeButton) activeButton.classList.remove('active');
+        if (newTab) newTab.classList.add('active');
+
+        event.currentTarget.classList.add('active');
+      }
+    }
+
+    customElements.define('size-guide', SizeGuide);
+  });
+</script>

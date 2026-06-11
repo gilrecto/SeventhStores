@@ -120,10 +120,13 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "Add to Bag",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
+      "gender": {
+        "variant": "It's unisex - check the {{ alternative }}"
+      },
       "inventory_in_stock": "In stock",
       "inventory_in_stock_show_count": "{{ quantity }} in stock",
       "inventory_low_stock": "Low stock",
@@ -133,6 +136,7 @@
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
+      "no_measurements": "Sorry, but no meaurements have been set for this product.",
       "media": {
         "gallery_viewer": "Gallery Viewer",
         "load_image": "Load image {{ index }} in gallery view",
@@ -181,7 +185,10 @@
         "unit_price": "Unit price"
       },
       "share": "Share this product",
+      "size_guide": "Size Guide",
+      "select_size": "Select a Size",
       "sold_out": "Sold out",
+      "styled_with": "Styled With",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",

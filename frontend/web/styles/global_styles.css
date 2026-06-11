@@ -11,7 +11,7 @@
 	@apply ts:xl:py-(--padding-xl) ts:lg:py-(--padding-lg) ts:md:py-(--padding-md) ts:py-(--padding-sm) ts:px-0 ts:overflow-hidden;
 }
 .button {
-	@apply ts:text-xs ts:leading-none ts:md:min-w-70 ts:min-w-56 ts:border ts:border-[rgba(var(--color-foreground))] ts:hover:text-[rgba(var(--color-foreground))]! ts:hover:bg-[rgba(var(--color-background))]! ts:hover:after:shadow-none!;
+	@apply ts:text-sm ts:leading-none ts:md:min-w-70 ts:min-w-56 ts:border ts:border-[rgba(var(--color-foreground))] ts:hover:text-[rgba(var(--color-foreground))]! ts:hover:bg-[rgba(var(--color-background))]! ts:hover:after:shadow-none!;
 }
 .btn-text-only {
 	@apply ts:text-sm! ts:uppercase ts:font-normal ts:inline ts:p-0 ts:bg-transparent ts:text-[rgba(var(--color-foreground))] ts:hover:underline ts:transition-all ts:duration-300 ts:ease-linear;
@@ -21,6 +21,9 @@
 }
 button, a, .button, .btn {
 	@apply ts:transition-all ts:duration-300 ts:ease-linear;
+}
+.rte ul {
+	@apply ts:list-disc;
 }
 
 /* Header */
@@ -65,6 +68,9 @@ header header-drawer .menu-drawer__menu-item > .svg-wrapper {
 }
 header header-drawer .menu-drawer__submenu .menu-drawer__menu-item {
 	@apply ts:py-2 ts:text-sm;
+}
+header  .header__icon span.topbadge {
+	@apply ts:absolute ts:top-0 ts:right-0 ts:p-[0.6rem]! ts:max-h-[1.7rem];
 }
 
 /* Footer */
@@ -133,10 +139,10 @@ product-info .product--stacked .product__media-item {
 	@apply ts:max-w-full ts:w-full;
 }
 product-info .product__info-wrapper {
-	@apply ts:min-[1025px]:pl-[clamp(4rem,7.039vw-3.215rem,10.3rem)];
+	@apply ts:min-[1025px]:pl-[clamp(clamp(3.2rem,4.581vw-1.496rem,7.3rem))];
 }
 product-info .product__info-container {
-	@apply ts:max-w-full;
+	@apply ts:max-w-full ts:top-[calc(var(--header-height)+2rem)] ts:max-h-[calc(100vh-var(--header-height))] ts:overflow-y-auto ts:scrollbar-thin ts:pr-8 ts:pb-16;
 }
 product-info .product__title {
 	@apply ts:mt-[1.6rem] ts:mb-[1.2rem];
@@ -146,4 +152,37 @@ product-info .product__title > * {
 }
 product-info .price {
 	@apply ts:text-base;
+}
+product-info .product__info-container variant-selects {
+	@apply ts:mb-0;
+}
+product-info .product__info-container .product-form {
+	@apply ts:my-[1.2rem];
+}
+product-info .product__info-container  .product-form__submit {
+	@apply ts:text-[1.1rem] ts:tracking-normal;
+}
+product-info .product__info-container .product__description {
+	@apply ts:my-[1.2rem] ts:text-[1.1rem] ts:font-light;
+}
+product-info .product__info-container .product__description p:not(:last-of-type) {
+	@apply ts:mb-[1.1rem]
+}
+product-info .product__info-container .product__accordion {
+	@apply ts:mt-0;
+}
+product-info .product__info-container .product__accordion summary {
+	@apply ts:py-[1.2rem];
+}
+product-info .product__info-container .product__accordion summary .accordion__title {
+	@apply ts:text-[1.1rem];
+}
+product-info .product__info-container .product__accordion .accordion__content {
+	@apply ts:p-0 ts:mb-[1.2rem];
+}
+product-info .product__info-container .product__accordion .accordion__content > * {
+	@apply ts:text-[1.1rem] ts:font-light;	
+}
+product-info .product__info-container .product__accordion .svg-wrapper {
+	@apply ts:w-[1.1rem] ts:h-[1.1rem] ts:m-0;
 }

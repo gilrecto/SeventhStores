@@ -37,6 +37,14 @@
             "swatch_shape": "circle"
           }
         },
+        "low_stock_alert_KxBnKm": {
+          "type": "low_stock_alert",
+          "settings": {
+            "threshold": 3,
+            "heading": "Low stock",
+            "message": "[count] left"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "disabled": true,
@@ -45,47 +53,18 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_wishlist": true,
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
           }
         },
-        "klarna_on_site_messaging_app_block_jTCGYt": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "disabled": true,
-          "settings": {
-            "data_key": "top-strip-promotion-badge",
-            "theme": "default",
-            "topPadding": "0",
-            "bottomPadding": "0",
-            "messagePrefix": ""
-          }
+        "unisex_link_DCFQ8w": {
+          "type": "unisex_link",
+          "settings": {}
         },
-        "clearpay_on_site_messaging_payments_messaging_bezUUq": {
-          "type": "shopify://apps/clearpay-on-site-messaging/blocks/payments-messaging/5d763983-d3e6-4888-9966-4e1170b26ae9",
-          "disabled": true,
-          "settings": {
-            "text_align": "inherit",
-            "margin_top": 16,
-            "margin_bottom": 16,
-            "color": "",
-            "size": "md",
-            "intro_text": "or",
-            "show_interest_free": true,
-            "payment_amount_is_bold": true,
-            "show_with": true,
-            "logo_type": "badge",
-            "logo_theme": "black-on-mint",
-            "modal_link_style": "circled-info-icon",
-            "modal_theme": "mint",
-            "breakpoint": 749,
-            "text_align_mobile": "inherit",
-            "margin_top_mobile": 16,
-            "margin_bottom_mobile": 16,
-            "show_lower_limit": true,
-            "show_upper_limit": true,
-            "show_if_outside_limits": true,
-            "product": "{{product}}"
-          }
+        "separator_ChYjpt": {
+          "type": "separator",
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -96,8 +75,10 @@
           "settings": {
             "heading": "Garment Measurements",
             "icon": "none",
+            "open_by_default": true,
             "content": "",
-            "page": ""
+            "page": "",
+            "size_guide": true
           }
         },
         "collapsible_tab_CryAmm": {
@@ -105,8 +86,10 @@
           "settings": {
             "heading": "Size Guide",
             "icon": "none",
+            "open_by_default": false,
             "content": "<p>For more information on sizing and how our products may fit you <a href=\"/pages/size-guide\" title=\"Size Guide\"><span style=\"text-decoration:underline\">please refer to our sizing page.</span></a></p>",
-            "page": ""
+            "page": "",
+            "size_guide": false
           }
         },
         "collapsible_tab_n4ciBz": {
@@ -114,9 +97,15 @@
           "settings": {
             "heading": "Need Help?",
             "icon": "none",
+            "open_by_default": false,
             "content": "<p>Text us <a href=\"https://wa.me/+447927651265\"><span style=\"text-decoration:underline\">on Whatsapp</span></a> or drop us an email - info@seventhstores.com</p><p>Check us out on Tik Tok (<a href=\"https://www.tiktok.com/@seventhstores?lang=en\" target=\"_blank\"><span style=\"text-decoration:underline\">@Seventhstores</span></a>) where you can see our pieces on different heights and body types.</p>",
-            "page": ""
+            "page": "",
+            "size_guide": false
           }
+        },
+        "styled_with_GG6m9F": {
+          "type": "styled_with",
+          "settings": {}
         }
       },
       "block_order": [
@@ -125,14 +114,16 @@
         "price",
         "color_variants_zKNbtb",
         "variant_picker",
+        "low_stock_alert_KxBnKm",
         "quantity_selector",
         "buy_buttons",
-        "klarna_on_site_messaging_app_block_jTCGYt",
-        "clearpay_on_site_messaging_payments_messaging_bezUUq",
+        "unisex_link_DCFQ8w",
+        "separator_ChYjpt",
         "description",
         "collapsible_tab_w3NVUz",
         "collapsible_tab_CryAmm",
-        "collapsible_tab_n4ciBz"
+        "collapsible_tab_n4ciBz",
+        "styled_with_GG6m9F"
       ],
       "settings": {
         "enable_sticky_info": true,
