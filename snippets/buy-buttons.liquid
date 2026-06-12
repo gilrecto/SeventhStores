@@ -28,6 +28,7 @@
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
       data-section-id="{{ section.id }}"
+      data-product-id="{{ section.id }}-{{ product.id }}"
     >
       <div class="product-form__error-message-wrapper" role="alert" hidden>
         <span class="svg-wrapper">
@@ -83,12 +84,21 @@
                 disabled
               {% endif %}
             >
-              <span>
+              <span class="ts:flex ts:items-center ts:justify-center ts:gap-2">
                 {%- if product.selected_or_first_available_variant == null -%}
+                  <span class="svg-wrapper">
+                    {{- 'icon-bag.svg' | inline_asset_content -}}
+                  </span>
                   {{ 'products.product.unavailable' | t }}
                 {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                  <span class="svg-wrapper">
+                    {{- 'icon-bag.svg' | inline_asset_content -}}
+                  </span>
                   {{ 'products.product.sold_out' | t }}
                 {%- else -%}
+                  <span class="svg-wrapper ts:w-[1.3rem]!">
+                    {{- 'icon-bag.svg' | inline_asset_content -}}
+                  </span>
                   {{ 'products.product.add_to_cart' | t }}
                 {%- endif -%}
               </span>
@@ -97,12 +107,12 @@
           {%- endcapture -%}
 
           {%- if block.settings.show_wishlist -%}
-            <div class="product-form--btn-wishlist ts:flex ts:items-center ts:gap-x-[1.2rem]">
-              {{- atc_btn -}}
+            <div class="product-form--btn-wishlist ts:flex ts:items-center ts:gap-x-[1.2rem] ts:flex-row-reverse">
+              <div class="ts:px-[0.8rem] ts:flex ts:flex-col ts:justify-center">
+                <div id="smartwishlist" data-product="{{ product.id }}" data-variant="{{ product.variants.first.id }}"></div>
+              </div>
 
-               <div class="ts:px-[0.8rem] ts:flex ts:flex-col ts:justify-center">
-                  <div id="smartwishlist" data-product="{{ product.id }}" data-variant="{{ product.variants.first.id }}"></div>
-                </div>
+              {{- atc_btn -}}
             </div>
           {%- else -%}
             {{- atc_btn -}}

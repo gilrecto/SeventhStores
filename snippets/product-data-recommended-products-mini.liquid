@@ -1,0 +1,60 @@
+{%- assign default_intent = 'related' -%}
+{%- unless intent == blank -%}
+  {%- assign default_intent = intent -%}
+{%- endunless -%}
+<!-- Recommended products -->
+<div
+  class="product-recommendations-mini"
+  data-url="/recommendations/products?section_id={{ section_id }}&intent={{ default_intent }}&limit={{ the_limit }}&product_id={{ product.id }}"
+>
+  {%- if recommendations.products_count > 0 -%}
+    <h2 class="ts:my-[1.6rem] ts:md:text-[1.6rem]! ts:text-base!">{{ 'products.product.product_recommendations' | t }}</h2>
+    <div class="ts:overflow-hidden">
+      <div class="ts:flex ts:flex-row ts:no-wrap ts:w-full ts:md:pb-[1.6rem] ts:pb-5 ts:overflow-x-scroll ts:snap-x ts:snap-mandatory ts:scroll-smooth">
+        {%- for related_product in recommendations.products -%}
+          <div class="ts:w-1/2 ts:shrink-0 ts:md:pr-[1.6rem] ts:pr-5">
+            {% render 'card-product',
+              card_product: related_product,
+              show_secondary_image: true,
+              show_swarches: true,
+              lazy_load: true,
+              section_id: section.id
+            %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<script type="text/javascript" defer="defer">
+  var loadProductRecommendationsIntoSection = function () {
+    // Look for an element with class 'product-recommendations'
+    var productRecommendationsSection = document.querySelector('.product-recommendations-mini');
+    if (productRecommendationsSection === null) {
+      return;
+    }
+    // Create request and submit it using Ajax
+    var request = new XMLHttpRequest();
+    request.open('GET', productRecommendationsSection.dataset.url);
+    request.onload = function () {
+      if (request.status >= 200 && request.status < 300) {
+        var container = document.createElement('div');
+        container.innerHTML = request.response;
+        productRecommendationsSection.innerHTML = container.querySelector('.product-recommendations-mini').innerHTML;
+      }
+    };
+    request.send();
+  };
+  // If your section has theme settings, the theme editor
+  // reloads the section as you edit those settings. When that happens, the
+  // recommendations need to be fetched again.
+  // See https://help.shopify.com/en/themes/development/sections/integration-with-theme-editor
+  document.addEventListener('shopify:section:load', function (event) {
+    if (event.detail.sectionId === 'product-recommendations') {
+      loadProductRecommendationsIntoSection();
+    }
+  });
+  // Fetching the recommendations on page load
+  loadProductRecommendationsIntoSection();
+</script>

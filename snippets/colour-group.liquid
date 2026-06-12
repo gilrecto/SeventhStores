@@ -7,7 +7,7 @@
     {% paginate collections.all.products by 1000 %}
       <ul class="ts:flex">
         {%- unless product.metafields.color.swatch == blank -%}
-          <li class="ts:pr-[0.4rem]">
+          <li class="ts:lg:pr-[0.4rem] ts:max-lg:px-[0.4rem]">
             <span class="ts:h-[1.6rem] ts:w-[1.6rem] ts:block ts:border ts:border-black ts:p-px ts:rounded-full">
               <span
                 class="ts:h-[1.2rem] ts:w-[1.2rem] ts:block ts:rounded-full"

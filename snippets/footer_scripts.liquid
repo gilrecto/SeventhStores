@@ -52,7 +52,7 @@
 {%- endif -%}
 
 {%- if request.page_type == 'product' or request.page_type == 'collection' -%}
-	<script src="https://a.klaviyo.com/media/js/onsite/onsite.js" defer="defer"></script>
+	<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
 	<script defer="defer">
 			var klaviyo = klaviyo || [];
 			klaviyo.init({
@@ -62,10 +62,10 @@
 			klaviyo.enable("backinstock",{ 
 			trigger: {
 				product_page_text: "Notify Me When Available",
-				product_page_class: "btn",
+				product_page_class: "button",
 				product_page_text_align: "center",
 				product_page_margin: "0px",
-				replace_anchor: false
+				replace_anchor: true
 			},
 			modal: {
 			headline: "{product_name}",

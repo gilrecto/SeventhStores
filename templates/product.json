@@ -92,6 +92,18 @@
             "size_guide": false
           }
         },
+        "collapsible_tab_XGMpmQ": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping",
+            "icon": "none",
+            "open_by_default": false,
+            "content": "<p>We aim to pack and dispatch your order within 1-2 working days. Shipping costs are calculated at checkout. Once dispatched, we offer Standard and Next Day shipping options for multiple locations.</p><p>All duties & taxes are now included in the price for customers based in the EU. For the rest of the world, customs are now calculated for you at the checkout. All global shipments are sent via DHL. </p>",
+            "page": "",
+            "size_guide": false
+          }
+        },
         "collapsible_tab_n4ciBz": {
           "type": "collapsible_tab",
           "settings": {
@@ -106,6 +118,13 @@
         "styled_with_GG6m9F": {
           "type": "styled_with",
           "settings": {}
+        },
+        "data_related_products_nFXtyy": {
+          "type": "data_related_products",
+          "settings": {
+            "intent": "complementary",
+            "limit": 4
+          }
         }
       },
       "block_order": [
@@ -122,8 +141,10 @@
         "description",
         "collapsible_tab_w3NVUz",
         "collapsible_tab_CryAmm",
+        "collapsible_tab_XGMpmQ",
         "collapsible_tab_n4ciBz",
-        "styled_with_GG6m9F"
+        "styled_with_GG6m9F",
+        "data_related_products_nFXtyy"
       ],
       "settings": {
         "enable_sticky_info": true,

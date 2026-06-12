@@ -778,9 +778,9 @@
               {%- when 'styled_with' -%}
                 {% comment %} Styled With {% endcomment %}
                 {%- assign styled_with_products = product.metafields.cross_sell.styled_with.value -%}
-                <div class="ts:mb-[1.6rem]">
+                <div class="ts:mb-[1.6rem]!">
                   {%- unless styled_with_products == blank -%}
-                    <h2 class="ts:my-[1.6rem] ts:md:text-[1.6rem] ts:text-base">{{ 'products.product.styled_with' | t }}</h2>
+                    <h2 class="ts:my-[1.6rem] ts:md:text-[1.6rem]! ts:text-base!">{{ 'products.product.styled_with' | t }}</h2>
                     <div class="ts:overflow-hidden">
                       <div class="ts:flex ts:flex-row ts:no-wrap ts:w-full ts:pb-[1.6rem] ts:overflow-x-scroll ts:snap-x ts:snap-mandatory ts:scroll-smooth">
                         {%- for styled_product in styled_with_products -%}
@@ -798,6 +798,12 @@
                     </div>
                   {%- endunless -%}
                 </div>
+              {%- when 'data_related_products' -%}
+                {% render 'product-data-recommended-products-mini',
+                  section_id: section.id,
+                  the_limit: block.settings.limit,
+                  intent: block.settings.intent
+                %}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2402,6 +2408,39 @@
       "type": "styled_with",
       "name": "Styled With",
       "limit": 1
+    },
+    {
+      "type": "data_related_products",
+      "name": "Data Recommended Products",
+      "limit": 1,
+      "settings": [
+        {
+          "id": "intent",
+          "label": "Intent",
+          "default": "related",
+          "info": "Choose between showing Complementary or Related products",
+          "type": "select",
+          "options": [
+            {
+              "value": "complementary",
+              "label": "Complementary"
+            },
+            {
+              "value": "related",
+              "label": "Related"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "limit",
+          "label": "Limit",
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "default": 2
+        }
+      ]
     }
   ],
   "settings": [
