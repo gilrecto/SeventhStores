@@ -129,6 +129,11 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "show_countdown_bar": true,
+    "countdown_limit": "100.00",
+    "countdown_success": "You have FREE SHIPPING!",
+    "show_upsell": true,
+    "upsell_collection": "best-sellers",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",

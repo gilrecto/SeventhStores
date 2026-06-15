@@ -1,0 +1,33 @@
+{%- liquid
+  assign countdown_limit = settings.countdown_limit | remove: '.' | plus: 0
+  assign limit_reached = false
+  assign percentage = 0
+  assign difference_currency = false
+
+  if countdown_limit > 0
+    if cart.total_price < countdown_limit
+      assign percentage = cart.total_price | times: 100 | divided_by: countdown_limit
+      assign difference_currency = countdown_limit | minus: cart.total_price | money_with_currency
+    else
+      assign percentage = 100
+      assign limit_reached = true
+    endif
+  endif
+
+  assign success_message = 'sections.cart.cart_countdown.success' | t
+-%}
+
+<div id="cart-countdown">
+  <div class="cart-countdown ts:py-[1.6rem]">
+    <p class="ts:text-center ts:mb-[0.8rem] ts:text-[1.1rem]">
+      {%- if limit_reached -%}
+        {{ settings.countdown_success | default: success_message }}
+      {%- else -%}
+        {{ 'sections.cart.cart_countdown.pre_limit' | t: difference: difference_currency }}
+      {%- endif -%}
+    </p>
+    <div class="cart-countdown__bar ts:h-[0.8rem] ts:border ts:border-[rgba(var(--color-foreground))] ts:rounded-md ts:overflow-hidden">
+      <div style="width: {{ percentage }}%;" class="bar__range ts:h-[0.8rem] ts:bg-[rgba(var(--color-foreground))] ts:block!"></div>
+    </div>
+  </div>
+</div>

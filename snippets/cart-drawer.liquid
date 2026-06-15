@@ -70,15 +70,17 @@
           aria-label="{{ 'accessibility.close' | t }}"
         >
           <span class="svg-wrapper">
-            {{- 'icon-close.svg' | inline_asset_content -}}
+            {{- 'icon-arrow.svg' | inline_asset_content -}}
           </span>
         </button>
       </div>
-      <cart-drawer-items
-        {% if cart == empty %}
-          class=" is-empty"
-        {% endif %}
-      >
+      <cart-drawer-items class="{% if cart == empty %}is-empty{% else %}ts:flex ts:flex-col{% endif %}">
+        {%- if settings.show_countdown_bar -%}
+          {%- if cart.items.size > 0 -%}
+            {% render 'free_shipping_bar' %}
+          {% endif %}
+        {%- endif -%}
+
         <form
           action="{{ routes.cart_url }}"
           id="CartDrawer-Form"
@@ -89,7 +91,7 @@
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
-                  <thead role="rowgroup">
+                  {% comment %} <thead role="rowgroup">
                     <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader">
                         <span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span>
@@ -114,7 +116,7 @@
                         <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
                       </th>
                     </tr>
-                  </thead>
+                  </thead> {% endcomment %}
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
@@ -170,7 +172,7 @@
                               </strong>
                             </div>
                           {%- else -%}
-                            <div class="product-option">
+                            <div class="product-option visually-hidden">
                               {{ item.original_price | money }}
                             </div>
                           {%- endif -%}
@@ -183,7 +185,7 @@
                               {%- if item.product.has_only_default_variant == false -%}
                                 {%- for option in item.options_with_values -%}
                                   <div class="product-option">
-                                    <dt>{{ option.name }}:</dt>
+                                    {% comment %} <dt>{{ option.name }}:</dt> {% endcomment %}
                                     <dd>
                                       {{ option.value -}}
                                       {%- unless forloop.last %}, {% endunless %}
@@ -214,6 +216,9 @@
                                   </div>
                                 {%- endif -%}
                               {%- endfor -%}
+                              <div class="product-option product-qty">
+                                <dd>Qty: {{ item.quantity }}</dd>
+                              </div>
                             </dl>
 
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
@@ -279,7 +284,7 @@
                           headers="CartDrawer-ColumnQuantity"
                         >
                           <quantity-popover>
-                            <div class="cart-item__quantity-wrapper quantity-popover-wrapper">
+                            <div class="cart-item__quantity-wrapper quantity-popover-wrapper visually-hidden">
                               <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
                                 <quantity-input class="quantity cart-quantity">
                                   <button
@@ -344,7 +349,7 @@
                                   </button>
                                 </quantity-input>
                               </div>
-                              <cart-remove-button
+                              {% comment %} <cart-remove-button
                                 id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
                               >
@@ -361,7 +366,7 @@
                                     {{- 'icon-remove.svg' | inline_asset_content -}}
                                   </span>
                                 </button>
-                              </cart-remove-button>
+                              </cart-remove-button> {% endcomment %}
                             </div>
                             {%- if has_qty_rules or has_vol_pricing -%}
                               <button
@@ -459,7 +464,26 @@
                               </span>
                             </div>
                           </quantity-popover>
-                        </td>
+                          <cart-remove-button
+                              id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
+                              data-index="{{ item.index | plus: 1 }}"
+                            >
+                              <button
+                                type="button"
+                                class="cart-remove-button"
+                                aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
+                                data-variant-id="{{ item.variant.id }}"
+                                {% if item.instructions and item.instructions.can_remove == false %}
+                                  class="hidden"
+                                {% endif %}
+                              >
+                                {% comment %} <span class="svg-wrapper">
+                                  {{- 'icon-remove.svg' | inline_asset_content -}}
+                                </span> {% endcomment %}
+                                <span>{{ 'sections.cart.remove_title' | t: title: '' }}</span>
+                              </button>
+                            </cart-remove-button>
+                          </td>
                       </tr>
                     {%- endfor -%}
                   </tbody>
@@ -473,6 +497,19 @@
           </div>
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
+        
+        {% comment %} Cart Upsell {% endcomment %}
+        {%- if settings.upsell_collection == blank -%}
+          {%- assign the_collection = collections.all -%}
+        {%- else -%}
+          {%- assign the_collection = collections[settings.upsell_collection] -%}
+        {%- endif -%}
+
+        {%- if settings.show_upsell -%}
+          <div class="cart-drawer-upsell ts:w-full">
+
+          </div>
+        {%- endif -%}
       </cart-drawer-items>
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
@@ -513,12 +550,17 @@
             {%- endif -%}
           </div>
 
+          <div class="totals subtotal" role="status">
+            <small class="totals__item-count">{{ cart.item_count }} {{ cart.item_count | pluralize: 'Item', 'Items' }}</small>
+            <small class="totals__subtotal-value">{{ cart.items_subtotal_price | money_with_currency }}</small>
+          </div>
+
           <div class="totals" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
             <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
           </div>
 
-          <small class="tax-note caption-large rte">
+          {% comment %} <small class="tax-note caption-large rte">
             {%- if cart.duties_included and cart.taxes_included -%}
               {%- if shop.shipping_policy.body == blank -%}
                 {{ 'sections.cart.duties_and_taxes_included_shipping_at_checkout_without_policy' | t }}
@@ -556,7 +598,7 @@
                 }}
               {%- endif -%}
             {%- endif -%}
-          </small>
+          </small> {% endcomment %}
         </div>
 
         <!-- CTAs -->

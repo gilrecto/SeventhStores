@@ -306,10 +306,14 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "Shopping Bag",
       "caption": "Cart items",
+      "cart_countdown": {
+        "pre_limit": "You are {{ difference }} away from Free UK Shipping",
+        "success": "You've qualified for free shipping."
+      },
       "remove_title": "Remove {{ title }}",
-      "estimated_total": "Estimated total",
+      "estimated_total": "Subtotal",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
       "checkout": "Check out",

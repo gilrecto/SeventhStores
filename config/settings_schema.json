@@ -1455,6 +1455,63 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "Free Shipping Bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_countdown_bar",
+        "label": "Show Free Shipping Bar",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "countdown_limit",
+        "label": "Countdown Limit",
+        "default": "50.00",
+        "info": "Must be a number without the currency. For example, for £50.00, enter 50.00."
+      },
+      {
+        "type": "text",
+        "id": "countdown_copy",
+        "label": "Countdown copy",
+        "default": "You are [[ money ]] away from free shipping.",
+        "info": "Enter the text you want to appear when counting down. Use \"[[ money ]]\" as a placeholder for the currency to appear in the content. "
+      },
+      {
+        "type": "text",
+        "id": "countdown_success",
+        "label": "Countdown success message",
+        "info": "What text should appear once the customer's cart value has exceeded or equalled the limit?"
+      },
+      {
+        "type": "header",
+        "content": "Cart Upsell"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_upsell",
+        "label": "Show Cart Upsells?",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "products_to_show",
+        "label": "Products To Show",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "default": 3,
+        "visible_if": "{{ settings.show_upsell == true }}",
+        "info": "Number of recommended products to show in the cart drawer."
+      },
+      {
+        "type": "collection",
+        "id": "upsell_collection",
+        "label": "Collection",
+        "info": "Tip - Create a new collection referring all products and sort by Best Selling."
       }
     ]
   }

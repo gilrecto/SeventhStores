@@ -135,6 +135,9 @@ footer .footer-block__details-content .list-menu__item {
 product-info .product--stacked .product__media-list {
 	@apply ts:min-[1025px]:pl-16 ts:min-[1025px]:pr-[4.85rem];
 }
+product-info .product media-gallery .product__media-list {
+	@apply ts:scrollbar-thin ts:scrollbar-thumb-[rgba(var(--color-foreground),0.4)]
+}
 product-info .product--stacked .product__media-item {
 	@apply ts:max-w-full ts:w-full;
 }
