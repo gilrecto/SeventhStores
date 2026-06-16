@@ -1,0 +1,28 @@
+{%- assign image_widths = '180,360,480,540,720,900,1080,1296,1512,1728,1944,2160,2376,2592,2808,3024' | split: ',' -%}
+{%- capture image_widths -%}
+  {%- for width in image_widths -%}
+    {%- comment -%} Check if image width is less or equal to width {%- endcomment -%}
+    {%- assign width_num = width | plus: 0 | round -%}
+    {%- if image.width >= width_num -%}
+      {%- assign width__num = width_num | append: 'x' -%}
+      {{ image | image_url: width: width__num }} {{ width_num }}w,
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign actual_width = image.width | append: 'x' -%}
+  {{ image | image_url: width: actual_width }} {{ width_num }}w,
+{%- endcapture -%}
+<img
+  loading="lazy"
+  id="image-{{ image.id }}"
+  width="{{ image.width }}"
+  height="{{ image.height }}"
+  {%- unless lazy == false -%}
+    loading="lazy"
+  {%- endunless -%}
+  class="motion-reduce {{ image_class }}"
+  src="{{ image | image_url: width: 160 }}"
+  srcset="{{ image_widths }}"
+  tabindex="-1"
+  alt="{{ image.alt | escape }}"
+  {{ image_attributes }}
+>

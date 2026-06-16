@@ -21,7 +21,7 @@
   <div id="CartDrawer" class="cart-drawer">
     <div id="CartDrawer-Overlay" class="cart-drawer__overlay"></div>
     <div
-      class="drawer__inner gradient color-{{ settings.cart_color_scheme }}"
+      class="drawer__inner gradient color-{{ settings.cart_color_scheme }} ts:max-sm:max-w-[100vw]! ts:max-sm:w-full!"
       role="dialog"
       aria-modal="true"
       aria-label="{{ 'sections.cart.title' | t }}"
@@ -74,7 +74,7 @@
           </span>
         </button>
       </div>
-      <cart-drawer-items class="{% if cart == empty %}is-empty{% else %}ts:flex ts:flex-col{% endif %}">
+      <cart-drawer-items class="{% if cart == empty %}is-empty{% else %}ts:flex ts:flex-col ts:overflow-x-hidden!{% endif %}">
         {%- if settings.show_countdown_bar -%}
           {%- if cart.items.size > 0 -%}
             {% render 'free_shipping_bar' %}
@@ -505,9 +505,212 @@
           {%- assign the_collection = collections[settings.upsell_collection] -%}
         {%- endif -%}
 
-        {%- if settings.show_upsell -%}
-          <div class="cart-drawer-upsell ts:w-full">
+        {%- if settings.show_upsell and cart.items.size > 0 -%}
+          {%- liquid
+            assign section_id = 'CartDrawer--Upsells'
+            assign upsell_id = 'upsells-' | append: section_id
+            assign upsell_title_def = 'sections.cart.upsell_title' | t
+            assign skip_card_product_styles = false
+          -%}
 
+          <div class="cart-drawer-upsell ts:w-full">
+            <div class="cart-upsell ts:mx-auto ts:pt-[2.4rem] ts:pb-[0.8rem]">
+              <div class="ts:flex ts:flex-wrap">
+                <div class="ts:w-full ts:mb-[1.2rem]">
+                  <h2 class="ts:text-base! ts:md:text-[1.6rem]!">{{ settings.upsell_title | default: upsell_title_def }}</h2>
+                </div>
+
+                <slider-component class="ts:w-full">
+                  <ul
+                    id="Slider-{{ section_id }}"
+                    data-id="{{ section_id}}"
+                    class="slider ts:flex ts:flex-nowrap ts:flex-row ts:overflow-y-hidden ts:overflow-x-auto ts:m-0! ts:p-0! ts:scroll-smooth"
+                    role="list"
+                    aria-label="{{ 'general.slider.name' | t }}"
+                  >
+                    {%- if the_collection.products.size > 0 -%}
+                      {%- for product in the_collection.products limit: settings.products_to_show -%}
+                        {%- liquid
+                          assign is_free_trial = false
+
+                          for tag in product.tags
+                            if tag == 'free-trial'
+                              assign is_free_trial = true
+                            endif
+                          endfor
+
+                          if is_free_trial
+                            continue
+                          endif
+
+                          assign current_variant = product.selected_or_first_available_variant
+                          assign featured_image = current_variant.featured_image | default: product.featured_image
+                          assign upsell_form_id = 'form-' | append: upsell_id | append: '-' | append: product.id
+                        -%}
+
+                        <li id="Slide-{{ section_id }}-{{ forloop.index }}" class="ts:shrink-0 ts:w-1/3 ts:px-2 slider__slide ts:ml-0!">
+                          {% comment %} {% render 'card-product',
+                            card_product: product,
+                            media_aspect_ratio: 'portrait',
+                            lazy_load: true,
+                            show_secondary_image: true,
+                            skip_styles: skip_card_product_styles,
+                            section_id: section_id
+                          %} {% endcomment %}
+                            <div class="ts:flex ts:flex-col ts:flex-wrap ts:items-center">
+                            <a href="{{ product.url }}" class="ts:overflow-hidden media media--transparent ts:aspect-3/4 ts:w-40 ts:h-40">
+                              {%- render 'image' with image: featured_image, image_class: 'ts:block ts:w-full ts:h-full ts:max-w-full cart-upsell--product-img ts:object-contain' -%}
+                            </a>
+                            <div class="ts:flex-1 ts:w-full ts:pt-3 ts:flex ts:flex-col ts:justify-center">
+                              <p class="ts:text-sm ts:leading-snug ts:truncate">
+                                <a class="ts:leading-snug" href="{{ product.url }}">{{ product.title }}</a>
+                              </p>
+                              <p class="ts:mt-2 ts:text-sm">
+                                <small
+                                  data-product-compare-price-wrapper
+                                  class="ts:mr-2 {% unless current_variant.compare_at_price > current_variant.price %}ts:hidden{% endunless %}"
+                                ><s class="ts:text-gray-500" data-product-compare-price>{{ current_variant.compare_at_price | money }}</s></small>
+                                <span
+                                  data-product-price
+                                  class="{% if current_variant.compare_at_price > current_variant.price %}ts:text-red-700{% endif %}"
+                                >{{ current_variant.price | money }}</span>
+                              </p>
+                              <product-form class="ts:block ts:mt-[0.8rem]" data-section="{{ section.id }}" data-product-id="{{ product.id }}">
+                                <div class="ts:flex ts:items-center ts:flex-col ts:gap-5">
+                                  {%- unless product.has_only_default_variant -%}
+                                    <variant-radios-mixed class="ts:flex ts:flex-wrap ts:items-center ts:gap-2 ts:flex-1 ts:w-full">
+                                      {%- for option in product.options_with_values -%}
+                                        {%- liquid
+                                          assign option_name = option.name | downcase
+                                          assign is_color = false
+                                          if option_name == 'color' or option_name == 'colour'
+                                            assign is_color = true
+                                          endif
+                                        -%}
+                                        <fieldset class="{% if option.values.size <= 1 %}ts:hidden{% endif %} {% if is_color %}ts:flex ts:flex-wrap ts:items-center ts:gap-2{% endif %} ts:w-full">
+                                          <legend class="ts:sr-only">{{ option.name }}</legend>
+                                          {%- if is_color -%}
+                                            {%- for value in option.values -%}
+                                              <label
+                                                for="Option-{{ upsell_id }}-{{ product.id }}-{{ option.position }}-{{ forloop.index }}"
+                                                class="ts:cursor-pointer ts:flex ts:items-center ts:justify-center ts:h-8 ts:w-8 ts:rounded-full ts:border ts:border-[rgba(var(--color-foreground))]"
+                                                style="background-color: {{ value }};"
+                                                title="{{ value | escape }}"
+                                              >
+                                                <input
+                                                  id="Option-{{ upsell_id }}-{{ product.id }}-{{ option.position }}-{{ forloop.index }}"
+                                                  type="radio"
+                                                  name="options-{{ product.id }}[{{ option.name | escape }}]"
+                                                  value="{{ value | escape }}"
+                                                  class="ts:sr-only peer"
+                                                  data-option-selector
+                                                  {% if option.selected_value == value %}checked{% endif %}
+                                                >
+                                              </label>
+                                            {%- endfor -%}
+                                          {%- else -%}
+                                            <div class="ts:relative selector-wrapper js">
+                                              <select
+                                                class="ts:block ts:appearance-none ts:bg-white ts:border ts:px-[0.8rem] ts:py-2 ts:pr-[2.4rem] ts:leading-tight ts:focus:outline-none ts:text-[8px] ts:w-full"
+                                                name="options-{{ product.id }}[{{ option.name | escape }}]"
+                                                data-option-selector
+                                              >
+                                                {%- for value in option.values -%}
+                                                  <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>{{ value }}</option>
+                                                {%- endfor -%}
+                                              </select>
+                                              <div class="ts:pointer-events-none ts:absolute ts:inset-y-0 ts:right-0 ts:flex ts:items-center ts:px-2 ts:text-gray-700">
+                                                <svg class="ts:fill-current ts:h-3 ts:w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                                </svg>
+                                              </div>
+                                            </div>
+                                          {%- endif -%}
+                                        </fieldset>
+                                      {%- endfor -%}
+                                      <script type="application/json">{{ product.variants | json }}</script>
+                                      <script type="application/json" data-upsell-variant-info>
+                                        {
+                                          {%- for variant in product.variants -%}
+                                            "{{ variant.id }}": {
+                                              "price": {{ variant.price | money | json }},
+                                              "compare_at_price": {% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money | json }}{% else %}null{% endif %},
+                                              "available": {{ variant.available }}
+                                            }{%- unless forloop.last -%},{%- endunless -%}
+                                          {%- endfor -%}
+                                        }
+                                      </script>
+                                    </variant-radios-mixed>
+                                  {%- endunless -%}
+                                  {%- form 'product', product, data-product-form: '', data-product-handle: product.handle, id: upsell_form_id, class: 'ts:flex-1 ts:min-w-0 ts:w-full' -%}
+                                    <select name="id" data-productid="{{ product.id }}" class="no-js ts:hidden" data-product-select>
+                                      {%- for variant in product.variants -%}
+                                        <option {% if variant == current_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}">{{ variant.title }}</option>
+                                      {%- endfor -%}
+                                    </select>
+                                    <button
+                                      class="ts:text-center ts:px-[1.2rem] ts:py-[0.8rem] ts:leading-tight ts:w-full ts:text-sm ts:disabled:opacity-50 ts:border ts:bg-black ts:text-white ts:hover:bg-white ts:hover:text-black ts:hover:border-gray-300"
+                                      type="submit"
+                                      name="add"
+                                      data-add-to-cart
+                                      data-text-available="{{ 'products.product.add_to_cart' | t | escape }}"
+                                      data-text-sold-out="{{ 'products.product.sold_out' | t | escape }}"
+                                      {%- unless current_variant.available -%}disabled="disabled"{%- endunless -%}
+                                    >
+                                      <span data-add-to-cart-text>
+                                        {%- if current_variant.available -%}
+                                          {{ 'products.product.add_to_cart' | t }}
+                                        {%- else -%}
+                                          {{ 'products.product.sold_out' | t }}
+                                        {%- endif -%}
+                                      </span>
+                                    </button>
+                                  {%- endform -%}
+                                </div>
+                              </product-form>
+                            </div>
+                          </div>
+                        </li>
+                        {%- assign skip_card_product_styles = true -%}
+                      {%- endfor -%}
+                    {%- endif -%}
+                  </ul>
+
+                  {%- unless settings.products_to_show <= 3 -%}
+                    <div class="slider-buttons ts:block!">
+                      <button
+                        type="button"
+                        class="slider-button slider-button--prev ts:p-2 ts:cursor-pointer ts:absolute ts:top-1/2 ts:-translate-y-1/2 ts:left-[-2.4rem] ts:z-10 ts:disabled:opacity-50"
+                        name="previous"
+                        aria-label="{{ 'general.slider.previous_slide' | t }}"
+                        aria-controls="Slider-{{ section_id }}"
+                      >
+                        <span class="svg-wrapper">
+                          {{- 'icon-caret.svg' | inline_asset_content -}}
+                        </span>
+                      </button>
+                      <div class="slider-counter caption visually-hidden">
+                        <span class="slider-counter--current">1</span>
+                        <span aria-hidden="true"> / </span>
+                        <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                        <span class="slider-counter--total">{{ products_to_display }}</span>
+                      </div>
+                      <button
+                        type="button"
+                        class="slider-button slider-button--next ts:p-2 ts:cursor-pointer ts:absolute ts:top-1/2 ts:-translate-y-1/2 ts:right-[-2.4rem] ts:z-10 ts:disabled:opacity-50"
+                        name="next"
+                        aria-label="{{ 'general.slider.next_slide' | t }}"
+                        aria-controls="Slider-{{ section_id }}"
+                      >
+                        <span class="svg-wrapper">
+                          {{- 'icon-caret.svg' | inline_asset_content -}}
+                        </span>
+                      </button>
+                    </div>
+                  {%- endunless -%}
+                </slider-component>
+              </div>
+            </div>
           </div>
         {%- endif -%}
       </cart-drawer-items>

@@ -133,6 +133,7 @@
     "countdown_limit": "100.00",
     "countdown_success": "You have FREE SHIPPING!",
     "show_upsell": true,
+    "products_to_show": 4,
     "upsell_collection": "best-sellers",
     "sections": {
       "main-password-header": {

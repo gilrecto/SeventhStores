@@ -1512,6 +1512,12 @@
         "id": "upsell_collection",
         "label": "Collection",
         "info": "Tip - Create a new collection referring all products and sort by Best Selling."
+      },
+      {
+        "type": "inline_richtext",
+        "id": "upsell_title",
+        "label": "Upsell Title",
+        "info": "If leave blank, the default value will be from the theme translation can be edited in Section > Cart > Upsell title."
       }
     ]
   }
