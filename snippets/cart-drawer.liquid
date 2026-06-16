@@ -578,7 +578,7 @@
                               <product-form class="ts:block ts:mt-[0.8rem]" data-section="{{ section.id }}" data-product-id="{{ product.id }}">
                                 <div class="ts:flex ts:items-center ts:flex-col ts:gap-5">
                                   {%- unless product.has_only_default_variant -%}
-                                    <variant-radios-mixed class="ts:flex ts:flex-wrap ts:items-center ts:gap-2 ts:flex-1 ts:w-full">
+                                    <div class="cart-upsell-variants ts:flex ts:flex-wrap ts:items-center ts:gap-2 ts:flex-1 ts:w-full">
                                       {%- for option in product.options_with_values -%}
                                         {%- liquid
                                           assign option_name = option.name | downcase
@@ -640,7 +640,7 @@
                                           {%- endfor -%}
                                         }
                                       </script>
-                                    </variant-radios-mixed>
+                                    </div>
                                   {%- endunless -%}
                                   {%- form 'product', product, data-product-form: '', data-product-handle: product.handle, id: upsell_form_id, class: 'ts:flex-1 ts:min-w-0 ts:w-full' -%}
                                     <select name="id" data-productid="{{ product.id }}" class="no-js ts:hidden" data-product-select>
@@ -649,7 +649,8 @@
                                       {%- endfor -%}
                                     </select>
                                     <button
-                                      class="ts:text-center ts:px-[1.2rem] ts:py-[0.8rem] ts:leading-tight ts:w-full ts:text-sm ts:disabled:opacity-50 ts:border ts:bg-black ts:text-white ts:hover:bg-white ts:hover:text-black ts:hover:border-gray-300"
+                                      id="ProductSubmitButton-{{ section_id }}"
+                                      class="product-form__submit ts:relative ts:text-center ts:px-[1.2rem] ts:py-[0.8rem] ts:leading-tight ts:w-full ts:text-sm ts:disabled:opacity-50 ts:border ts:bg-black ts:text-white ts:hover:bg-white ts:hover:text-black ts:hover:border-gray-300 ts:cursor-pointer"
                                       type="submit"
                                       name="add"
                                       data-add-to-cart
@@ -664,6 +665,8 @@
                                           {{ 'products.product.sold_out' | t }}
                                         {%- endif -%}
                                       </span>
+
+                                      {%- render 'loading-spinner' -%}
                                     </button>
                                   {%- endform -%}
                                 </div>
@@ -824,3 +827,8 @@
     </div>
   </div>
 </cart-drawer>
+
+{%- if settings.show_upsell and cart.items.size > 0 -%}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'cart-upsell.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}

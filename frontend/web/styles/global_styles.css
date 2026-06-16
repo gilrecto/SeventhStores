@@ -199,3 +199,10 @@ product-info .product__info-container .product__accordion .accordion__content > 
 product-info .product__info-container .product__accordion .svg-wrapper {
 	@apply ts:w-[1.1rem] ts:h-[1.1rem] ts:m-0;
 }
+
+cart-drawer .cart-drawer-upsell product-form button[aria-disabled="true"] > span {
+	@apply ts:opacity-0 ts:invisible;
+}
+cart-drawer .cart-drawer-upsell product-form button > .loading__spinner {
+	@apply ts:left-1/2 ts:-translate-x-1/2;
+}
