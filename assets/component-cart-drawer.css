@@ -99,6 +99,28 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   width: 2rem;
 }
 
+.drawer__inner-empty button.drawer__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  line-height: 1;
+}
+
+.drawer__inner-empty button.drawer__close .svg-wrapper {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.cart-drawer__empty-content h2 {
+  font-size: 1.6rem;
+}
+
+.cart-drawer__empty-content .cart__login-title,
+.cart-drawer__empty-content .cart__login-paragraph {
+  font-size: 1.2rem;
+}
+
 .drawer__contents {
   flex-grow: 1;
   display: flex;

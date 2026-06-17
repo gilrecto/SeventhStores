@@ -206,3 +206,12 @@ cart-drawer .cart-drawer-upsell product-form button[aria-disabled="true"] > span
 cart-drawer .cart-drawer-upsell product-form button > .loading__spinner {
 	@apply ts:left-1/2 ts:-translate-x-1/2;
 }
+cart-drawer .cart-upsell variant-selects select {
+	@apply ts:text-[0.8rem] ts:text-[rgba(var(--color-foreground))] ts:py-[0.4rem] ts:pl-[0.8rem] ts:pr-[2.4rem] ts:m-0 ts:h-auto ts:focus:shadow-none ts:border;
+}
+cart-drawer .cart-upsell .product-form__input .select {
+	@apply ts:after:shadow-none;
+}
+cart-drawer .cart-upsell variant-selects .product-form__input .svg-wrapper {
+	@apply ts:right-[0.8rem] ts:w-[0.8rem];
+}

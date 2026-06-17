@@ -84,8 +84,16 @@ class CartDrawer extends HTMLElement {
     });
 
     setTimeout(() => {
-      this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
+      this.querySelector('#CartDrawer-Overlay').addEventListener(
+        'click',
+        this.close.bind(this)
+      );
+
       this.open();
+
+      if (window.initCartUpsells) {
+        window.initCartUpsells();
+      }
     });
   }
 

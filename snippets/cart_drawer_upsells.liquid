@@ -1,0 +1,222 @@
+{% comment %} Cart Upsell {% endcomment %}
+{%- if settings.upsell_collection == blank -%}
+	{%- assign the_collection = collections.all -%}
+{%- else -%}
+	{%- assign the_collection = collections[settings.upsell_collection] -%}
+{%- endif -%}
+
+{%- if settings.show_upsell and cart.items.size > 0 -%}
+	{%- liquid
+		assign section_id = 'CartDrawer--Upsells'
+		assign upsell_id = 'upsells-' | append: section_id
+		assign upsell_title_def = 'sections.cart.upsell_title' | t
+		assign skip_card_product_styles = false
+	-%}
+
+	<div class="cart-drawer-upsell ts:w-full">
+		<div class="cart-upsell ts:mx-auto ts:pt-[2.4rem] ts:pb-[0.8rem]">
+			<div class="ts:flex ts:flex-wrap">
+				<div class="ts:w-full ts:mb-[1.2rem]">
+					<h2 class="ts:text-base! ts:md:text-[1.6rem]!">{{ settings.upsell_title | default: upsell_title_def }}</h2>
+				</div>
+
+				<slider-component class="ts:w-full">
+					<ul
+						id="Slider-{{ section_id }}"
+						data-id="{{ section_id}}"
+						class="slider ts:flex ts:flex-nowrap ts:flex-row ts:overflow-y-hidden ts:overflow-x-auto ts:m-0! ts:p-0! ts:scroll-smooth"
+						role="list"
+						aria-label="{{ 'general.slider.name' | t }}"
+					>
+						{%- if the_collection.products.size > 0 -%}
+							{%- for product in the_collection.products limit: settings.products_to_show -%}
+								{%- liquid
+									assign is_free_trial = false
+
+									for tag in product.tags
+										if tag == 'free-trial'
+											assign is_free_trial = true
+										endif
+									endfor
+
+									if is_free_trial
+										continue
+									endif
+
+									assign current_variant = product.selected_or_first_available_variant
+									assign featured_image = current_variant.featured_image | default: product.featured_image
+									assign upsell_form_id = 'form-' | append: upsell_id | append: '-' | append: product.id
+									assign quantity_rule_soldout = false
+									assign check_against_inventory = true
+									if current_variant.inventory_management != 'shopify' or current_variant.inventory_policy == 'continue'
+										assign check_against_inventory = false
+									endif
+									if current_variant.quantity_rule.min > current_variant.inventory_quantity and check_against_inventory
+										assign quantity_rule_soldout = true
+									endif
+								-%}
+
+								<li
+									id="Slide-{{ section_id }}-{{ forloop.index }}"
+									class="ts:shrink-0 ts:w-1/3 ts:px-2 slider__slide ts:ml-0!"
+									data-cart-upsell-card
+									data-product-id="{{ product.id }}"
+								>
+									<div class="ts:flex ts:flex-col ts:flex-wrap ts:items-center">
+										<a href="{{ product.url }}" class="ts:overflow-hidden media media--transparent ts:aspect-3/4 ts:w-40 ts:h-40">
+											{%- render 'image' with image: featured_image, image_class: 'ts:block ts:w-full ts:h-full ts:max-w-full cart-upsell--product-img ts:object-contain' -%}
+										</a>
+										<div class="ts:flex-1 ts:w-full ts:pt-3 ts:flex ts:flex-col ts:justify-center">
+											<p class="ts:text-sm ts:leading-snug ts:truncate">
+												<a class="ts:leading-snug" href="{{ product.url }}">{{ product.title }}</a>
+											</p>
+											<p class="ts:mt-2 ts:text-sm">
+												<small
+													data-product-compare-price-wrapper
+													class="ts:mr-2 {% unless current_variant.compare_at_price > current_variant.price %}ts:hidden{% endunless %}"
+												><s class="ts:text-gray-500" data-product-compare-price>{{ current_variant.compare_at_price | money }}</s></small>
+												<span
+													data-product-price
+													class="{% if current_variant.compare_at_price > current_variant.price %}ts:text-red-700{% endif %}"
+												>{{ current_variant.price | money }}</span>
+											</p>
+
+											{%- unless product.has_only_default_variant -%}
+												<variant-selects id="variant-selects--{{ section_id }}__{{ product.id }}" data-section="{{ section_id }}" class="ts:mt-[0.8rem]">
+													{%- for option in product.options_with_values -%}
+														{%- liquid
+															assign swatch_count = option.values | map: 'swatch' | compact | size
+														-%}
+														
+														<div class="product-form__input product-form__input--dropdown ts:mb-0!">
+															<label class="form__label visually-hidden" for="Option-{{ section_id }}-{{ product.id }}-{{ option.position }}">
+																{{ option.name }}
+															</label>
+															<div class="select">
+																<select
+																	id="Option-{{ section_id }}-{{ product.id }}-{{ option.position }}"
+																	class="select__select"
+																	name="options[{{ option.name | escape }}]"
+																	form="{{ upsell_form_id }}"
+																>
+																	{% render 'product-variant-options',
+																		product: product,
+																		option: option,
+																		block: block,
+																		picker_type: 'dropdown'
+																	%}
+																</select>
+																<span class="svg-wrapper">
+																	{{- 'icon-caret.svg' | inline_asset_content -}}
+																</span>
+															</div>
+														</div>
+													{%- endfor -%}
+
+													<script type="application/json" data-product-variants>
+														{{ product.variants | json }}
+													</script>
+													<script type="application/json" data-product-variant-prices>
+														{
+															{%- for variant in product.variants -%}
+																"{{ variant.id }}": {
+																	"price": {{ variant.price | money | json }},
+																	"compareAtPrice": {% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money | json }}{% else %}null{% endif %}
+																}{%- unless forloop.last -%},{%- endunless -%}
+															{%- endfor -%}
+														}
+													</script>
+												</variant-selects>
+											{%- endunless -%}
+
+											<product-form class="product-form ts:block ts:mt-[0.4rem]" data-section-id="{{ section_id }}" data-product-id="{{ section_id }}-{{ product.id }}">
+												<div class="product-form__error-message-wrapper" role="alert" hidden>
+													<span class="svg-wrapper">
+														{{- 'icon-error.svg' | inline_asset_content -}}
+													</span>
+													<span class="product-form__error-message"></span>
+												</div>
+												<div class="ts:flex ts:items-center ts:flex-col ts:gap-5">
+													{%- form 'product', product, id: upsell_form_id, class: 'form ts:flex-1 ts:min-w-0 ts:w-full', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+														<input
+															type="hidden"
+															name="id"
+															value="{{ product.selected_or_first_available_variant.id }}"
+															{% if product.selected_or_first_available_variant.available == false
+																or quantity_rule_soldout
+																or product.selected_or_first_available_variant == null
+															%}
+																disabled
+															{% endif %}
+															class="product-variant-id"
+														>
+														<button
+															id="ProductSubmitButton-{{ section_id }}-{{ product.id }}"
+															class="product-form__submit ts:relative ts:text-center ts:px-[1.2rem] ts:py-[0.8rem] ts:leading-tight ts:w-full ts:text-sm ts:disabled:opacity-50 ts:border ts:bg-black ts:text-white ts:hover:bg-white ts:hover:text-black ts:hover:border-gray-300 ts:mb-0! ts:not-disabled:cursor-pointer"
+															type="submit"
+															name="add"
+															{% if product.selected_or_first_available_variant.available == false
+																or quantity_rule_soldout
+																or product.selected_or_first_available_variant == null
+															%}
+																disabled
+															{% endif %}
+														>
+															<span data-add-to-cart-text>
+																{%- if current_variant.available -%}
+																	{{ 'products.product.add_to_cart' | t }}
+																{%- else -%}
+																	{{ 'products.product.sold_out' | t }}
+																{%- endif -%}
+															</span>
+
+															{%- render 'loading-spinner' -%}
+														</button>
+													{%- endform -%}
+												</div>
+											</product-form>
+										</div>
+									</div>
+								</li>
+								{%- assign skip_card_product_styles = true -%}
+							{%- endfor -%}
+						{%- endif -%}
+					</ul>
+
+					{%- unless settings.products_to_show <= 3 -%}
+						<div class="slider-buttons ts:block!">
+							<button
+								type="button"
+								class="slider-button slider-button--prev ts:p-2 ts:cursor-pointer ts:absolute ts:top-1/2 ts:-translate-y-1/2 ts:left-[-2.4rem] ts:z-10 ts:disabled:opacity-50"
+								name="previous"
+								aria-label="{{ 'general.slider.previous_slide' | t }}"
+								aria-controls="Slider-{{ section_id }}"
+							>
+								<span class="svg-wrapper">
+									{{- 'icon-caret.svg' | inline_asset_content -}}
+								</span>
+							</button>
+							<div class="slider-counter caption visually-hidden">
+								<span class="slider-counter--current">1</span>
+								<span aria-hidden="true"> / </span>
+								<span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+								<span class="slider-counter--total">{{ products_to_display }}</span>
+							</div>
+							<button
+								type="button"
+								class="slider-button slider-button--next ts:p-2 ts:cursor-pointer ts:absolute ts:top-1/2 ts:-translate-y-1/2 ts:right-[-2.4rem] ts:z-10 ts:disabled:opacity-50"
+								name="next"
+								aria-label="{{ 'general.slider.next_slide' | t }}"
+								aria-controls="Slider-{{ section_id }}"
+							>
+								<span class="svg-wrapper">
+									{{- 'icon-caret.svg' | inline_asset_content -}}
+								</span>
+							</button>
+						</div>
+					{%- endunless -%}
+				</slider-component>
+			</div>
+		</div>
+	</div>
+{%- endif -%}

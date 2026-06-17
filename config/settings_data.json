@@ -129,10 +129,10 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
-    "show_countdown_bar": true,
+    "show_countdown_bar": false,
     "countdown_limit": "100.00",
     "countdown_success": "You have FREE SHIPPING!",
-    "show_upsell": true,
+    "show_upsell": false,
     "products_to_show": 4,
     "upsell_collection": "best-sellers",
     "sections": {
@@ -176,7 +176,7 @@
       },
       "18128612654622612671": {
         "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },
