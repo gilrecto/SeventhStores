@@ -14,13 +14,47 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+{%- capture main_page_content -%}
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
+{%- endcapture -%}
+
+<div class="page-width{% if section.settings.fullwidth_wrapper %} page-width--desktop{% else %} page-width--narrow{% endif %} section-{{ section.id }}-padding{% if section.settings.enable_sidebar %} ts:max-w-[153.6rem]!{% endif %}">
+  {%- if section.settings.enable_sidebar -%}
+    <div class="main-page-wrapper--with_sidebar ts:flex ts:flex-wrap ts:items-start">
+      <asside class="ts:lg:max-w-lg ts:lg:self-start ts:lg:sticky ts:lg:top-47 ts:lg:mr-[3.2rem] ts:w-full">
+        {%- unless section.settings.sidebar_title == blank -%}
+          <h4 class="main-page-title ts:max-lg:mb-0!">
+            {{ section.settings.sidebar_title }}
+          </h4>
+        {%- endunless -%}
+
+        {%- unless section.settings.sidebar == blank -%}
+          <ul class="ts:flex ts:flex-row ts:flex-nowrap ts:overflow-x-auto ts:lg:block ts:mb-[1.6rem]">
+            {%- for link in section.settings.sidebar.links -%}
+              <li class="ts:shrink-0">
+                <a 
+                  href="{{ link.url }}"
+                  class="link ts:block! ts:no-underline! ts:text-[1.1rem]! ts:font-light {% unless link.current %} ts:text-[rgba(var(--color-link),0.4)]!{% endunless %} ts:hover:text-[rgba(var(--color-link))]! ts:py-[1.6rem]{% unless forloop.last %} ts:pr-[1.6rem]{% endunless %}{% if forloop.first %} ts:lg:pt-0{% endif %}"
+                >
+                  {{ link.title }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endunless -%}
+      </asside>
+      <div class="page-content ts:flex-1 ts:w-full ts:lg:max-w-240">
+        {{- main_page_content -}}
+      </div>
+    </div>
+  {%- else -%}
+    {{- main_page_content -}}
+  {%- endif -%}
 </div>
 
 {% schema %}
@@ -29,6 +63,34 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "fullwidth_wrapper",
+      "label": "Fullwidth Section",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Sidebar Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sidebar",
+      "label": "Enable Sidebar?",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "sidebar_title",
+      "label": "Sidebar Title",
+      "visible_if": "{{ section.settings.enable_sidebar }}"
+    },
+    {
+      "type": "link_list",
+      "id": "sidebar",
+      "label": "Sidebar Navigation",
+      "visible_if": "{{ section.settings.enable_sidebar }}"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

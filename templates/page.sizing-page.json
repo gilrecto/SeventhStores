@@ -1,0 +1,170 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 48
+      }
+    },
+    "rich_text_rMNXqh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kXgPUL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to our sizing guide",
+            "heading_size": "h2"
+          }
+        },
+        "text_xHaJTx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We've put together sizing guidelines for how to measure yourself, so you can ensure your Seventh piece fits perfectly. Please note that this is a recommendation and if you still need sizing assistance based on achieving a particular fit, feel free to hit us up at Customer Service via the email or dm us on socials.<br/><br/>We include in depth sizing details and measurements under the 'Garment Measurements' details on every product page. We recommend checking these for specific products to help you determine the best size to choose. Additionally, we offer personal shopping services linked in the button below so you can reach out for in depth help with selections.<br/><br/></p>"
+          }
+        },
+        "button_Ewmr4f": {
+          "type": "button",
+          "settings": {
+            "button_label": "Personal Shopping Services",
+            "button_link": "shopify://pages/personal-styling-services",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kXgPUL",
+        "text_xHaJTx",
+        "button_Ewmr4f"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 102.4rem;}",
+        ".rich-text__heading {font-size: clamp(1.4rem, 0.512vw + 1.016rem, 2rem); color: #000000;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: clamp(1.2rem, 0.256vw + 1.008rem, 1.5rem); color: #000000;}",
+        ".rich-text__text > * {font-weight: 300;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_VgeyHe": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JchKqm": {
+          "type": "heading",
+          "settings": {
+            "heading": "How To Measure: Top Half",
+            "heading_size": "h2"
+          }
+        },
+        "text_kDXn7K": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chest/Pit To Pit<br/>To find your chest measurement, take a tape measure and wrap it under your armpits at the fullest part of your chest, making sure it's snug, but not tight. Ensure the tape is parallel to the floor. The measure is your chest measurement. Divide. the total sum by two to get your pit-to-pit measurement.<br/><br/>Shoulder<br/>To find your shoulder measurement, ask a friend or relative to place the end of the measuring tape at the place where your shoulder meets the top of your arm, or the boniest part of your shoulder. From there, holding the tape taut, you should stretch the tape straight across your back to the tip of your other shoulder blade. The measurement is your shoulder with. Alternatively you can take the measure from a trusty favourite shirt.<br/><br/>Arm/Sleeve Length<br/>To find your sleeve length, take a tape measure and begin at the top of your arm , or boniest part of your shoulder, to just below the wrist bone. The measure is your sleeve length measurement.<br/><br/>Back Length/Length<br/>To find your length measurement, ask a friend or relative to take a tape measure and place it at the nape of your neck (the bony protrusion at the back of your neck). Holding the tape taut, they should stretch the tape straight down to the top of your hips. The measurement is your length measurement. Alternatively, you can the the measurement from a trusty favourite shirt.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JchKqm",
+        "text_kDXn7K"
+      ],
+      "custom_css": [
+        ".image-with-text__content {padding: 0;}",
+        ".image-with-text__heading {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem); color: #000000;}",
+        ".image-with-text__text.rte {margin-top: 2.4rem; font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.5; font-weight: 300; color: #000000;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/resized_measure-01_2.webp",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_xiBBew": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KU7hXP": {
+          "type": "heading",
+          "settings": {
+            "heading": "How To Measure: Bottom Half",
+            "heading_size": "h2"
+          }
+        },
+        "text_wWXhw7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Waist<br/>Place the measuring tape at the smallest part of your waist. Relax your stomach and wrap the tape around your waist, making sure it is snug, but not tight and ensure the tape measure is parallel to the floor. The measurement is your waist measurement.<br/><br/>Rise<br/>To find your rise measurement, grab your favourite fitting pair of pants and lay them flat. Run a tape measure from the crotch seam up the front to the top of the pant below the waistband. The measurement is your rise measurement.<br/><br/>Inseam<br/>To find your inseam measurement, grab your favourite fitting pair of pants and lay them flat. Run a tape measure from the crotch seam down to the hem of the pants on the inside seam of the leg. The measurement is your inseam measurement.<br/><br/><br/>Hem/Leg Opening<br/>To find your hem circumference/ leg opening measurement, grab your favourite fitting pair of pants and lay them flat. Run a tape measure along the hem edge (bottom of the pant). Take that measurement and double it for your hem circumference.<br/><br/>Sideseam Length<br/>To find your sideseam length, simply add together your rise and inseam measurements, the total is your sideseam measurement.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KU7hXP",
+        "text_wWXhw7"
+      ],
+      "custom_css": [
+        ".image-with-text__content {padding: 0;}",
+        ".image-with-text__heading {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem); color: #000000;}",
+        ".image-with-text__text.rte {margin-top: 2.4rem; font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.5; font-weight: 300; color: #000000;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/resized_measure-02.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_rMNXqh",
+    "image_with_text_VgeyHe",
+    "image_with_text_xiBBew"
+  ]
+}

@@ -195,27 +195,45 @@
   {% if setting.mb_poster == blank %}
     {% assign poster_mob = setting.poster | image_url: width: setting.poster.width %}
   {% endif %}
-	
-  <script type="text/javascript" async>
-    document.addEventListener("DOMContentLoaded", function() {
-      const loadMobileMedia = () => {
-        let mobileView = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
 
-        if(!mobileView.matches) {
-          return
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const videoPlayer = document.querySelector('#shopify-section-{{ section.id }} video.video-player');
+
+      if (!videoPlayer) return;
+
+      const source = videoPlayer.querySelector('source');
+      const desktopVideo = '{{ setting.video.sources[1].url }}';
+      const desktopPoster = '{{ poster }}';
+      const mobileVideo = '{{ setting.mb_video.sources[1].url }}';
+      const mobilePoster = '{{ poster_mob }}';
+      let currentMode = null;
+
+      const updateVideo = () => {
+        const isMobile = window.innerWidth < 768;
+        // Prevent unnecessary reloads
+        if (currentMode === isMobile) return;
+
+        currentMode = isMobile;
+
+        if (isMobile) {
+          source.dataset.src = mobileVideo;
+          source.src = mobileVideo;
+          videoPlayer.poster = mobilePoster;
         } else {
-          let mb_video = '{{ setting.mb_video.sources[1].url }}',
-              mb_poster = '{{ poster_mob }}',
-              video_player = document.querySelector("video.video-player");
-
-
-          video_player.children[0].dataset.src = mb_video
-          video_player.poster = mb_poster
+          source.dataset.src = desktopVideo;
+          source.src = desktopVideo;
+          videoPlayer.poster = desktopPoster;
         }
-      }
 
-      loadMobileMedia();
-      window.addEventListener('resize', loadMobileMedia);
+        videoPlayer.load();
+        videoPlayer.play().catch(() => {});
+      };
+
+      updateVideo();
+
+      window.matchMedia('(max-width: 767px)')
+        .addEventListener('change', updateVideo);
     });
   </script>
 {%- endif -%}

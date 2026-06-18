@@ -1,0 +1,285 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DfYkmb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to our care guide",
+            "heading_size": "h2"
+          }
+        },
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get to know more about your Seventh pieces - here's how best to care for them. We want you to enjoy your Seventh piece for as long as possible, by following our care guidelines you'll get the most use out of your garments. Scroll below to view your Seventh piece and see our care info</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DfYkmb",
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 95rem;}",
+        ".rich-text__heading {font-size: 1.5rem; color: #000000;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: 1.1rem; color: #000000;}",
+        ".rich-text__text > * {font-weight: 300;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_z786Jw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8yX4VJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/D7SWEATSHIRT_closeup.png",
+            "title": "D7",
+            "text": "<p>Machine wash cold, wash inside out. Wash with similar colours using a mild detergent. Do not bleach or tumble dry. Iron on a low heat, we also recommend steaming. Dry flat in a shaded space.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dax4fk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_04_20250734_f4c66952-e542-40be-87cd-5ed365657422.png",
+            "title": "410 Denim",
+            "text": "<p>Our 410 denim refers to our washed denim pieces, designed for immediate comfort and a vintage look. Washed denim has been pre-treated to soften the fabric. 410 indicates the weight of our denim which is equivalent to a heavy denim. Hand wash cold and wash inside out. We recommend air drying or hang dry to prevent shrinkage and preserve the shape. Iron on low heat or steam post wash. Use a soft detergent, avoid frequent washing to extend the lifespan of your denim piece. Spot clean where needed.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_khPPKR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEHOODIE50_2x3_309000e7-6de5-4d2b-a3f5-4bf5559c539d.jpg",
+            "title": "440 Denim",
+            "text": "<p>Our 440 denim is raw denim in its purest form, untreated and unwashed- allowing it to develop a completely personal fade over time. Cold hand wash separately, and wash inside out. Colour may transfer when new. We recommend air drying or hang dry to prevent shrinkage and preserve the shape. Iron on low heat or steam post wash. Use a soft detergent, avoid frequent washing to extend the lifespan of your denim piece. Spot clean where needed. The fabric is stiff when new and later softens over time with each wear. Expect natural fading over time.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iAiBFY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEHOODIE111_2x3_d23e6fd3-8754-42c0-a7ff-042ae484ad1f.jpg",
+            "title": "V2",
+            "text": "<p>Dry clean only, we recommend hanging this piece when storing and steaming to remove creasing.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_8yX4VJ",
+        "column_dax4fk",
+        "column_khPPKR",
+        "column_iAiBFY"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; color: #000000; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list h3 {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem);}",
+        ".multicolumn-list .rte {font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.6; font-weight: 300; margin-top: 0.4rem;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_hbW8xw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rmnDAX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_04_20250563_1_1610ee69-adc1-43be-be11-8332154fdd3f.png",
+            "title": "Knit",
+            "text": "<p>Hand wash cold and dry flat. Avoid hanging. The natural fibres of the wool will change the garment over time resulting in a brushed, texture finish. To restore the garment to its original state, use a pilling comb or fabric shaver</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iEx3bj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_04_20250637-b.png",
+            "title": "Base Rib Vest",
+            "text": "<p>Machine wash cold (below 20 degrees). We recommend steaming this piece and folding when storing. Wash with similar colours, do not tumble dry.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mGJYi6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_04_20250470_269f69c4-f0ea-44f1-b17b-559c1af442fd.png",
+            "title": "Football Box Polo",
+            "text": "<p>Machine wash cold (below 20 degrees). We recommend steaming this piece and folding when storing. Wash with similar colours, do not tumble dry.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UM9NB4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520506_326adb9c-5909-4036-8840-ad97fec42ffb.png",
+            "title": "M5",
+            "text": "<p>Hand wash only. We recommend steaming this piece and hanging when storing. Wash with similar colours, do not tumble dry.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rmnDAX",
+        "column_iEx3bj",
+        "column_mGJYi6",
+        "column_UM9NB4"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; color: #000000; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list h3 {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem);}",
+        ".multicolumn-list .rte {font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.6; font-weight: 300; margin-top: 0.4rem;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_Nmb7zj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Nc99De": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520616_d93f0286-19da-4648-98e2-ababf78b8307.png",
+            "title": "Windbreaker",
+            "text": "<p>Machine wash cold (below 20 degrees). We recommend steaming this piece and hanging when storing. Wash with similar colours, do not tumble dry.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3DBwf8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Flatlay_29_040083_31392103-19bc-4253-a207-60961d840b59.png",
+            "title": "Nylon Pant",
+            "text": "<p>Machine Wash Cold (Below 20 Degrees), we recommend hanging or folding the piece when storing and either ironing or steaming post wash.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kjiktE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_12_071760_1_1_a1eedf5b-0a56-46aa-a9fd-c828821025ef.png",
+            "title": "Lunar Sac, Moon Sac & Mini Moon",
+            "text": "<p>Dry clean only. We recommend storing in a safe dry place when not in use. Do not bleach.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Nc99De",
+        "column_3DBwf8",
+        "column_kjiktE"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; color: #000000; justify-content: center; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list h3 {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem);}",
+        ".multicolumn-list .rte {font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.6; font-weight: 300; margin-top: 0.4rem;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_z786Jw",
+    "multicolumn_hbW8xw",
+    "multicolumn_Nmb7zj"
+  ]
+}

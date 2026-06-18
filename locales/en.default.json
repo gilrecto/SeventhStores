@@ -48,6 +48,7 @@
     },
     "search": {
       "search": "Search",
+      "search_input_placeholder": "Search hundreds of styles",
       "reset": "Clear search term"
     },
     "cart": {
@@ -240,9 +241,10 @@
   },
   "templates": {
     "search": {
-      "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
+      "no_results": "Your search for “{{ terms }}” did not yield any results.",
       "page": "Page",
       "products": "Products",
+      "results": "Product Search Results",
       "results_pages_with_count": {
         "one": "{{ count }} page",
         "other": "{{ count }} pages"
@@ -263,7 +265,8 @@
         "one": "{{ count }} result found for “{{ terms }}”",
         "other": "{{ count }} results found for “{{ terms }}”"
       },
-      "title": "Search results",
+      "results_with_terms": "Your search for “{{ terms }}” revealed the following:",
+      "title": "Search for products on our site",
       "search_for": "Search for “{{ terms }}”",
       "suggestions": "Suggestions",
       "pages": "Pages"

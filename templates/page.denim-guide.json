@@ -1,0 +1,148 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DfYkmb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to our Denim guide",
+            "heading_size": "h2"
+          }
+        },
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our 101 on our denim pieces is covered here: get to know the dynamics of our denim styles so you can select the right piece for you.</p><p><strong>See below more info regarding each denim style and how to care for them</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DfYkmb",
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 95rem;}",
+        ".rich-text__heading {font-size: 1.8rem; color: #000000;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: 1.2rem; color: #000000;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_z786Jw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_khPPKR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEHOODIE50_2x3_65f21103-ce3c-41fd-b973-d8dc88010848.jpg",
+            "title": "440",
+            "text": "<p>Cold hand wash separately, and wash inside out. Colour may transfer when new. We recommend air drying or hang dry to prevent shrinkage and preserve the shape. Iron on low heat or steam post wash. Use a soft detergent, avoid frequent washing to extend the lifespan of your denim piece. Spot clean where needed. The fabric is stiff when new and later softens over time with each wear. Expect natural fading over time.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dax4fk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEHOODIE74_2x3_7086a36d-76a4-4363-b8d0-5c30a5de81e9.jpg",
+            "title": "410",
+            "text": "<p>Hand wash cold and wash inside out. We recommend air drying or hang dry to prevent shrinkage and preserve the shape. Iron on low heat or steam post wash. Use a soft detergent, avoid frequent washing to extend the lifespan of your denim piece. Spot clean where needed.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_khPPKR",
+        "column_dax4fk"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; color: #000000; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list h3 {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem);}",
+        ".multicolumn-list .rte {font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.6; font-weight: 300; margin-top: 0.4rem;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 60
+      }
+    },
+    "sev_media_banner_VUhtri": {
+      "type": "sev_media_banner",
+      "name": "Media Banner",
+      "settings": {
+        "color_scheme": "",
+        "banner_type": "video",
+        "add_overlay": false,
+        "overlay_opacity": 0.5,
+        "enable_anim": false,
+        "video": "shopify://files/videos/Untitled design.mp4",
+        "mb_video": "shopify://files/videos/Denim V2 (1).mp4",
+        "banner_link": "",
+        "link_label": "",
+        "content_alignment_h": "ts:md:items-center",
+        "content_alignment_v": "ts:md:justify-center",
+        "text_alignment": "center",
+        "content_alignment_h_mobile": "ts:items-center",
+        "content_alignment_v_mobile": "ts:justify-center",
+        "text_alignment_mobile": "center",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_z786Jw",
+    "sev_media_banner_VUhtri"
+  ]
+}

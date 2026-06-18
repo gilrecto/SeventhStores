@@ -31,7 +31,7 @@
 
 .drawer__inner-empty {
   height: 100%;
-  padding: 0 clamp(1.6rem, 0.683vw + 1.088rem, 2.4rem);
+  padding: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -42,6 +42,7 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
+  padding: 0 clamp(1.6rem,.683vw + 1.088rem,2.4rem);
 }
 
 cart-drawer.is-empty .drawer__inner {
@@ -53,6 +54,10 @@ cart-drawer.is-empty .drawer__inner {
 
 cart-drawer.is-empty .drawer__header {
   display: none;
+}
+
+cart-drawer .drawer__inner-empty .drawer__header {
+  display: flex;
 }
 
 cart-drawer:not(.is-empty) .cart-drawer__warnings,
@@ -100,10 +105,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 }
 
 .drawer__inner-empty button.drawer__close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1.5rem;
   line-height: 1;
 }
 
@@ -119,6 +120,10 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 .cart-drawer__empty-content .cart__login-title,
 .cart-drawer__empty-content .cart__login-paragraph {
   font-size: 1.2rem;
+}
+
+.cart-drawer__empty-content .cart__login-title {
+  margin-top: 2.8rem;
 }
 
 .drawer__contents {

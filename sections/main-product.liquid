@@ -933,53 +933,6 @@
   }
 </script>
 
-<script src="{{ 'custom_product_swatches.js' | asset_url }}" defer="defer"></script>
-{%- paginate collections.all.products by 1000 -%}
-  <script type="application/json" id="product-groups-data">
-    {
-    {%- assign rendered_groups = '' -%}
-    {%- assign first_group = true -%}
-
-    {%- for product in collections.all.products -%}
-      {%- assign group = product.metafields.custom.product_colour_group.value.system.handle -%}
-
-      {%- if group != blank -%}
-        {%- capture token -%}|{{ group }}|{%- endcapture -%}
-
-        {%- unless rendered_groups contains token -%}
-          {%- unless first_group -%},{%- endunless -%}
-          {%- assign first_group = false -%}
-
-          "{{- group -}}": [
-            {%- assign first_product = true -%}
-
-            {%- for related_product in collections.all.products -%}
-              {%- assign related_group = related_product.metafields.custom.product_colour_group.value.system.handle -%}
-
-              {%- if related_group == group -%}
-                {%- unless first_product -%},{%- endunless -%}
-                {%- assign first_product = false -%}
-
-                {
-                  "handle": {{ related_product.handle | json }},
-                  "url": {{ related_product.url | within: collection | json }},
-                  "title": {{ related_product.title | json }},
-                  "swatch": "{{ related_product.metafields.color.swatch }}"
-                }
-              {%- endif -%}
-            {%- endfor -%}
-          ]
-
-          {%- capture rendered_groups -%}
-            {{ rendered_groups }}{{ token }}
-          {%- endcapture -%}
-        {%- endunless -%}
-      {%- endif -%}
-    {%- endfor -%}
-    }
-  </script>
-{%- endpaginate -%}
-
 {% schema %}
 {
   "name": "t:sections.main-product.name",

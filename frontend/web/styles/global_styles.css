@@ -215,3 +215,6 @@ cart-drawer .cart-upsell .product-form__input .select {
 cart-drawer .cart-upsell variant-selects .product-form__input .svg-wrapper {
 	@apply ts:right-[0.8rem] ts:w-[0.8rem];
 }
+cart-drawer.is-empty .cart-drawer {
+	@apply ts:max-sm:w-full;
+}

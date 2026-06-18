@@ -1,54 +1,67 @@
 {% comment %}
-  Renders a header search modal. Should be used with 'header.liquid'
+  Renders a header search drawer. Should be used with 'header.liquid'
 
   Accepts:
   - input_id: {String} Id for the search input element (required)
 
   Usage:
-  {% render 'header-search', input_id: 'My-Id'%}
+  {% render 'header-search', input_id: 'My-Id' %}
 {% endcomment %}
 
-<details-modal class="header__search">
-  <details>
-    <summary
-      class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
-      aria-haspopup="dialog"
-      aria-label="{{ 'general.search.search' | t }}"
-    >
-      <span>
-        <span class="svg-wrapper">
-          {{- 'icon-search.svg' | inline_asset_content -}}
-        </span>
-        <span class="svg-wrapper header__icon-close">
-          {{- 'icon-close.svg' | inline_asset_content -}}
-        </span>
-      </span>
-    </summary>
+<search-drawer class="header__search">
+  <button
+    type="button"
+    class="header__icon header__icon--search link focus-inset"
+    aria-haspopup="dialog"
+    aria-expanded="false"
+    aria-controls="SearchDrawer-{{ input_id }}"
+    aria-label="{{ 'general.search.search' | t }}"
+    data-search-drawer-trigger
+  >
+    <span class="svg-wrapper">
+      {{- 'icon-search.svg' | inline_asset_content -}}
+    </span>
+  </button>
+
+  <div class="drawer search-drawer" data-search-drawer>
+    <div class="cart-drawer__overlay search-drawer__overlay" data-search-drawer-overlay></div>
     <div
-      class="search-modal modal__content gradient"
+      id="SearchDrawer-{{ input_id }}"
+      class="drawer__inner search-drawer__inner gradient color-{{ settings.cart_color_scheme }}"
       role="dialog"
       aria-modal="true"
       aria-label="{{ 'general.search.search' | t }}"
+      tabindex="-1"
     >
-      <div class="modal-overlay"></div>
-      <div
-        class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}"
-        tabindex="-1"
-      >
+      <div class="drawer__header search-drawer__header">
+        <h2 class="drawer__heading">{{ 'general.search.search' | t }}</h2>
+        <button
+          type="button"
+          class="drawer__close search-drawer__close"
+          aria-label="{{ 'accessibility.close' | t }}"
+          data-search-drawer-close
+        >
+          <span class="svg-wrapper">
+            {{- 'icon-arrow.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      </div>
+
+      <div class="search-drawer__content">
         {%- if settings.predictive_search_enabled -%}
           <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- else -%}
           <search-form class="search-modal__form">
         {%- endif -%}
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-          <div class="field">
+          <div class="field_wrapper ts:relative">
             <input
               class="search__input field__input"
               id="{{ input_id }}"
               type="search"
               name="q"
               value="{{ search.terms | escape }}"
-              placeholder="{{ 'general.search.search' | t }}"
+              placeholder="{{ 'general.search.search_input_placeholder' | t }}"
               {%- if settings.predictive_search_enabled -%}
                 role="combobox"
                 aria-expanded="false"
@@ -62,7 +75,7 @@
                 spellcheck="false"
               {%- endif -%}
             >
-            <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+            <label class="field__label visually-hidden" for="{{ input_id }}">{{ 'general.search.search_input_placeholder' | t }}</label>
             <input type="hidden" name="options[prefix]" value="last">
             <button
               type="reset"
@@ -70,7 +83,7 @@
               aria-label="{{ 'general.search.reset' | t }}"
             >
               <span class="svg-wrapper">
-                {{- 'icon-reset.svg' | inline_asset_content -}}
+                {{- 'icon-close.svg' | inline_asset_content -}}
               </span>
             </button>
             <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
@@ -81,7 +94,7 @@
           </div>
 
           {%- if settings.predictive_search_enabled -%}
-            <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+            <div class="predictive-search predictive-search--header predictive-search--drawer" tabindex="-1" data-predictive-search>
               {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
             </div>
 
@@ -93,16 +106,7 @@
         {%- else -%}
           </search-form>
         {%- endif -%}
-        <button
-          type="button"
-          class="search-modal__close-button modal__close-button link link--text focus-inset"
-          aria-label="{{ 'accessibility.close' | t }}"
-        >
-          <span class="svg-wrapper">
-            {{- 'icon-close.svg' | inline_asset_content -}}
-          </span>
-        </button>
       </div>
     </div>
-  </details>
-</details-modal>
+  </div>
+</search-drawer>

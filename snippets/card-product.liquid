@@ -291,7 +291,7 @@
               {% endif %}
             {%- endif -%}
 
-            {%- if show_swarches -%}
+            {%- if settings.show_related_swatches -%}
               {%- assign group = card_product.metafields.custom.product_colour_group.value.system.handle -%}
                {%- if group -%}
                  <product-swatches group="{{ group }}" current="{{ card_product.handle }}"></product-swatches>

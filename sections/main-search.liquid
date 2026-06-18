@@ -15,13 +15,16 @@
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
 
 <style>
+  .template-search .page-width {
+    padding: 0 clamp(1.6rem, 5.465vw - 2.494rem, 8rem) !important;
+  }
   .template-search__header {
-    margin-bottom: 3rem;
+    margin-bottom: 3.2rem;
   }
 
   .template-search__search {
-    margin: 0 auto 3.5rem;
-    max-width: 74.1rem;
+    margin: 0 auto 6.4rem;
+    max-width: 38.5rem;
   }
 
   .template-search__search .search {
@@ -30,16 +33,6 @@
 
   .template-search--empty {
     padding-bottom: 18rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .template-search__header {
-      margin-bottom: 5rem;
-    }
-  }
-
-  .search__button .icon {
-    height: 1.8rem;
   }
 </style>
 
@@ -66,27 +59,42 @@
 {% paginate search.results by 24 %}
   <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      <h1 class="h2 center">
+      <div class="title-wrapper center ts:mb-[4.8rem]!">
+        <h1 class="h2 ts:text-[1.6rem]!">
+          {%- if search.performed -%}
+            {{- 'templates.search.title' | t -}}
+          {%- else -%}
+            {{- 'general.search.search' | t -}}
+          {%- endif -%}
+        </h1>
+
         {%- if search.performed -%}
-          {{- 'templates.search.title' | t -}}
-        {%- else -%}
-          {{- 'general.search.search' | t -}}
+          {%- unless section.settings.enable_filtering or section.settings.enable_sorting -%}
+            {%- if search.results_count > 0 -%}
+              <p role="status" class="ts:text-base ts:mt-[1.6rem]">
+                {{ 'templates.search.results_with_terms' | t: terms: search.terms }}
+              </p>
+            {%- endif -%}
+          {%- endunless -%}
+          {%- if search.results_count == 0 and search.filters == empty -%}
+            <p role="status" class="ts:text-base ts:mt-[1.6rem]">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+          {%- endif -%}
         {%- endif -%}
-      </h1>
+      </div>
       <div class="template-search__search">
         {%- if settings.predictive_search_enabled -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
         <main-search>
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
-            <div class="field">
+            <div class="field_wrapper ts:relative">
               <input
                 class="search__input field__input"
                 id="Search-In-Template"
                 type="search"
                 name="q"
                 value="{{ search.terms | escape }}"
-                placeholder="{{ 'general.search.search' | t }}"
+                placeholder="{{ 'general.search.search_input_placeholder' | t }}"
                 {%- if settings.predictive_search_enabled -%}
                   role="combobox"
                   aria-expanded="false"
@@ -100,11 +108,11 @@
                   spellcheck="false"
                 {%- endif -%}
               >
-              <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
+              <label class="field__label visually-hidden" for="Search-In-Template">{{ 'general.search.search_input_placeholder' | t }}</label>
               <input name="options[prefix]" type="hidden" value="last">
 
               {%- if settings.predictive_search_enabled -%}
-                <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
+                <div class="predictive-search predictive-search--search-template ts:sr-only" tabindex="-1" data-predictive-search>
                   {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
                 </div>
 
@@ -117,7 +125,7 @@
                 aria-label="{{ 'general.search.reset' | t }}"
               >
                 <span class="svg-wrapper">
-                  {{- 'icon-reset.svg' | inline_asset_content -}}
+                  {{- 'icon-close.svg' | inline_asset_content -}}
                 </span>
               </button>
               <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
@@ -135,13 +143,13 @@
       {%- if search.performed -%}
         {%- unless section.settings.enable_filtering or section.settings.enable_sorting -%}
           {%- if search.results_count > 0 -%}
-            <p role="status">
-              {{ 'templates.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}
+            <p class="ts:text-lg" role="status">
+              {{ 'templates.search.results' | t }}
             </p>
           {%- endif -%}
         {%- endunless -%}
         {%- if search.results_count == 0 and search.filters == empty -%}
-          <p role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+          <p class="ts:text-[1.1rem]" role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
         {%- endif -%}
       {%- endif -%}
     </div>
@@ -226,7 +234,7 @@
             </aside>
           {%- endif -%}
         {%- endif -%}
-        <div class="product-grid-container" id="ProductGridContainer">
+        <div class="product-grid-container ts:pt-0!" id="ProductGridContainer">
           {%- if search.results.size == 0 and search.filters != empty -%}
             <div
               class="template-search__results collection collection--empty{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
