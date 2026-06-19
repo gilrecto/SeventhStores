@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "multicolumn_wDL8Hb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_H4Cm9z": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250218_2c552ac1-1ac3-4d64-b098-c43acc3d8187.jpg",
+            "title": "",
+            "text": "<p>Stillness Collection | Part Two</p>",
+            "link_label": "",
+            "link": "shopify://pages/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_DCP78e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0013.jpg",
+            "title": "",
+            "text": "<p>Stillness Collection | Part One</p>",
+            "link_label": "",
+            "link": "shopify://pages/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_yq8ftA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF1727.jpg",
+            "title": "",
+            "text": "<p>Daily Seventh / D7 Lookbook</p>",
+            "link_label": "",
+            "link": "shopify://pages/daily-seventh-d7-lookbook-preview",
+            "open_new_tab": false
+          }
+        },
+        "column_dTF4GL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_138.jpg",
+            "title": "",
+            "text": "<p>Spring/Summer</p>",
+            "link_label": "",
+            "link": "shopify://pages/spring-summer-project-1",
+            "open_new_tab": false
+          }
+        },
+        "column_3UnpQE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SS.08.15.2025_14_1.jpg",
+            "title": "",
+            "text": "<p>V2 Fujisusutake & Returning Essentialsa</p>",
+            "link_label": "",
+            "link": "shopify://pages/new-arrivals-returning-essentials",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_H4Cm9z",
+        "column_DCP78e",
+        "column_yq8ftA",
+        "column_dTF4GL",
+        "column_3UnpQE"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 2rem; max-width: 150.4rem; margin: 0 auto; padding: 0; justify-content: center;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list .media--portrait {padding-bottom: 133.895%;}",
+        ".multicolumn-list .rte {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem); line-height: 1.5; font-weight: 300; margin-top: 0.4rem; color: #4b4c4a;}"
+      ],
+      "name": "Collections",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_wDL8Hb"
+  ]
+}

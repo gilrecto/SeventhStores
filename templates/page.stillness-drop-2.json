@@ -1,0 +1,287 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A continuation of our Stillness Collection. This assortment marks 5 years from when we first started, which for us is a time to bring things full circle whilst showcasing our intentions of growth and refinement.<br/><br/></p>"
+          }
+        },
+        "button_787RDK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Browse the collection",
+            "button_link": "shopify://collections/stillness-the-second-installment",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq",
+        "button_787RDK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 92rem;}",
+        ".rich-text__text {font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}",
+        ".rich-text__blocks.left .rich-text__buttons {justify-content: center; display: flex; max-width: 100%; margin-top: 3.2rem;}"
+      ],
+      "name": "Browse Collection",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120255291.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_MhPYhi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250770.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_d8jwte": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250669.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_BNGeEH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250024.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_qRwtMg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250107.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_E8hnUf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250028_95ddbed7-67ab-4000-ab94-b58caced1795.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_yw9VfH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250527.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_Bi3JjJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250233.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_qr6zbx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250431_62ea07a6-a569-486a-b341-034d07fc106e.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_6mVRjU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120255079.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_gUq8YM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120255037_db658923-4161-4033-9cdc-3c2def02316c.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        },
+        "column_Rfn9K9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH051120250165_41083041-c9cf-49d1-b1d7-81ea8c9ebc1b.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-second-installment",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_MhPYhi",
+        "column_d8jwte",
+        "column_BNGeEH",
+        "column_qRwtMg",
+        "column_E8hnUf",
+        "column_yw9VfH",
+        "column_Bi3JjJ",
+        "column_qr6zbx",
+        "column_6mVRjU",
+        "column_gUq8YM",
+        "column_Rfn9K9"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Collection Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "stillness-the-second-installment",
+        "products_to_show": 8,
+        "title": "<a href=\"https://seventhstores.com/en-ph/collections/stillness-the-second-installment\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Here",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "featured_collection_gnT46J"
+  ]
+}

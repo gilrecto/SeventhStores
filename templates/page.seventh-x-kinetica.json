@@ -1,0 +1,453 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".page-width--narrow {max-width: 150.4rem;}",
+        ".rte h4 {font-size: 1.7rem;}",
+        ".rte h4 > strong {font-weight: 500;}",
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 4.5rem; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": false,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 48
+      }
+    },
+    "image_with_text_VgeyHe": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_kDXn7K": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With social funding for youth programs being significantly reduced, your sponsorship will help Kinetika Bloco continue its 20-year legacy of empowering young people. By supporting this event, you’ll provide vital resources to sustain opportunities for youth to thrive. This is a chance to make a real, lasting impact on the future of these young creatives.<br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_UBj6VM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Donate Here",
+            "button_link": "https://square.link/u/kSwiY1qF",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "text_kDXn7K",
+        "button_UBj6VM"
+      ],
+      "custom_css": [
+        ".image-with-text__content {max-width: 101rem; margin: 0 auto; padding: clamp(7.4rem, 1.879vw + 5.993rem, 9.6rem) 0.8rem 0;}",
+        ".image-with-text .grid {max-width: 126.5rem;}",
+        ".image-with-text__text.rte {font-size: clamp(1.2rem, 0.171vw + 1.072rem, 1.4rem); line-height: 1.5; font-weight: 300; color: #000000;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Seventh_Kinectabloc_Kickback_20250218_0014.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 32,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_3DWpQQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yWkhjy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Kinectabloc_Kickback_20250218_0002.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_tfcAiy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Kinectabloc_Kickback_20250218_0004.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_RVyrce": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/86630012-2-3-rectangle_6881df8d-236e-46f8-b466-dfdb4ba72137.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_rnd9dM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Kinectabloc_Kickback_20250218_0025.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_yWkhjy",
+        "column_tfcAiy",
+        "column_RVyrce",
+        "column_rnd9dM"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".multicolumn-card__image-wrapper {margin: 0;}",
+        ".multicolumn-card__image {width: 100%;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_FA7cxN": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RgjiyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kinetika Bloco, founded in 2000, is a youth music charity that empowers young people from South London through inclusive creative activities in music and dance. They provide a safe, inspiring space where youth aged 8-25 can grow, connect, and realise their potential.<br/><br/>Through workshops, after-school clubs, leadership programs, and performances, they offer a vibrant and inclusive pathway for young people to learn, express themselves, and explore the Creative Industries. <br/><br/>A unique strength of Kinetika Bloco is their community—75% of their Leadership Team are alumni who return to mentor the next generation. This ongoing cycle of giving back highlights the deep impact Kinetika Bloco has on its members and showcases the power of unity.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_RgjiyF"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; font-weight: 300;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_B8qzVn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_kgzD4G": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72920022.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ERizBD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72920020.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_DVUCXG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/86700021.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_kgzD4G",
+        "column_ERizBD",
+        "column_DVUCXG"
+      ],
+      "custom_css": [
+        ".page-width {max-width: 153.6rem;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".multicolumn-list .multicolumn-list__item:first-of-type {flex: 1 1 100%; width: 100%; max-width: 100%;}",
+        ".multicolumn-card__image-wrapper {margin: 0;}",
+        ".multicolumn-card__image {width: 100%;}",
+        "@media screen and (max-width: 989px) {.multicolumn .page-width {padding-left: 0 !important; padding-right: 0 !important; }}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_az7VeY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3iGQmD": {
+          "type": "heading",
+          "settings": {
+            "heading": "REST, QUALITY, ART, COMMUNITY, BALANCE, PEACE.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3iGQmD"
+      ],
+      "custom_css": [
+        ".rich-text__heading {font-size: 2rem;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_ryMdMb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BrJj3G": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72980035.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_QHxtpJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72920027.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_T6RhBp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72920002.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_mK4w3z": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/86700005.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_BxHKFe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72920014.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_c7UWEq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72920034.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_BrJj3G",
+        "column_QHxtpJ",
+        "column_T6RhBp",
+        "column_mK4w3z",
+        "column_BxHKFe",
+        "column_c7UWEq"
+      ],
+      "custom_css": [
+        ".page-width {max-width: 153.6rem;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".multicolumn-card__image-wrapper {margin: 0;}",
+        ".multicolumn-card__image {width: 100%;}",
+        "@media screen and (max-width: 989px) {.multicolumn .page-width {padding-left: 0 !important; padding-right: 0 !important; }}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "image_with_text_JhKDjC": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text .grid {max-width: 100.233rem;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Seventh_Kinectabloc_Kickback_20250218_0010.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "multicolumn_GgxdKL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VK8rq6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-05-18_at_15.46.20.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_VK8rq6"
+      ],
+      "custom_css": [
+        ".multicolumn .title {flex: 1; text-align: center; font-size: 3rem;}",
+        ".multicolumn-list__item:only-child {max-width: 94.45rem;}",
+        ".multicolumn-card__image-wrapper {margin: 0;}",
+        ".multicolumn-card__image {width: 100% !important;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Partners",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_VgeyHe",
+    "multicolumn_3DWpQQ",
+    "rich_text_FA7cxN",
+    "multicolumn_B8qzVn",
+    "rich_text_az7VeY",
+    "multicolumn_ryMdMb",
+    "image_with_text_JhKDjC",
+    "multicolumn_GgxdKL"
+  ]
+}
