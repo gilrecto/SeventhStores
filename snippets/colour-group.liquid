@@ -1,5 +1,5 @@
 {% if product.metafields.custom.product_colour_group %}
-  <div class="ts:my-[0.8rem]! ts:lg:my-[1.6rem]! ts:flex ts:lg:block ts:items-center">
+  <div class="ts:my-[0.8rem]! ts:lg:my-[1.6rem]! ts:flex ts:lg:block ts:items-center" {{ block.shopify_attributes }}>
     {%- if product.metafields.filters.colour -%}
       <p class="product-single__color-swatch ts:text-[1.1rem] ts:leading-none ts:font-light ts:lg:pb-[0.8rem]">{{ product.metafields.filters.colour }}</p>
     {%- endif -%}

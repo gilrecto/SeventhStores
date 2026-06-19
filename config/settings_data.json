@@ -126,6 +126,7 @@
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
     "cart_type": "drawer",
+    "cart_redirect": "shopify://collections/shop-all",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -177,7 +178,7 @@
       },
       "18128612654622612671": {
         "type": "shopify://apps/selecty/blocks/app-embed/a005a4a7-4aa2-4155-9c2b-0ab41acbf99c",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },
@@ -257,6 +258,17 @@
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
+        }
+      },
+      "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#000000",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#000000",
+          "shadow": "#000000"
         }
       }
     }

@@ -198,13 +198,15 @@
     </slider-component>
 
     {%- if section.settings.show_view_all and more_in_collection -%}
+      {%- assign def_label = 'sections.featured_collection.view_all' | t -%}
+
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
-          {{ 'sections.featured_collection.view_all' | t }}
+          {{ section.settings.view_all_label | default: def_label }}
         </a>
       </div>
     {%- endif -%}
@@ -339,6 +341,13 @@
       "info": "t:sections.featured-collection.settings.show_view_all.info"
     },
     {
+      "type": "text",
+      "id": "view_all_label",
+      "label": "Button Label",
+      "info": "View all button label. If blank, default value is 'View All'",
+      "visible_if": "{{ section.settings.show_view_all }}"
+    },
+    {
       "type": "select",
       "id": "view_all_style",
       "label": "t:sections.featured-collection.settings.view_all_style.label",
@@ -356,7 +365,8 @@
           "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
         }
       ],
-      "default": "solid"
+      "default": "solid",
+      "visible_if": "{{ section.settings.show_view_all }}"
     }, 
     {
       "type": "color_scheme",

@@ -1,5 +1,5 @@
 {%- assign t = template | split: '.' | first -%}
-<div class="ts:mx-auto">
+<div class="ts:mx-auto" {{ block.shopify_attributes }}>
   <nav class="ts:flex" aria-label="Breadcrumb">
     <ol class="ts:flex ts:w-full ts:space-x-1">
       <li class="ts:flex">

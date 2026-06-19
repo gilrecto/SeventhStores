@@ -57,6 +57,7 @@ class ProductSwatches extends HTMLElement {
                     ts:h-[1.6rem]
                     ts:w-[1.6rem]
                     ts:block
+                    ts:box-border!
                     ${product.handle === current
                       ? 'ts:border ts:border-black ts:p-px'
                       : ''

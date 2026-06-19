@@ -46,15 +46,15 @@
       ],
       "custom_css": [
         ".rich-text__blocks {max-width: 95rem;}",
-        ".rich-text__heading {font-size: 1.8rem; color: #000000;}",
-        ".rich-text__text {margin-top: 1.6rem; font-size: 1.2rem; color: #000000;}",
+        ".rich-text__heading {font-size: 1.8rem;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: 1.2rem;}",
         ".rich-text__text > *:not(strong) {font-weight: 300;}"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Welcome to Denim Guide",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
         "full_width": true,
         "padding_top": 80,
         "padding_bottom": 80
@@ -70,7 +70,8 @@
             "title": "440",
             "text": "<p>Cold hand wash separately, and wash inside out. Colour may transfer when new. We recommend air drying or hang dry to prevent shrinkage and preserve the shape. Iron on low heat or steam post wash. Use a soft detergent, avoid frequent washing to extend the lifespan of your denim piece. Spot clean where needed. The fabric is stiff when new and later softens over time with each wear. Expect natural fading over time.</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "open_new_tab": false
           }
         },
         "column_dax4fk": {
@@ -80,7 +81,8 @@
             "title": "410",
             "text": "<p>Hand wash cold and wash inside out. We recommend air drying or hang dry to prevent shrinkage and preserve the shape. Iron on low heat or steam post wash. Use a soft detergent, avoid frequent washing to extend the lifespan of your denim piece. Spot clean where needed.</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "open_new_tab": false
           }
         }
       },
@@ -89,13 +91,13 @@
         "column_dax4fk"
       ],
       "custom_css": [
-        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; color: #000000; padding: 0;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; padding: 0;}",
         ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
         ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
         ".multicolumn-list h3 {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem);}",
         ".multicolumn-list .rte {font-size: clamp(1.2rem, 0.342vw + 0.944rem, 1.6rem); line-height: 1.6; font-weight: 300; margin-top: 0.4rem;}"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Denim Variations",
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -106,7 +108,7 @@
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
-        "color_scheme": "",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 32,
@@ -137,12 +139,558 @@
         "top_spacing_mobile": 0,
         "bottom_spacing_mobile": 0
       }
+    },
+    "rich_text_Nn9cTC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BKje4E": {
+          "type": "heading",
+          "settings": {
+            "heading": "440 Denim",
+            "heading_size": "h2"
+          }
+        },
+        "text_7aErDz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Raw denim is denim in its purest form untreated and unwashed- allowing it to develop a completely personal fade over time. 440 indicates the weight of our denim which is equivalent to a heavy denim. The denim is designed to evolve uniquely with every wear. The fabric is stiff when new and later softens over time with each wear. Expect natural fading over time. The pleating is well thought out to create a flattering drape. In the 440 weight the pleating of the denim is very distinct, holding its structure.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BKje4E",
+        "text_7aErDz"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__heading {font-size: 1.8rem;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "440 Denim",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_NqtcjP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XXLPbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_05_20240957copy_c0b337f4-d2a3-421d-a4ca-d284da28fb15.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_E9E8Ty": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DENIM_TROUSER_CLOSEUP_25_copy_1_ba5aa273-80c0-49a3-944a-4dabfa93175d.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_XXLPbA",
+        "column_E9E8Ty"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "440 Denim Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_wYkinb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x9434m": {
+          "type": "heading",
+          "settings": {
+            "heading": "410 Denim",
+            "heading_size": "h2"
+          }
+        },
+        "text_ELCedg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our 410 denim refers to our washed denim pieces, designed for immediate comfort and a vintage look. Washed denim has been pre-treated to soften the fabric. 410 indicates the weight of our denim which is equivalent to a mid-weight denim. 410 denim has defined pleating, with a soft drape whilst still maintaining a strong silhouette throughout the leg.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9434m",
+        "text_ELCedg"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__heading {font-size: 1.8rem;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "410 Denim",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_NCghCd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_iUV3xP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WHITESHIRTMENS10_6731065d-20bb-4cd3-a945-b49e161b00cb.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_B8hBJp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WHITESHIRTMENS19_68a3c4d5-45cd-42be-bea2-ffdb3dda3f24.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_iUV3xP",
+        "column_B8hBJp"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; max-width: 150.4rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "410 Denim Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "sev_media_banner_WVGAfw": {
+      "type": "sev_media_banner",
+      "name": "Media Banner",
+      "settings": {
+        "color_scheme": "",
+        "banner_type": "video",
+        "add_overlay": false,
+        "overlay_opacity": 0.5,
+        "enable_anim": false,
+        "video": "shopify://files/videos/Denim Jorts Dark 1_Landscape.mp4",
+        "mb_video": "shopify://files/videos/Denim Jorts Dark 4.mp4",
+        "banner_link": "",
+        "link_label": "",
+        "content_alignment_h": "ts:md:items-center",
+        "content_alignment_v": "ts:md:justify-center",
+        "text_alignment": "center",
+        "content_alignment_h_mobile": "ts:items-center",
+        "content_alignment_v_mobile": "ts:justify-center",
+        "text_alignment_mobile": "center",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0
+      }
+    },
+    "rich_text_8HCUeA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_raVNDJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "See how the Seventh Fam style their Denim",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_raVNDJ"
+      ],
+      "custom_css": [
+        ".rich-text__heading {font-size: 1.8rem; line-height: 1.5;}"
+      ],
+      "name": "Seventh Fam style their Denim",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/503595029_18509652118062418_5797145353792427976_n.jpg",
+            "title": "",
+            "text": "<p>Height: 170cm<br/>Weight: 65/66kg<br/>Size: 28 waist</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DLICa3BNO6m/",
+            "open_new_tab": true
+          }
+        },
+        "column_P6G8Ma": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/524297835_18513713374060313_4044172678255199825_n_09e0bd64-063e-4bd8-8d29-30bab911f85f.jpg",
+            "title": "",
+            "text": "<p>Height: 180cm<br/>Weight: 90kg<br/>Size: Waist 36 Large</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DMn0Ub-KdU-/",
+            "open_new_tab": true
+          }
+        },
+        "column_aUQRkK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/535043531_18525963298051382_7788386551211526275_n.jpg",
+            "title": "",
+            "text": "<p>Height : 182cm<br/>Weight: 92kg<br/>Size: XL Waist size: 35in</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DNjTsFIJoRh/",
+            "open_new_tab": true
+          }
+        },
+        "column_3tjdBJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/523962179_18515844826063320_9194857638950521653_n_70e11e5d-71e8-44c9-8526-9da6650c179e.jpg",
+            "title": "",
+            "text": "<p>Height : 188cm<br/>Weight: 85kg<br/>Size: L Waist size: 32in</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DMpp1l4KN2M/",
+            "open_new_tab": true
+          }
+        },
+        "column_K3H6eU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/564153407_18535469134012051_5908943337028076652_n.jpg",
+            "title": "",
+            "text": "<p>Height : 180cm<br/>Weight: 104kg<br/>Size: XL Jeans, L Jacket</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DPqfWzAgiuP/",
+            "open_new_tab": true
+          }
+        },
+        "column_P9TzG8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/524286534_18517674334062687_2639494401445533654_n.jpg",
+            "title": "",
+            "text": "<p>Height : 178cm<br/>Weight: 80kg<br/>Size: 34 inch waist</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DMqEd4GqV1G/",
+            "open_new_tab": true
+          }
+        },
+        "column_rpLWTR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/531536894_18521818672012120_874291762471316095_n.jpg",
+            "title": "",
+            "text": "<p>Height : 177cm<br/>Weight: 77kg<br/>Size: M</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DNV3z-gIcV-/",
+            "open_new_tab": true
+          }
+        },
+        "column_DrL3P8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/502052938_17907243750159577_5776879036848261242_n_2265a53d-a585-4fd5-940b-7e93af708ea9.jpg",
+            "title": "",
+            "text": "<p>Height : 188cm<br/>Weight: 90kg<br/>Size: L</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DKPSIeixXiZ/",
+            "open_new_tab": true
+          }
+        },
+        "column_mgtdBC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/525735754_17888789829305132_6617403454359332381_n.jpg",
+            "title": "",
+            "text": "<p>Height : 185cm<br/>Size: XL</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DMvhbCZMD9p/",
+            "open_new_tab": true
+          }
+        },
+        "column_m7wdhf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/522039295_17887621044305132_3057615955825587619_n_060a4502-7685-48cc-9166-01eed4fa4384.jpg",
+            "title": "",
+            "text": "<p>Height : 193cm<br/>Size: XL</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DMYZflbI9AV/",
+            "open_new_tab": true
+          }
+        },
+        "column_WTpBqm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/501948689_18478074721071824_5631867060963261728_n_8651f75a-1336-4e0d-b947-3719cf7a7502.jpg",
+            "title": "",
+            "text": "<p>Height : 170cm<br/>Weight: 75kg<br/>Size: S</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DKILV2WIvbd/",
+            "open_new_tab": true
+          }
+        },
+        "column_cJUTVN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/500447952_18504378934005929_5315291821617195508_n_24650cc5-8dc4-4bff-9b2d-23e0e4011ec3.jpg",
+            "title": "",
+            "text": "<p>Height : 180cm<br/>Weight: 82kg<br/>Size: M, Waist 32</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DJ9AiBoT3aT/",
+            "open_new_tab": true
+          }
+        },
+        "column_6nzR6n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/543699116_18472691725073667_3761254022249595826_n.jpg",
+            "title": "",
+            "text": "<p>Height: 168cm<br/>Weight: 51kg<br/>Size: S, 27 waist</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DOQd6ehkhUp/",
+            "open_new_tab": true
+          }
+        },
+        "column_tRtxWA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/522900819_18050199071626120_5736058782931361572_n_9e5e3cbb-bfe7-41f9-8d93-fe9740788df8.jpg",
+            "title": "",
+            "text": "<p>Height: 180cm<br/>Weight: 76kg<br/>Size: L, Waist 33</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DMfrjvcI0O0/",
+            "open_new_tab": true
+          }
+        },
+        "column_LVtybF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/504325262_18511203040019459_3683523668793199409_n.jpg",
+            "title": "",
+            "text": "<p>Height: 173cm<br/>Size: S</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DKl1S44sWnk/",
+            "open_new_tab": true
+          }
+        },
+        "column_rtELWT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/484168011_18488092774054007_5207776133770970896_n_389b9e2c-6933-46e2-a403-8c290cee4534.jpg",
+            "title": "",
+            "text": "<p>Height: 188cm<br/>Weight: 90kg<br/>Size: L</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DHB7ow4tmk4/",
+            "open_new_tab": true
+          }
+        },
+        "column_hjQFK4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/505091086_18330762178207845_8732245815904412623_n_eab79734-ed0d-40b9-b157-d941ba2fd4a3.jpg",
+            "title": "",
+            "text": "<p>Height: 180cm<br/>Size: S, Waist 30</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DKpS9yRSD2j/",
+            "open_new_tab": true
+          }
+        },
+        "column_mH9tfQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/549255107_17980256735863534_1203916678979337229_n_a1cfd04d-a279-4262-bc5c-7c92c53bcdeb.jpg",
+            "title": "",
+            "text": "<p>Height: 175cm<br/>Weight: 74kg<br/>Size: M, Waist 30/32</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DOp8p9NCI_C/",
+            "open_new_tab": true
+          }
+        },
+        "column_MhdwVt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/539440646_18520404034048839_8594958975377319219_n_7b7fbd3a-0aaa-45ba-b3ae-8de4a73d5445.jpg",
+            "title": "",
+            "text": "<p>Height: 175cm<br/>Weight: 68kg<br/>Size: M, Waist 30</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DN3JbJDUsFh/",
+            "open_new_tab": true
+          }
+        },
+        "column_UanEYf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/491445366_18498700012014245_4891783788962633818_n_a616cac5-82fb-479f-bc51-65ac8286598f.jpg",
+            "title": "",
+            "text": "<p>Height: 183cm<br/>Weight: 84kg<br/>Size: L, Waist 33</p>",
+            "link_label": "",
+            "link": "https://www.instagram.com/p/DI3t0NUsrDi/",
+            "open_new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_P6G8Ma",
+        "column_aUQRkK",
+        "column_3tjdBJ",
+        "column_K3H6eU",
+        "column_P9TzG8",
+        "column_rpLWTR",
+        "column_DrL3P8",
+        "column_mgtdBC",
+        "column_m7wdhf",
+        "column_WTpBqm",
+        "column_cJUTVN",
+        "column_6nzR6n",
+        "column_tRtxWA",
+        "column_LVtybF",
+        "column_rtELWT",
+        "column_hjQFK4",
+        "column_mH9tfQ",
+        "column_MhdwVt",
+        "column_UanEYf"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 2rem; max-width: 150.4rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list .media--portrait {padding-bottom: 133.895%;}",
+        ".multicolumn-list .rte {font-size: 1.3rem; line-height: 1.616; font-weight: 300; margin-top: 0.4rem; color: #4b4c4a;}"
+      ],
+      "name": "Insta Posts",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".slider-buttons {display: none;}",
+        "@media screen and (max-width: 749px) {.slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item, .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "denim",
+        "products_to_show": 5,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": false,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Browse our Denim",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
     "main",
     "rich_text_YMmzAa",
     "multicolumn_z786Jw",
-    "sev_media_banner_VUhtri"
+    "sev_media_banner_VUhtri",
+    "rich_text_Nn9cTC",
+    "multicolumn_NqtcjP",
+    "rich_text_wYkinb",
+    "multicolumn_NCghCd",
+    "sev_media_banner_WVGAfw",
+    "rich_text_8HCUeA",
+    "multicolumn_kqFKb6",
+    "featured_collection_gnT46J"
   ]
 }

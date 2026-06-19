@@ -1439,6 +1439,13 @@
         "label": "t:settings_schema.cart.settings.cart_type.label"
       },
       {
+        "type": "url",
+        "id": "cart_redirect",
+        "label": "Redirect Cart Page",
+        "info": "Redirect cart page to a specific url.",
+        "visible_if": "{{ settings.cart_type == 'drawer' }}"
+      },
+      {
         "type": "checkbox",
         "id": "show_vendor",
         "label": "t:settings_schema.cart.settings.show_vendor.label",
@@ -1481,20 +1488,23 @@
         "id": "countdown_limit",
         "label": "Countdown Limit",
         "default": "50.00",
-        "info": "Must be a number without the currency. For example, for £50.00, enter 50.00."
+        "info": "Must be a number without the currency. For example, for £50.00, enter 50.00.",
+        "visible_if": "{{ settings.show_countdown_bar }}"
       },
       {
         "type": "text",
         "id": "countdown_copy",
         "label": "Countdown copy",
         "default": "You are [[ money ]] away from free shipping.",
-        "info": "Enter the text you want to appear when counting down. Use \"[[ money ]]\" as a placeholder for the currency to appear in the content. "
+        "info": "Enter the text you want to appear when counting down. Use \"[[ money ]]\" as a placeholder for the currency to appear in the content. ",
+        "visible_if": "{{ settings.show_countdown_bar }}"
       },
       {
         "type": "text",
         "id": "countdown_success",
         "label": "Countdown success message",
-        "info": "What text should appear once the customer's cart value has exceeded or equalled the limit?"
+        "info": "What text should appear once the customer's cart value has exceeded or equalled the limit?",
+        "visible_if": "{{ settings.show_countdown_bar }}"
       },
       {
         "type": "header",
@@ -1514,8 +1524,8 @@
         "max": 6,
         "step": 1,
         "default": 3,
-        "visible_if": "{{ settings.show_upsell == true }}",
-        "info": "Number of recommended products to show in the cart drawer."
+        "info": "Number of recommended products to show in the cart drawer.",
+        "visible_if": "{{ settings.show_upsell }}"
       },
       {
         "type": "collection",
@@ -1527,7 +1537,8 @@
         "type": "inline_richtext",
         "id": "upsell_title",
         "label": "Upsell Title",
-        "info": "If leave blank, the default value will be from the theme translation can be edited in Section > Cart > Upsell title."
+        "info": "If leave blank, the default value will be from the theme translation can be edited in Section > Cart > Upsell title.",
+        "visible_if": "{{ settings.show_upsell }}"
       }
     ]
   }

@@ -1,0 +1,207 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumbs_EYDrEz": {
+          "type": "breadcrumbs",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_info": false
+          }
+        },
+        "color_variants_zKNbtb": {
+          "type": "color_variants",
+          "settings": {}
+        },
+        "text_block_8pkBqN": {
+          "type": "text_block",
+          "settings": {
+            "richtext": "<p><strong>Launching Friday 5th June 2026 | 6PM BST For Members & 7PM BST For General Release </strong></p><p>Sign up below to be notified</p>",
+            "size": "ts:text-xs!"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_W6yQXq": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "TRTD5M"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "low_stock_alert_KxBnKm": {
+          "type": "low_stock_alert",
+          "disabled": true,
+          "settings": {
+            "threshold": 3,
+            "heading": "Low stock",
+            "message": "[count] left"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_wishlist": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "unisex_link_DCFQ8w": {
+          "type": "unisex_link",
+          "settings": {}
+        },
+        "separator_ChYjpt": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible_tab_w3NVUz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Garment Measurements",
+            "icon": "none",
+            "open_by_default": true,
+            "content": "",
+            "page": "",
+            "size_guide": true
+          }
+        },
+        "collapsible_tab_CryAmm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Guide",
+            "icon": "none",
+            "open_by_default": false,
+            "content": "<p>For more information on sizing and how our products may fit you <a href=\"/pages/size-guide\" title=\"Size Guide\"><span style=\"text-decoration:underline\">please refer to our sizing page.</span></a></p>",
+            "page": "",
+            "size_guide": false
+          }
+        },
+        "collapsible_tab_XGMpmQ": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping",
+            "icon": "none",
+            "open_by_default": false,
+            "content": "<p>We aim to pack and dispatch your order within 1-2 working days. Shipping costs are calculated at checkout. Once dispatched, we offer Standard and Next Day shipping options for multiple locations.</p><p>All duties & taxes are now included in the price for customers based in the EU. For the rest of the world, customs are now calculated for you at the checkout. All global shipments are sent via DHL. </p>",
+            "page": "",
+            "size_guide": false
+          }
+        },
+        "collapsible_tab_n4ciBz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Need Help?",
+            "icon": "none",
+            "open_by_default": false,
+            "content": "<p>Text us <a href=\"https://wa.me/+447927651265\"><span style=\"text-decoration:underline\">on Whatsapp</span></a> or drop us an email - info@seventhstores.com</p><p>Check us out on Tik Tok (<a href=\"https://www.tiktok.com/@seventhstores?lang=en\" target=\"_blank\"><span style=\"text-decoration:underline\">@Seventhstores</span></a>) where you can see our pieces on different heights and body types.</p>",
+            "page": "",
+            "size_guide": false
+          }
+        },
+        "styled_with_GG6m9F": {
+          "type": "styled_with",
+          "settings": {}
+        },
+        "data_related_products_nFXtyy": {
+          "type": "data_related_products",
+          "disabled": true,
+          "settings": {
+            "intent": "complementary",
+            "limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs_EYDrEz",
+        "title",
+        "price",
+        "color_variants_zKNbtb",
+        "text_block_8pkBqN",
+        "klaviyo_email_marketing_sms_form_embed_block_W6yQXq",
+        "variant_picker",
+        "low_stock_alert_KxBnKm",
+        "quantity_selector",
+        "buy_buttons",
+        "unisex_link_DCFQ8w",
+        "separator_ChYjpt",
+        "description",
+        "collapsible_tab_w3NVUz",
+        "collapsible_tab_CryAmm",
+        "collapsible_tab_XGMpmQ",
+        "collapsible_tab_n4ciBz",
+        "styled_with_GG6m9F",
+        "data_related_products_nFXtyy"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}

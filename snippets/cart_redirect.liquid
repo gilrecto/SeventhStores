@@ -1,0 +1,9 @@
+{%- if request.page_type == 'cart' -%}
+	{%- if settings.cart_type == 'drawer' -%}
+		{%- assign url = settings.cart_redirect | default: '/' -%}
+
+		<script>
+			window.location.replace("{{ url }}");
+		</script>
+	{%- endif -%}
+{%- endif -%}

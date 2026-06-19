@@ -6,6 +6,7 @@
 <div
   class="product-recommendations-mini"
   data-url="/recommendations/products?section_id={{ section_id }}&intent={{ default_intent }}&limit={{ the_limit }}&product_id={{ product.id }}"
+  {{ block.shopify_attributes }}
 >
   {%- if recommendations.products_count > 0 -%}
     <h2 class="ts:my-[1.6rem] ts:md:text-[1.6rem]! ts:text-base!">{{ 'products.product.product_recommendations' | t }}</h2>

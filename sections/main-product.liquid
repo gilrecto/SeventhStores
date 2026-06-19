@@ -132,6 +132,13 @@
                 >
                   {{- block.settings.text -}}
                 </p>
+              {%- when 'text_block' -%}
+                <div
+                  class="product__text-block rte {{ block.settings.size }} ts:[&>*:not(:last-child)]:mb-[1.1rem] ts:font-light"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.richtext -}}
+                </div>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -720,13 +727,12 @@
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
               {%- when 'separator' -%}
-                <hr class="ts:my-[1.2rem]!">
+                <hr class="ts:my-[1.2rem]!" {{ block.shopify_attributes }}>
               {%- when 'unisex_link' -%}
                 {% comment %} Unisex Link {% endcomment %}
                 {%- assign unisex_link = product.metafields.gender.variant.value -%}
-                {% comment %} {{ product.metafields.gender.variant | json }} {% endcomment %}
 
-                 <div class="ts:flex ts:gap-2 ts:items-center ts:mt-[1.2rem] klarna-widget ts:text-[1.1rem] ts:font-light">
+                 <div class="ts:flex ts:gap-2 ts:items-center ts:mt-[1.2rem] klarna-widget ts:text-[1.1rem] ts:font-light" {{ block.shopify_attributes }}>
                   <span>Pay later or monthly with </span>
                   <span class="svg-wrapper ts:w-20! ts:h-auto!">
                     {{- 'icon-klarna-logo.svg' | inline_asset_content -}}
@@ -764,6 +770,7 @@
                   role="status"
                   aria-live="polite"
                   aria-hidden="{% if show_low_stock_alert %}false{% else %}true{% endif %}"
+                  {{ block.shopify_attributes }}
                 >
                   <span class="ts:mr-[0.8rem] ts:inline-flex ts:shrink-0 ts:items-center ts:justify-center ts:rounded-full" style="width: 1.6rem; height: 1.6rem; background-color: #fff7ef;" aria-hidden="true">
                     <span class="low-stock-alert__dot ts:rounded-full" style="width: 0.8rem; height: 0.8rem; background-color: #f5bd79;"></span>
@@ -778,7 +785,7 @@
               {%- when 'styled_with' -%}
                 {% comment %} Styled With {% endcomment %}
                 {%- assign styled_with_products = product.metafields.cross_sell.styled_with.value -%}
-                <div class="ts:mb-[1.6rem]!">
+                <div class="ts:mb-[1.6rem]!" {{ block.shopify_attributes }}>
                   {%- unless styled_with_products == blank -%}
                     <h2 class="ts:my-[1.6rem] ts:md:text-[1.6rem]! ts:text-base!">{{ 'products.product.styled_with' | t }}</h2>
                     <div class="ts:overflow-hidden">
@@ -981,6 +988,45 @@
           ],
           "default": "body",
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "text_block",
+      "name": "Custom Text Block",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "richtext",
+          "label": "Text-block"
+        },
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Text Size",
+          "options": [
+            {
+              "value": "ts:text-xs!",
+              "label": "XS"
+            },
+            {
+              "value": "ts:text-sm!",
+              "label": "S"
+            },
+            {
+              "value": "ts:text-base!",
+              "label": "M"
+            },
+            {
+              "value": "ts:text-lg!",
+              "label": "L"
+            },
+            {
+              "value": "ts:text-xl!",
+              "label": "XL"
+            }
+          ],
+          "default": "ts:text-base!"
         }
       ]
     },
