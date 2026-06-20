@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Founded by Mathieu and Jordy, Dogma is not your traditional Burger spot. Sitting on a competitive street of esteemed and beloved restaurants in the 10th Arrondissement, Dogma specialises in serving you unique, homemade and tasty options in the realm of Burgers, Fried Chicken and other surprises. With a balance of great Art Direction & a delicious menu you can enjoy a succinct selection accompanied by natural wine. We spent a couple of hours with the team to talk about what they most enjoy about their work, what makes the perfect burger and more!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4518.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_MhPYhi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4483.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_d8jwte": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4504.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_MhPYhi",
+        "column_d8jwte"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_UpJPxd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gyT8nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What’s your ultimate comfort meal with an accompanying drink?<br/><br/></strong>M: Anything with a ton of melted cheese and a glass of white jura wine.<br/>J: Jamaican style braised oxtail, rice & peas (extra gravy), fried plantain, and a Red Stripe.<br/><br/><strong>Why food & beverage over anything else?<br/><br/></strong>M: Because it’s the way people show they care in my family. There was always a good reason to sit around a table. And it’s easy. It doesn’t need to be sophisticated.<br/>J: Cooking was something I was really interested in from a young age, then it just grew into a passion before becoming a career.<br/><br/><strong>What do you enjoy the most about your work?<br/><br/></strong>M: The second time a customer comes.<br/>J: Seeing someone’s face when they eat my food and have the “wow, that’s good!” look.<br/><br/><strong>If you were to recommend anything from your menu what would it be?<br/><br/></strong>M: Our infamous El diablo fried chicken burger. The perfect balance between flavour and spices.<br/>J: The O.G. The first burger I put on the menu.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gyT8nb"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_6EyeUF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GywfnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4592.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_WiBJGy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4638.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_wfyJJi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4569.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GywfnC",
+        "column_WiBJGy",
+        "column_wfyJJi"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_8KbrYt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qhVPVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Burger culture is heavily influenced by America, how would you say you’ve adapted and twisted it for your Parisian audience?<br/><br/></strong>M: We wanted to make a very artisanal and traditional fried chicken joint but we had to adapt to french food culture a bit. First fried chicken isn’t that big here. So we had to convince people we are not doing what kfc does. And we had to add cheese in burgers too.<br/>J: Can’t have anything too spicy. And cheese. We have access to some very nice cheeses out here, so I’ve made a few specials using them. French people love cheese. Also, everything we do is fresh and 99% housemade, so I think that makes a big difference too.<br/><br/><strong>What makes a great burger?<br/><br/></strong>M: The same precise balance of flavours that makes any dish great. But in a bun.<br/>J: Flavour, composition and simplicity. It needs to taste good, can’t be a mess to eat and not be overly complicated with a bunch of different ingredients.<br/><br/><strong>If you were to expand into any other food genre what would it be and why?<br/><br/></strong>M: A very traditional French bistro.<br/>J: I make a lot of playlists for the restaurant. I love music and I also DJ professionally. I wish I could open some kind of space where I can cook and mix at the same time. It would be outside and everything is cooked over an open fire. But it might be a little complicated due to health & safety standards. I also really like making pizzas. That would be cool too.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qhVPVK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_MhjnP8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QzChz6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4737.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_JiRfyQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4523.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ckBy4Q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4671.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_QzChz6",
+        "column_JiRfyQ",
+        "column_ckBy4Q"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "mens-bestsellers",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/mens-bestsellers\" title=\"Bestsellers\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Bestsellers",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "rich_text_UpJPxd",
+    "multicolumn_6EyeUF",
+    "rich_text_8KbrYt",
+    "multicolumn_MhjnP8",
+    "featured_collection_gnT46J"
+  ]
+}

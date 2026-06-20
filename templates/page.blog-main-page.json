@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to Seventh Stories: we love our community and sharing our family's stories, here you can read up on what we've been up to.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 95rem;}",
+        ".rich-text__text {margin-top: 1.6rem; font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4483.jpg",
+            "title": "Seventh Suppers: Dogma",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/seventh-suppers-dogma",
+            "open_new_tab": false
+          }
+        },
+        "column_9yr7Xx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4476.jpg",
+            "title": "The Support System — Featuring Benji Flow",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/the-support-system-featuring-benji-flow",
+            "open_new_tab": false
+          }
+        },
+        "column_qJaPyy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC8953.jpg",
+            "title": "Seventh Suppers: Toraya",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/seventh-suppers-toraya",
+            "open_new_tab": false
+          }
+        },
+        "column_V7FzgG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCANBATCH2006_1.jpg",
+            "title": "Beyond Blood, Morocco",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/beyond-blood-morocco",
+            "open_new_tab": false
+          }
+        },
+        "column_ppnQBM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9545_ce783089-6475-447b-b3d1-b517db0fb123.jpg",
+            "title": "Seventh Suppers: Menchirashi",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/seventh-suppers-menchirashi",
+            "open_new_tab": false
+          }
+        },
+        "column_Yf8RM9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_138_4a4c4943-1fdf-4465-971b-e5a70f170554.jpg",
+            "title": "Seven questions with Seri The King",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/seven-questions-with-seri-the-king",
+            "open_new_tab": false
+          }
+        },
+        "column_q4QxQn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/unnamed_1.jpg",
+            "title": "Seventh Suppers: Huddle Coffee",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/seventh-suppers-huddle-coffee",
+            "open_new_tab": false
+          }
+        },
+        "column_D793ay": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/unnamed_f11c893c-16ea-4c96-a0fa-c909d9d3f8c0.jpg",
+            "title": "Seventh Suppers: Ola’s Cafe",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/seventh-suppers",
+            "open_new_tab": false
+          }
+        },
+        "column_jrMnU3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6822_dda42008-7218-46cf-a020-d65372c990c2.jpg",
+            "title": "Doing What You Love - In conversation with Tommy Gold",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://pages/tommy-gold",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_9yr7Xx",
+        "column_qJaPyy",
+        "column_V7FzgG",
+        "column_ppnQBM",
+        "column_Yf8RM9",
+        "column_q4QxQn",
+        "column_D793ay",
+        "column_jrMnU3"
+      ],
+      "custom_css": [
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 2rem; max-width: 150.4rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}",
+        ".multicolumn-list h3 {font-size: clamp(1.4rem, 0.171vw + 1.272rem, 1.6rem); line-height: 1.5;}"
+      ],
+      "name": "Posts",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6"
+  ]
+}

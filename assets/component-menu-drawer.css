@@ -25,26 +25,10 @@ menu-drawer > details[open] > summary::before {
   transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
-html:has(#Details-menu-drawer-container[open]),
-body:has(#Details-menu-drawer-container[open]) {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-@supports (overflow: clip) {
-  html:has(#Details-menu-drawer-container[open]),
-  body:has(#Details-menu-drawer-container[open]) {
-    overflow-x: clip;
-    overflow-y: hidden;
-  }
-}
-
 .menu-drawer {
   position: absolute;
-  transform: translateX(100%);
   visibility: hidden;
   z-index: 3;
-  right: 0;
   top: 100%;
   width: 100%;
   padding: 0;
@@ -54,6 +38,18 @@ body:has(#Details-menu-drawer-container[open]) {
     var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset) var(--drawer-shadow-blur-radius)
       rgba(var(--color-shadow), var(--drawer-shadow-opacity))
   );
+}
+
+.menu-drawer.menu-drawer--open_left {
+  transform: translateX(-100%);
+  left: 0;
+}
+
+.menu-drawer.menu-drawer--open_right {
+  position: fixed;
+  top: var(--header-bottom-position);
+  right: 0;
+  transform: translateX(100%);
 }
 
 .js .menu-drawer {

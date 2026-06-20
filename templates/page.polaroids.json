@@ -1,0 +1,1244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".main-page-title {border-bottom: 0;}",
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seventh People is our platform for finding new faces, talents and collaborators to work with around the world. Through our gallery of Polaroids we look to grow an extensive hub to showcase the people that make up our communities, contribute to our campaigns and brand activations. Ranging from Photographers, Models, Chefs and DJs we want to show the diversity of faces and backgrounds - whether it be from London, Japan or Paris you all make up the Seventh family.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0014_daf15efa-afdc-447e-9d8e-7fe17762d717.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_MhPYhi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0018_d8631604-6c55-4dfd-898e-833427877e69.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_d8jwte": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0021_b371dc2c-e7c7-492f-aa85-885fb1329393.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_BNGeEH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0017_5b502054-b9e5-4416-9fc4-420964810119.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_qRwtMg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0022_e29dc3c1-8057-4656-a1a1-02a5ca1cf7b2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_E8hnUf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0023_9a645ed1-9b04-4d9c-ba15-269313a4dbfb.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_yw9VfH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0013_38ef0f6b-dd8e-461e-b2ac-b1960cd58d5c.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_Bi3JjJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0016_d93b3414-a560-4fb9-8d88-b5eb4efaab06.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_qr6zbx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0024_55334cbb-f940-4707-9cd0-939490090152.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_6mVRjU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0012_5d4bf754-c2fa-4a33-b051-709e135b56ac.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_gUq8YM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0015_54f630bb-c407-4b37-9786-f7d9417d330f.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_Rfn9K9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0020_2c4ccffa-163a-4e0d-b887-fca9df3cc169.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_zierA4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0011_dc0f1056-e950-4912-8790-0c4345bf9fb7.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_9tML4i": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0019_cc77ee40-489a-49fb-9233-e918d4580e53.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_Q98JWg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0009_9bec6ccc-c2d3-469e-a552-677c3e2ceeda.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_MhkBc7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0010_05fecd73-2103-4e10-bf8c-0b4154137a01.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_xWhqf7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0005_62270d88-cabd-45bd-aafa-785843dbfe79.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_NgpR7T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0007_90753556-a3bf-4e79-a246-54b81f26c75a.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_BwCbkW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0004_8eedfe34-7c74-4e04-8647-2c635c8c6fa8.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_gdqHb4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0006_acf9142f-8354-41a4-be7e-fb07ecb4b918.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ac3XXV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0008_a6ea4d1c-5e76-41f0-8a2b-f8957c1d0bce.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_fm9CTC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0003_2c49584a-f35f-475d-90bc-9d2a49eac405.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_dUYKGV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0002_4efce209-c620-4491-a3d2-b0aa721f1586.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_pMCqkT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0001_662c1b91-43f4-4313-9d40-abe348e789ca.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_RbrXFN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0005_2e3a44fd-ecc2-458d-a043-1406efc00fb0.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_UqbQtg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0010_c4290b79-8b07-41b6-b6b2-f3a6d3de13ce.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_3nYNaC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0004_fd53b99a-88ff-4a2c-b050-04917775f75b.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_FahmbB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0011_copy_9fcd5cf1-bc10-487e-aaf0-8faaef331653.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_FEbtWX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0006_916c356f-9f06-4468-86eb-04a76e06f551.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_4U6gNJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0007_ae25220c-bb7f-4a8f-8b67-0f6bedb6873e.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_w44yHQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0017_c0b0a87b-9b4b-4561-8660-4141d3bfe593.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_xtLHH8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0013_fe7f1280-bb1d-4f71-b792-4e36a27d6689.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_MrrrbK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0015_504cdd35-6a37-4ab2-ba7b-590f8aac7ee9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_NPXzUF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0008_8107658b-94a5-4304-b2da-e4afb4726535.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_HR76wF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0012_a21ade35-36d0-41aa-9a01-997c417d2ff1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_XiE7bH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0019_6c4ecabc-b0ae-44a0-8dbd-b918c797e60c.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_UJMVDq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0009_aca1fbaa-609a-4c3d-b71e-ab05ddc89398.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ex9Nrp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0018_42228e78-c220-4dbb-9532-74b50642ea75.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_4RNfFM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0011_d6672186-052b-4c01-b475-18ad025babb1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_tzYdi8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0010_4c183605-3746-4c06-80f4-2b38050ba5b9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_7zL3hA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0001.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_WyyFKq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0003.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_NFPC8c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0004.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_rHPBwK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0005.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_nKxjhB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0002.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_8Jw3L6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0009.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_4cgpDG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0006.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_mWL6aE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0007.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_8EDjYg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0008.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_CWNFqL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0011.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_3aamzP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0012.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_Ap4twq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0021_a7a0a8d3-bef3-4098-b606-aae07639e988.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_R3AhKw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0013.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_pdJG7Y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0015.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_LyQhYC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0014.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_xUCthy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0022.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ktbXcW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0024.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_CXUphd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0017.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_BzkNC7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0016.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_dJzGEN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_LGHVWU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0018.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_PpkEni": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0023.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_yjUxGk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0001_7ff19026-9eef-44f0-bfad-1fa143930a3b.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_LBgmaK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0002_eeb27d20-e22e-414a-a728-37f365cea98e.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_baMY7w": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0007_766767fa-a00d-4875-acfe-e42edd5f2b32.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_LDPkMA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0004_d214b63b-14a5-4e7f-9696-da47c6e5ef71.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_rWWgc6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0006_492c9a1d-af1a-416c-b915-49b06b632595.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_7YzYHG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0005_d393b06e-f467-4a69-a097-29a7f680f6a9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_nC7XDt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0008_cdf22c47-ed41-4f24-bb12-d862f82e197a.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_68jcan": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0003_dbb1ec04-047c-4c7c-a447-6edc5bf3ac86.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_LaERiB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0009_e61113da-09f4-4b4d-b217-6014a493e46d.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_dyNQgN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_WEMKEp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0001_d3264585-7dbf-44bb-942f-10699fa06807.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_zyqBAe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0011_3a6fc530-cc53-4082-a78e-ba4e9ca072b7.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_aqxYC9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0002_d2824959-2782-40ed-bbce-307abd4a3ce4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_Le9n93": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0005_3cc43852-64e2-42e8-a882-0c3d2bbdc25e.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_68fLFQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0006_7c6a029d-3fb4-4961-8c92-3d8c7e9a52fc.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_QG4wdT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0004_cac65043-8949-43a5-ba6c-04bf0fbb6524.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_TCtP7F": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0003_1db34808-c50d-448f-850f-d3c3447bd3a0.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_6bpa4P": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0012_202e7dea-5eb7-4dbd-bc76-4f31e7d32f8c.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_rcbyTg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0008_9db345ae-9661-43b2-8ad8-8c52e788b42f.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_MDkhQi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0010_33f57231-a356-4926-b572-ab9d84c73b7d.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_qDRpj7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0013_d8665fb4-3470-447e-ba81-87a3caaa8cba.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_B4NbgE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0007_f7a91c09-178b-4a8f-9d3c-e94328d8e08a.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_aUzPnQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0013_7c0e404e-6021-4479-abc8-f4f52987df5b.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_cHqinA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0012_2a80a114-0f37-4200-ace7-e55e85afd6ed.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_AKFzwQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0011_4f135ee8-2336-4f48-8902-68f53394a1c9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_tnVTPE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_JP_20250324_0010_77ba2086-e70e-47c3-a9b9-d327e67cd20b.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_Q68idi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy_3.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_QXqGpV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy_4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_AT3wJP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0002_copy.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_4TWBHn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy_6.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_xQMBQG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy_2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_L3FKPU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy_8.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_67yVHm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_rnEWwK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SCN_20250127_0001_copy_7.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_MhPYhi",
+        "column_d8jwte",
+        "column_BNGeEH",
+        "column_qRwtMg",
+        "column_E8hnUf",
+        "column_yw9VfH",
+        "column_Bi3JjJ",
+        "column_qr6zbx",
+        "column_6mVRjU",
+        "column_gUq8YM",
+        "column_Rfn9K9",
+        "column_zierA4",
+        "column_9tML4i",
+        "column_Q98JWg",
+        "column_MhkBc7",
+        "column_xWhqf7",
+        "column_NgpR7T",
+        "column_BwCbkW",
+        "column_gdqHb4",
+        "column_ac3XXV",
+        "column_fm9CTC",
+        "column_dUYKGV",
+        "column_pMCqkT",
+        "column_RbrXFN",
+        "column_UqbQtg",
+        "column_3nYNaC",
+        "column_FahmbB",
+        "column_FEbtWX",
+        "column_4U6gNJ",
+        "column_w44yHQ",
+        "column_xtLHH8",
+        "column_MrrrbK",
+        "column_NPXzUF",
+        "column_HR76wF",
+        "column_XiE7bH",
+        "column_UJMVDq",
+        "column_ex9Nrp",
+        "column_4RNfFM",
+        "column_tzYdi8",
+        "column_7zL3hA",
+        "column_WyyFKq",
+        "column_NFPC8c",
+        "column_rHPBwK",
+        "column_nKxjhB",
+        "column_8Jw3L6",
+        "column_4cgpDG",
+        "column_mWL6aE",
+        "column_8EDjYg",
+        "column_CWNFqL",
+        "column_3aamzP",
+        "column_Ap4twq",
+        "column_R3AhKw",
+        "column_pdJG7Y",
+        "column_LyQhYC",
+        "column_xUCthy",
+        "column_ktbXcW",
+        "column_CXUphd",
+        "column_BzkNC7",
+        "column_dJzGEN",
+        "column_LGHVWU",
+        "column_PpkEni",
+        "column_yjUxGk",
+        "column_LBgmaK",
+        "column_baMY7w",
+        "column_LDPkMA",
+        "column_rWWgc6",
+        "column_7YzYHG",
+        "column_nC7XDt",
+        "column_68jcan",
+        "column_LaERiB",
+        "column_dyNQgN",
+        "column_WEMKEp",
+        "column_zyqBAe",
+        "column_aqxYC9",
+        "column_Le9n93",
+        "column_68fLFQ",
+        "column_QG4wdT",
+        "column_TCtP7F",
+        "column_6bpa4P",
+        "column_rcbyTg",
+        "column_MDkhQi",
+        "column_qDRpj7",
+        "column_B4NbgE",
+        "column_aUzPnQ",
+        "column_cHqinA",
+        "column_AKFzwQ",
+        "column_tnVTPE",
+        "column_Q68idi",
+        "column_QXqGpV",
+        "column_AT3wJP",
+        "column_4TWBHn",
+        "column_xQMBQG",
+        "column_L3FKPU",
+        "column_67yVHm",
+        "column_rnEWwK"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 0 clamp(6.4rem, 1.366vw + 5.377rem, 8rem) !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".multicolumn .button {margin-top: clamp(9.6rem, 1.366vw + 8.577rem, 11.2rem); font-size: 1.6rem;}",
+        "@media screen and (max-width: 989px) {.grid__item {width: 100%; flex: 0 0 calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2.7 / 4); max-width: 100%; }}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "Connect with us",
+        "button_link": "https://www.instagram.com/seventhpeople/",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6"
+  ]
+}

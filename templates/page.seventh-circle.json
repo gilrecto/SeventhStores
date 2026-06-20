@@ -1,0 +1,263 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".page-width--narrow {max-width: 150.4rem;}",
+        ".rte h4 {font-size: 1.7rem;}",
+        ".rte h4 > strong {font-weight: 500;}",
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 4.5rem; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": true,
+        "padding_top": 64,
+        "padding_bottom": 48
+      }
+    },
+    "rich_text_dH3PAt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_y6bwUb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Seventh Circle: Creatives in Business",
+            "heading_size": "h2"
+          }
+        },
+        "text_AaEjGc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Applications for Cohort 3 are now closed - we officially launch on 10th June 2025.<br/>Thank you to everyone who applied, Cohort 4 application dates will be announced soon.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_y6bwUb",
+        "text_AaEjGc"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__heading {font-size: clamp(1.6rem, 0.342vw + 1.344rem, 2rem); line-height: 1.5;}",
+        ".rich-text__text {font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_VgeyHe": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text .grid {max-width: 100.233rem;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/0003953-R1-03-4A.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_TYGXDd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_kHbKV8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seventh Circle: Creatives in Business is a fully sponsored, 7-week live webinar programme designed to equip emerging entrepreneurs with the real-world tools, knowledge, and systems needed to build a purposeful, long-lasting brand.<br/><br/>Led by the CEO and Founder of Seventh, who brings over 13 years of experience as a creative entrepreneur, this course offers an honest and in-depth look at what it truly takes to build a business from the ground up. You’ll also hear from guest experts, including our Creative Director and CFO, who bring their insights into key areas such as branding, production, and financial management.<br/><br/>Over the seven weeks, we pour out what has worked for us- practically and creatively. Each session includes live teaching, weekly Q&As, actionable takeaways, and the opportunity to connect with a cohort of like-minded creatives who are all on the journey of building something meaningful.<br/><br/>We only run this programme twice a year, and spaces are fully sponsored for all selected participants.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_kHbKV8"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__heading {font-size: clamp(1.6rem, 0.342vw + 1.344rem, 2rem); line-height: 1.5;}",
+        ".rich-text__text {font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_7eXKFN": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text .grid {max-width: 100.233rem;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/231220000000010006.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_khne6w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3wUAzA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Course Curriculum",
+            "heading_size": "h2"
+          }
+        },
+        "text_DtxqBF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong><br/><br/>Session 1 – Introductions & Intentions<br/><br/></strong>We kick off by reflecting on your purpose—why you’re stepping into business—and setting clear intentions. You’ll also meet the full cohort, creating space for connection and collaboration from day one.<br/><br/><strong>Session 2 – Product Concept<br/><br/></strong>We dive into your product: What problem does it solve? What space does it occupy? And how does it define what you’re known for as a brand?<br/><br/><strong>Session 3 – Creating the Brand<br/><br/></strong>Led by our Creative Director, this session explores how to build a brand that not only stands out visually but also creates emotional resonance with your audience.<br/><br/><strong>Session 4 – Marketing Position & Audience<br/><br/></strong>Here, we identify your true place in the market—who you’re speaking to, who you’re actually serving, and whether your offering aligns with your audience’s needs. We also help you define your customer profiles with precision.<br/><br/><strong>Session 5 – Production<br/><br/></strong>This session covers the realities of managing production—from common pitfalls to practical solutions. We share strategies for building a smoother process and provide a curated directory of trusted production contacts.<br/><br/><strong>Session 6 – Numbers<br/><br/></strong>Led by our CFO, this session simplifies the financial side of business—covering cash flow, margin, expense tracking, and the key financial habits every brand needs to sustain and grow.<br/><br/><strong>Session 7 – Marketing<br/><br/></strong>We close with how to get your brand seen. From social media and email to content and campaign strategy, we explore marketing tactics that build awareness, engagement, and long-term brand growth.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3wUAzA",
+        "text_DtxqBF"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__heading {font-size: clamp(1.6rem, 0.342vw + 1.344rem, 2rem); line-height: 1.5; text-align: center;}",
+        ".rich-text__text {font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}",
+        ".rich-text__text strong {font-weight: 500;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_KAUwyA": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text .grid {max-width: 100.233rem;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/0003953-R1-16-17A.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_MbbHA6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QcmgTd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Testimonials:",
+            "heading_size": "h2"
+          }
+        },
+        "text_DwEqQG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/><br/>“I really really enjoyed the sessions. I have had my baby now and the sessions were the perfect lead up to help me feel confident in my business and next steps entering post maternity, whereby before I panicked to think of how to take my brand to the next level and make it something that’s built on strong foundations to actually be a viable business and model to live off. I really appreciate all the time Bukki, Emmanuel and Thomas took out of their week to help us as a group and it’s given me a lot to think about and work on, I’ve left feeling really motivated which was something I felt I was stagnant in feeling. Thank you again”<br/><br/><br/>“I would like to express my gratitude to Bukki and the team for their exceptional generosity and unusual giving. I really enjoyed being a part of the program, and despite being a non-native English speaker and coming from an area with a lot of prejudice, with the added challenge of ongoing escalation, I had a fantastic time and found the lessons and homework to be very beneficial. (even though I didn't present them, I did complete them). Thank you very much for everything, and I hope we have the opportunity to meet in person someday!”<br/><br/><br/>“The sessions gave me a renewed sense of faith within myself, between the learning, the networking, and seeing people where I want to be, and on a similar journey to me, I felt more confident than ever to work towards my vision of success.”<br/><br/>“It was very interactive and the different designers shared their own personal experiences, based on the topic Bukki was teaching us”.<br/><br/>“Bukki was fully transparent with everything she learned about the business, and also answered any of our concerns. She was very specific, and also, very validating. She made it feel that we can all be successful in this area.”<br/><br/><br/>“For me, hearing Bukki, being in the company of other creatives, and diving together into the intricacies of the business was exciting every week. The points that I found most valuable were the concrete examples, the numbers, the obstacles, and the ways to overcome them, both from Bukki and from the group”.<br/><br/></p>"
+          }
+        },
+        "button_WctEG4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sign up to our newsletter here",
+            "button_link": "shopify://pages/subscribe",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QcmgTd",
+        "text_DwEqQG",
+        "button_WctEG4"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__heading {font-size: clamp(1.6rem, 0.342vw + 1.344rem, 2rem); line-height: 1.5; text-align: center;}",
+        ".rich-text__text {font-size: 1.4rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}",
+        ".rich-text__text strong {font-weight: 500;}",
+        ".rich-text__buttons {justify-content: center; max-width: 100%;}",
+        ".rich-text__buttons .button {font-size: 1.6rem;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_dH3PAt",
+    "image_with_text_VgeyHe",
+    "rich_text_TYGXDd",
+    "image_with_text_7eXKFN",
+    "rich_text_khne6w",
+    "image_with_text_KAUwyA",
+    "rich_text_MbbHA6"
+  ]
+}

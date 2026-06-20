@@ -1,0 +1,239 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the first time, we’re naming a full season; Stillness.<br/><br/>As we approach our 5th birthday this November, we wanted to move with intention. We live in a world where everything is moving fast, changing constantly. As creatives committed to our craft, we never want to compromise. This Autumn/Winter collection represents exactly that: intentionality.<br/><br/>It’s a season rooted in stillness. In taking the time to pause, look inward, and create pieces that are true to us. Every garment is a reflection of our time, our dedication, and the design philosophy that’s carried us from the beginning.<br/><br/>So we introduce to you: Stillness.<br/><br/>Reclaiming the energy and the purpose with which we began, and offering it back to you in every detail of this season.<br/><br/>Here we go. Here we begin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 88rem;}",
+        ".rich-text__text {font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}",
+        ".rich-text__blocks.left .rich-text__buttons {justify-content: center; display: flex; max-width: 100%; margin-top: 3.2rem;}"
+      ],
+      "name": "Browse Collection",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0021.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_NWa3id": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0016.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_JQxBzN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0029.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_qCnx3g": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0013.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_MUHTDh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0031.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_KDhLbf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0015.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_E7V7XU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0023.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_XN9mCA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0027.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_dpNzkN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh0025.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_NWa3id",
+        "column_JQxBzN",
+        "column_qCnx3g",
+        "column_MUHTDh",
+        "column_KDhLbf",
+        "column_E7V7XU",
+        "column_XN9mCA",
+        "column_dpNzkN"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Collection Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "stillness-the-first-release",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/stillness-the-first-release\" title=\"Stillness: The First Release\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Browse Here",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "featured_collection_gnT46J"
+  ]
+}

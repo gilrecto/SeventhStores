@@ -1,0 +1,501 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".main-page-title {border: 0;}",
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re restocking some of our most requested pieces, The Denim 440 Jeans in Indigo & Night along with the anticipated return of the Denim 440 Jacket in both colourways. Joining them is something new: the Fujisusutake V2 Hoodie and Zipped Hoodie, a limited-edition release created in collaboration with renowned Japanese brand United Arrows.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 95rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "sev_media_banner_VUhtri": {
+      "type": "sev_media_banner",
+      "name": "Media Banner",
+      "settings": {
+        "color_scheme": "",
+        "banner_type": "image",
+        "add_overlay": false,
+        "overlay_opacity": 0.5,
+        "enable_anim": false,
+        "banner_image": "shopify://shop_images/Desktop_Home_New_31.png",
+        "banner_img_mb": "shopify://shop_images/SS.08.15.2025_14_1.jpg",
+        "banner_link": "shopify://collections/new-arrivals",
+        "link_label": "",
+        "content_alignment_h": "ts:md:items-center",
+        "content_alignment_v": "ts:md:justify-center",
+        "text_alignment": "center",
+        "content_alignment_h_mobile": "ts:items-center",
+        "content_alignment_v_mobile": "ts:justify-center",
+        "text_alignment_mobile": "center",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0
+      }
+    },
+    "multicolumn_kw4yRL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_EfQfeq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_06_08_20253957.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_hAmhpQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_06_08_20253925_3e1a85c9-3e33-48bb-8cd1-43b2f054a184.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_EfQfeq",
+        "column_hAmhpQ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 12.8rem 0 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_bmdgaH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_iyiCkJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>V2 Hoodie & V2 Zipped Hoodie in Fujisusutake</strong></p><p>We had the pleasure of working with MonkeyTime Japan / United Arrows on this very special piece. The V2 is one of our pinnacle silhouettes, and this release marks our first V2 with direct Japanese influence. After countless swatches and fine-tuning to capture the shade exactly, we are proud to present our newest colorway: FUJISUSUTAKE.<br/><br/>This color is deeply rooted in ancient Japanese tradition. It blends fuji-iro (wisteria purple)with susutake-iro (sooty bamboo gray).<br/><br/>It’s been a while since we introduced a new V2 colorway, so we’re especially excited to share this one with you.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_iyiCkJ"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_nwqAFX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GPD6Rk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_04_20250653.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/new-arrivals",
+            "open_new_tab": false
+          }
+        },
+        "column_iyQi3b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_07_04_20250647.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/new-arrivals",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GPD6Rk",
+        "column_iyQi3b"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 0; --grid-mobile-horizontal-spacing: 0; row-gap: 0; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_NqtcjP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XXLPbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/indigo1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_E9E8Ty": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/indigo2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/denim-440-jeans-indigo",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_XXLPbA",
+        "column_E9E8Ty"
+      ],
+      "custom_css": [
+        ".page-width {padding: 12.8rem 0 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_RcKtix": {
+      "type": "rich-text",
+      "blocks": {
+        "text_D8mnLJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Denim 440 Jacket in Indigo</strong></p><p>Bringing back our Seventh Denim 440 Jacket is made from a Turkish cotton twill denim for this season: the top piece to match our best selling Denim 440 Bermuda Jeans in Indigo. The garment features YKK hardware with poppers as closures and several pleats providing shape to the garment. This pieces has hidden seamless pockets, Seventh signature arch detail at the sleeves and the denim weight is 13.5oz.<br/><br/><br/><strong>Denim 440 Bermuda Jeans in Indigo</strong></p><p>Our best selling denim style: The Seventh Denim Pleat Pants are made from a Turkish cotton twill denim. The garment is wide leg and loose fitting with a Knife Pleat on the center-front of both legs, concealing the hidden front pockets. This piece has YKK hardware, side pleats to maintain the silhouette, the denim weight is 13.5oz<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_D8mnLJ"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_EMFEmH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_m37qNa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Flatlay_29_040028copy_70c2fa8e-ad16-445a-a3c0-596947c28ef3.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/new-arrivals",
+            "open_new_tab": false
+          }
+        },
+        "column_EAbnBJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Flatlay_29_040032_9ed1d49b-11ef-48c4-a255-0d24522452e7.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/new-arrivals",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_m37qNa",
+        "column_EAbnBJ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 0; --grid-mobile-horizontal-spacing: 0; row-gap: 0; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_YkRr3M": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dTrJmy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BLACKDENIMMENS_4copy_f901bbe6-6fbd-4bb6-96f6-eed12c23c120.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ffHCBN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BLACKDENIMMENS_27copy_541ff4ba-ab3a-457a-b0a0-5843578a941b.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/denim-440-bermuda-jeans-in-night",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_dTrJmy",
+        "column_ffHCBN"
+      ],
+      "custom_css": [
+        ".page-width {padding: 12.8rem 0 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_TrDiAH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_eMTtJb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Denim 440 Jacket in Night</strong></p><p>In our signature Night colourway: The Seventh Denim 440 Jacket is made from a Turkish cotton twill denim. The garment features YKK hardware with poppers as closures and several pleats providing shape to the garment. This piece has hidden seamless pockets, Seventh signature arch detail at the sleeves and the denim weight is 13.5oz.<br/><br/><br/><strong>Denim 440 Bermuda Jeans in Night</strong></p><p>Complete your set with our best selling Seventh Denim Pleat Pants, made from a Turkish cotton twill denim. The garment is wide leg and loose fitting with a knife pleat on the center-front of both legs, concealing the hidden front pockets. This piece features YKK hardware, side pleats and the denim weight is 13.5oz.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_eMTtJb"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_4MtFfM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ydJ8aG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Flats_9th_October4485copy_b2fed179-289f-4e7c-bb39-8f9c95cee08c.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/new-arrivals",
+            "open_new_tab": false
+          }
+        },
+        "column_wfYqHz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Flats_9th_October4480copy_ff647419-c89c-496f-995b-13cf8e146abc.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/new-arrivals",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_ydJ8aG",
+        "column_wfYqHz"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 0; --grid-mobile-horizontal-spacing: 0; row-gap: 0; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "sev_media_banner_VUhtri",
+    "multicolumn_kw4yRL",
+    "rich_text_bmdgaH",
+    "multicolumn_nwqAFX",
+    "multicolumn_NqtcjP",
+    "rich_text_RcKtix",
+    "multicolumn_EMFEmH",
+    "multicolumn_YkRr3M",
+    "rich_text_TrDiAH",
+    "multicolumn_4MtFfM"
+  ]
+}

@@ -550,6 +550,24 @@
     },
     {
       "type": "select",
+      "id": "open_from",
+      "label": "Open From?",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "info": "Open menu drawer from left or right.",
+      "visible_if": "{{ section.settings.menu_type_desktop == 'drawer' }}"
+    },
+    {
+      "type": "select",
       "id": "sticky_header_type",
       "options": [
         {

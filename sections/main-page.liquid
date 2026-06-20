@@ -18,9 +18,12 @@
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
-  </div>
+  
+  {%- unless section.settings.hide_def_contents -%}
+    <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      {{ page.content }}
+    </div>
+  {%- endunless -%}
 {%- endcapture -%}
 
 <div class="page-width{% if section.settings.fullwidth_wrapper %} page-width--desktop{% else %} page-width--narrow{% endif %} section-{{ section.id }}-padding{% if section.settings.enable_sidebar %} ts:max-w-[153.6rem]!{% endif %}">
@@ -90,6 +93,16 @@
       "id": "sidebar",
       "label": "Sidebar Navigation",
       "visible_if": "{{ section.settings.enable_sidebar }}"
+    },
+    {
+      "type": "header",
+      "content": "Page Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_def_contents",
+      "label": "Hide Page Contents",
+      "default": false
     },
     {
       "type": "header",

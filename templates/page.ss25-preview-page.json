@@ -1,0 +1,621 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".main-page-title {border: 0;}",
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This season, we invite you to explore our newest range of bold silhouettes, designed to take your wardrobe into new territory.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 95rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "sev_media_banner_VUhtri": {
+      "type": "sev_media_banner",
+      "name": "Media Banner",
+      "settings": {
+        "color_scheme": "",
+        "banner_type": "video",
+        "add_overlay": false,
+        "overlay_opacity": 0.5,
+        "enable_anim": false,
+        "video": "shopify://files/videos/Desktop Home New (2).mp4",
+        "mb_video": "shopify://files/videos/9 GRID V14.mp4",
+        "banner_link": "",
+        "link_label": "",
+        "content_alignment_h": "ts:md:items-center",
+        "content_alignment_v": "ts:md:justify-center",
+        "text_alignment": "center",
+        "content_alignment_h_mobile": "ts:items-center",
+        "content_alignment_v_mobile": "ts:justify-center",
+        "text_alignment_mobile": "center",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0
+      }
+    },
+    "rich_text_bmdgaH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_iyiCkJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Spring/Summer collection embodies a harmonious blend of past influences and future-forward design, offering pieces that challenge conventions while celebrating individuality. Within these pieces you’ll discover breathable, lightweight fabrics blended into structured tailoring, designed for all occasions throughout the warmer days ahead. Crafted with attention to detail and an unwavering commitment to quality, each item in the collection reflects a unique vision of the modern aesthetic.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_iyiCkJ"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_NqtcjP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XXLPbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WHITESHIRTMENS10.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_E9E8Ty": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEHOODIEZIPMENS11_2c4e4285-38ca-4c8c-b94b-9c1b702e8905.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_iMWVEQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/M5CUBANSHIRTWHITE20_8267b20f-8c96-42a1-b485-5e9057394cb8.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-ecru-m",
+            "open_new_tab": false
+          }
+        },
+        "column_HXRK89": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEZIPHOODIE29_312b4099-7587-4039-b73a-8b963ac5ad61.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_XXLPbA",
+        "column_E9E8Ty",
+        "column_iMWVEQ",
+        "column_HXRK89"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_RcKtix": {
+      "type": "rich-text",
+      "blocks": {
+        "text_D8mnLJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>V2 Hoodie & V2 Zipped Hoodie in Bone</strong></p><p>Our newest colourway for the Seventh staple: Bone is a classic muted tone defined for the season. Crafted from soft, premium fabric, it offers both comfort and versatility for everyday wear. Its relaxed fit and minimalistic design make it perfect for layering, while subtle details like refined stitching and a contemporary cut elevate its style. Whether you’re running errands or lounging, this hoodie provides the perfect balance of ease and modern flair. A must-have piece for those who appreciate laid-back sophistication with an edge.<br/><br/><br/><strong>Denim 410 in Vintage Tide Blue & Denim 440 in Indigo DenimI</strong></p><p>ntroducing Denim 410 to our range: a slightly lighter piece in breathable 100% Cotton in a lighter colourway. The Seventh Denim 440 Workwear Jeans are a merge of two worlds - taking inspiration from vintage workwear, we pay homage to the history of denim whilst combining it with a practical silhouette. Both pieces are designed to be functional, easy to incorporate pieces in your Spring/Summer outfit selections. Our Denim range has quickly become a Seventh family fave: we’ve responded with these additional designs and colourways to provide everyone with more options for everyday.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_D8mnLJ"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_nwqAFX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GPD6Rk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_Flats_9th_October4182copy_0cdccc3f-6e6f-425a-9df6-1b246f1b9b7f.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_iyQi3b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BONEHOODIE74_2x3_7086a36d-76a4-4363-b8d0-5c30a5de81e9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GPD6Rk",
+        "column_iyQi3b"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 0; --grid-mobile-horizontal-spacing: 0; row-gap: 0; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_kw4yRL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_EfQfeq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CHARCOALWINDBREAKERANDSHORTS21_92f19445-536a-4c35-a490-b0b6ea3014e9.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_hAmhpQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BEIGESHIRTMENS24_cad3cfa7-3d34-4f12-8356-26ac89a10523.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-mushroom-m",
+            "open_new_tab": false
+          }
+        },
+        "column_mywpwP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PULLONSHORTS19_e30b5894-5dbd-4333-ae5a-dfc1352b259c.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_GQ9FAX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/WINDBREAKERCAVEJACKET19.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_EfQfeq",
+        "column_hAmhpQ",
+        "column_mywpwP",
+        "column_GQ9FAX"
+      ],
+      "custom_css": [
+        ".page-width {padding: 12.8rem 0 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_rxT7Pj": {
+      "type": "rich-text",
+      "blocks": {
+        "text_XwXtR9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>M5 Cuban Shirt in Mushroom and Ecru</strong></p><p>The M5 Cuban shirt is a bold fusion of classic style and modern innovation. This unique piece features a distinct Cuban collar, offering a relaxed yet sharp silhouette that captures the effortless elegance of laid-back luxury. Made from 100% Cotton, it’s perfect for both warm weather and layering. The standout feature of the M5 Cuban shirt is its magnetic fastening system, which adds a touch of ease to the design of this timeless shirt style. Sleek, seamless closure at the front with magnetic clasps that provide both functionality and a clean, minimalistic look. Ideal for everything from comfortable workwear to formal Summer evenings.<br/><br/><br/><strong>Orb Shell Jacket in Graphite</strong></p><p>Designed to be the perfect multifunctional layer, The Orb Shell Jacket is our newest take on a transeasonal piece. With a sleek and minimal silhouette, its built for the ease of navigating the city whilst still maintaining stylistic edge. In ‘Graphite’, the Orb Shell Jacket is a versatile piece for dressing up or down. Made from 100% Nylon, featuring signature press buttons, an internal adjustable shock cord and elastic cuffs<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_XwXtR9"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_EMFEmH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_m37qNa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520638_7941de06-caef-438e-9dd5-723b72636967.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_EAbnBJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520506.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/m5-cuban-collar-shirt-in-mushroom-m",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_m37qNa",
+        "column_EAbnBJ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 0; --grid-mobile-horizontal-spacing: 0; row-gap: 0; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_XAMx7Y": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2025_143.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "multicolumn_YkRr3M": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dTrJmy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520729.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ffHCBN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520761.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_DPRjrf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520783.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_nHgELE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520718.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_dTrJmy",
+        "column_ffHCBN",
+        "column_DPRjrf",
+        "column_nHgELE"
+      ],
+      "custom_css": [
+        ".page-width {padding: 12.8rem 0 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_TrDiAH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_eMTtJb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Denim 440 Dome Cap</strong></p><p>The Denim 440 Dome Cap is the perfect all year round baseball cap. Made from our signature 440 Denim fabric in ‘Indigo’, our cap is complementary to our Bermuda range and Carpenter pants. With contrast yellow stitching, the Dome Cap is minimal with a subtle pop of colour. Featuring an adjustable backstrap, our Cove cap is roomy and comfortable making this the cap to grab and go.<br/><br/><br/><strong>Moon Sac in Mushroom</strong></p><p>The Seventh Moon Sac is the ultimate travel companion for the season, offering about twice the capacity of our original Lunar Sac. It features a smooth, wide strap that sits comfortably on the shoulder or across the body, reducing strain and enhancing comfort. The bag’s interior is lined with durable, waterproof nylon, ensuring easy cleaning and practicality. Crafted from 100% cotton and quilted for added texture, this bag is the perfect choice for all your travel adventures.<br/><br/><br/><strong>Lunar Sac in Graphite</strong></p><p>Our core accessory for your Seventh wardrobe: Comfort and practicality were the primary focus during the design of the Lunar Sac bag. Crafted from 100% nylon, the Lunar Sac is built for everyday use. Its adjustable sling strap comfortably fits the body while remaining highly functional. This is the go-to bag you can effortlessly grab for any errand or outing, no matter the destination.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_eMTtJb"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_4MtFfM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ydJ8aG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520695.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_wfYqHz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Seventh_10_03_202520689.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_ydJ8aG",
+        "column_wfYqHz"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 0; --grid-mobile-horizontal-spacing: 0; row-gap: 0; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "sev_media_banner_VUhtri",
+    "rich_text_bmdgaH",
+    "multicolumn_NqtcjP",
+    "rich_text_RcKtix",
+    "multicolumn_nwqAFX",
+    "multicolumn_kw4yRL",
+    "rich_text_rxT7Pj",
+    "multicolumn_EMFEmH",
+    "image_banner_XAMx7Y",
+    "multicolumn_YkRr3M",
+    "rich_text_TrDiAH",
+    "multicolumn_4MtFfM"
+  ]
+}
