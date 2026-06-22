@@ -156,9 +156,9 @@ product-info .product__title > * {
 product-info .price {
 	@apply ts:text-base;
 }
-product-info:has(.klaviyo-bis-trigger) .price__badge-sold-out {
+/* product-info:has(.klaviyo-bis-trigger) .price__badge-sold-out {
 	@apply ts:hidden;
-}
+} */
 product-info .product__info-container variant-selects {
 	@apply ts:mb-0;
 }
