@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It was a first for many things on our trip to Japan and among those new food experiences included Yakitori, Soba Noodles and lots of seafood – all which can be found in a traditional Kushiyaki restaurant.<br/><br/>It was our debut night in Japan, off the back of almost a day of travel. Our friends on ground ensured we were met and welcomed with a warm Japanese experience and there was no better place to do it than family owned Toraya, located in Shibuya.<br/><br/>Opened 42 years ago by twin brothers, their fluid and fresh style of Robatakyaki brings you into the kitchen, with ingredients being cut and prepared in front of you. It was truly an evening full of great food, meant to be enjoyed together.<br/><br/>42 years later, Toraya is still enjoyed and filled with locals and visitors seeking authentic and unique cuisine. We managed to come back during our trip and talk brotherhood, trust and tradition.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC8953.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_CzRBpx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9340_f40b58d4-8df1-4082-a82b-21ff644a2e72.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ByKWT9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9193_1a0cdfe9-6f79-4278-808c-1fbe4920dd2f.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_CzRBpx",
+        "column_ByKWT9"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_UpJPxd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gyT8nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>In your own words, could you briefly summarise the style of robatayaki and what inspired you to cook in this way? | ご自身の言葉で構いませんので、炉端焼きのスタイルについて簡単に説明していただけますか？また、その料理法に惹かれたきっかけは何ですか<br/><br/></strong>While we don’t do robatayaki specifically, we use charcoal to grill our yakitori and other dishes. The focus is on charcoal grilling. | 炉端焼きでは無く、炭火焼きですが炭を使って焼き鳥やその他の炭火焼き料理を提供しています。<br/><br/><strong>You run the restaurant together. As twins, over the past 42 years of having a restaurant how would you say working together has benefited your relationship? | お二人は双子として一緒にレストランを経営されています。42年間にわたって共同でお店を営んできた中で、一緒に働くことがどのようにお互いの関係に良い影響を与えたと思いますか<br/><br/></strong>Since we’re brothers, there’s a natural trust between us, so things get done smoothly even without much need for words. Compared to working with others, it’s easier and more comfortable, and that’s something we really appreciate. | 兄弟なので、元から信頼信用を持っている為、言葉にしなくても作業が効率的に進み、他人と働くことよりもやり易さや楽さなどの面が魅力的だと感じています。<br/><br/><strong>Food can be an intimate experience when curated correctly. What would you say is your relationship with providing an experience for your customer? | 食事は、丁寧に演出されることでとても親密な体験になり得ます。お客様に体験を提供することについて、ご自身ではどのような関係性を持っていると感じますか<br/><br/></strong>We believe it’s all about building trust. | 信頼関係があると考えています。<br/><br/><strong>The balance between tradition and innovation can be a tricky task. How do you maintain that respect for the past and history of Japanese cooking whilst keeping things fresh? | 伝統と革新のバランスを取るのは難しいこともあります。日本料理の歴史と伝統への敬意を保ちつつ、現代的で新鮮な感覚をどう取り入れていますか<br/><br/></strong>We go out and try different kinds of food ourselves, and we also try to stay in tune with current trends and the general vibe of the times. | 自分達でいろんな料理を食べに行くことや、感覚・時代の流れや流行りのものを取り入れたりします。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gyT8nb"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_6EyeUF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GywfnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9020_90724986-da4b-4591-a8a8-48663f0a5afd.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_8KkEkh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC8903.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_nyNB3D": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9090.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GywfnC",
+        "column_8KkEkh",
+        "column_nyNB3D"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_8KbrYt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qhVPVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What type of people convene at Toraya? | Torayaにはどのようなお客様が来られますか<br/><br/></strong>Mostly regular customers. | 常連さんがほとんどです。<br/><br/><strong>How would you describe the ambience in Toraya and what feeling would you like your customers to leave with? | Torayaの雰囲気はどのようなものだと思いますか？また、お客様にはどのような気持ちでお店を後にしてもらいたいと考えていますか<br/><br/></strong>It’s a calm, relaxed izakaya where people can enjoy good food. We always try to make sure guests leave wanting to come back again. | 落ち着いた雰囲気で美味しい料理を食べれる居酒屋です。お客様にはまた来たいと思ってもらえるよう日々考えながら働いています。<br/><br/><strong>To someone visiting your restaurant for the first time, what would you recommend them to try off of your menu? | 初めてTorayaを訪れるお客様には、どのメニューをおすすめされますか？<br/><br/></strong>Honestly, everything’s good, but I’d especially recommend starting with sashimi and skewers, and finishing with our soba. | どれもおすすめできる料理ばかりですが、お刺身串焼きをはじめ、最後の締めにはぜひお蕎麦を食べてもらいたいです。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qhVPVK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_MhjnP8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QzChz6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9082.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_J4XzG8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9337.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_Dc9rKQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9388.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_QzChz6",
+        "column_J4XzG8",
+        "column_Dc9rKQ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "toraya",
+        "products_to_show": 8,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": false,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Toraya",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "rich_text_UpJPxd",
+    "multicolumn_6EyeUF",
+    "rich_text_8KbrYt",
+    "multicolumn_MhjnP8",
+    "featured_collection_gnT46J"
+  ]
+}

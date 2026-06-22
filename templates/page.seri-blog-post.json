@@ -1,0 +1,392 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To set the foundation for Spring Summer, we continue our commitment to highlighting individuals who are making an impact in their communities. For this project, we highlight Seri The King —a hip-hop artist from Germany with Ghanaian roots—whose work and presence push the boundaries of underground hip-hop globally. His personal style, energy, and artistic expression aligned seamlessly with the ethos of this first installment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_161.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_MhPYhi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_160.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_d8jwte": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_162.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_MhPYhi",
+        "column_d8jwte"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_UpJPxd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gyT8nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What do you intend for your audience to gain from listening to your music?<br/><br/></strong>I always try to paint a picture of my reality. The experiences, wins, losses & the way God works through me. People are going through things, they learn things, good and bad and that’s what shapes us at the end of the day. I want them to lay back, enjoy the motion picture and feel.<br/><br/><br/><strong>What's one thing that has transformed your creative process?<br/><br/></strong>I am highly observant, noticing more than what meets the eye. Sometimes we look at things but we’re not really paying attention. Not going beyond mere sight. Everything happens for a reason, I learned to pay attention to things that happen around me. It helps me to stay grounded and put more emotion into the music, more reality. Something that makes you feel.<br/><br/><br/><strong>Describe your music in one word?<br/><br/></strong>Emotion</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gyT8nb"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_6EyeUF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GywfnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_174.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_WiBJGy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_177.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_wfyJJi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_176.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GywfnC",
+        "column_WiBJGy",
+        "column_wfyJJi"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_8KbrYt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qhVPVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Your background in comparison to where you spent most of your life growing up is contrastingly different, how have both experiences of Ghana & Germany influenced you as a person?<br/><br/></strong>I travelled quite a lot as a child, I was born in Germany then my mom took me to Ghana for about two years when I was like 6 months old. When I came back I was about two years old. The culture I grew up in was always Ghanaian. The way we talk, which hand we use to greet people, the morals etc. I was exposed to Germany all my life but in between our four walls, it was Krofrum Kumasi.<br/><br/><strong>What is your relationship with travelling - do you enjoy it? Have you picked up any valuable habits from spending time in places other than home?<br/><br/></strong>To get to do what I love the most and make a living off it is a blessing. Making music has brought me to places I always dreamt about. It’s like that one movie you‘re always excited to watch;I am just grateful & I think one of the habits that I’ve picked up is neatly organizing my suitcase. And always including my hardest fits.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qhVPVK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_MhjnP8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QzChz6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_147.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_JiRfyQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_144.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ckBy4Q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2025_148.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_QzChz6",
+        "column_JiRfyQ",
+        "column_ckBy4Q"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_KqjXTP": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fmELhG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>We cannot forget to mention the partnership you've forged with Nas' label, a Hip Hop Goat. What does music mean to you and where do you look to take it - what do you see for yourself?<br/><br/></strong>Yea, Nas is King. I am grateful he believes in what I do. Being connected to him was another reminder that everything happens for a reason. I didn’t get this far just to get this far. I breathe music, there’s no life without it for me, I just want to leave something behind that I will be remembered for and continue to not only touch but change lives.</p><p><br/><strong>What does rest mean to you & how do you find it?<br/><br/></strong>Rest is essential to me. Without rest it’s impossible to create. One of my happy places is definitely Ghana, riding through different cities and villages while listening to beats. Playing a bunch of instrumentals while looking out the window, that’s peace to me. At its core, whether I’m surrounded by nature or in the comfort of my home, music is rest to me.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_fmELhG"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "mens-bestsellers",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/mens-bestsellers\" title=\"Bestsellers\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Bestsellers",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "rich_text_UpJPxd",
+    "multicolumn_6EyeUF",
+    "rich_text_8KbrYt",
+    "multicolumn_MhjnP8",
+    "rich_text_KqjXTP",
+    "featured_collection_gnT46J"
+  ]
+}

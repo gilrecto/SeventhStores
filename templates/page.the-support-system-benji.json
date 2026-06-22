@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Support System is a project that captures Benji Flow not just as a musician, but as a whole person rooted in faith, family, and community. Shot with three of his closest friends who also work alongside him, the project reveals the people and the energy that hold him up behind the music.<br/><br/>In conversation, Benji Flow reflected on the balance between his art and his personal life, acknowledging both the challenges and the beauty of living authentically. He spoke about being intentional with his online presence, building momentum with his website and social platforms by showing not only music, but also the fullness of his lifestyle, family, fitness, and daily routines. For him, support is not simply about words but about presence, reliability, and vulnerability. It extends beyond blood to those who share his everyday life, the ones who can advocate for him even when he is not in the room.<br/><br/>Family plays a central role in his story. Both his mother’s and father’s sides are deeply involved in his journey, attending shows, lending encouragement, and shaping his character. His father, a musician and pastor, laid down a foundation that continues to influence his creativity. Beyond family, Benji Flow is anchored by long standing friends such as Andre his DJ, Banky in tech, and Amps of AMP FM. These relationships, formed before music, remain vital to his sense of identity and growth.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4482.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_CzRBpx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4672.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_ByKWT9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4735.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_CzRBpx",
+        "column_ByKWT9"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_UpJPxd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gyT8nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For Benji Flow, being vulnerable means choosing freedom and living consistently in authenticity. That freedom allows him to integrate every side of his life, whether it is his obsession with fitness, his love for his niece, or his deep connection to his Jamaican heritage. He draws inspiration from his grandparents, who immigrated from Jamaica and built lives from nothing, embodying resilience and integrity. Today, he finds just as much influence in his friends marrying, his fitness progress, and his young niece who has given him a renewed sense of purpose.<br/><br/>His creative process reflects this rhythm of balance and discipline. He jogs every morning, creating space for his thoughts to wander and ideas to form. He avoids meat during the week, stays curious about new artists outside of mainstream pressures, and treats listening habits with intention. These daily choices feed into his craft and the larger vision he holds for his future.<br/><br/>In his own words, he wishes to be seen as a master at nothing, someone who embraces many different crafts with equal passion. He plays drums, keys, bass, and guitar, sings, stays dedicated to fitness, and practices combat. Rather than presenting perfection, he chooses an unfiltered authenticity that acknowledges life’s struggles. This spirit was reflected in the shoot, where he chose to appear unretouched, presenting himself as real and unfiltered.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gyT8nb"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_6EyeUF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GywfnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4124.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_8KkEkh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4039.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_nyNB3D": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4137.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GywfnC",
+        "column_8KkEkh",
+        "column_nyNB3D"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_8KbrYt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qhVPVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Support System also brings forward his long term vision, a desire to build success while lifting others along the way. He resists gatekeeping, choosing instead to create opportunities that echo the spirit of the Windrush generation, believing that true longevity comes when your community remains intact.<br/><br/>The Support System stands as both a portrait and a statement. It reminds us that behind every artist there are people, relationships, and values that make the journey possible. For Benji Flow, that system is built on love, faith, resilience, and the kind of support that lasts beyond the stage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qhVPVK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_MhjnP8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QzChz6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4613.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_J4XzG8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4336.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        },
+        "column_Dc9rKQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSCF4075.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_QzChz6",
+        "column_J4XzG8",
+        "column_Dc9rKQ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "stillness-the-first-release",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/stillness-the-first-release\" title=\"Stillness: The First Release\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Here",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "rich_text_UpJPxd",
+    "multicolumn_6EyeUF",
+    "rich_text_8KbrYt",
+    "multicolumn_MhjnP8",
+    "featured_collection_gnT46J"
+  ]
+}

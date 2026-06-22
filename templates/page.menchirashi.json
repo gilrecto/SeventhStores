@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve landed in Japan for another segment of Seventh Suppers and it wouldn’t be a trip to the East without a bowl of Udon - one of the country’s most traditional delicacies.<br/><br/>Alongside food comes shopping (of course) and there was nowhere better to do that than in Harajuku, which is where we find Menchirashi, a contemporary Udon restaurant that opened its doors in September 2018. It quickly gained popularity for its innovative approach to traditional Japanese cuisine, combining classic flavours with modern culinary techniques.<br/><br/>They specialize in Sanuki-style udon noodles, known for their firm and chewy texture. The noodles are made fresh daily, adhering to the principles of being “freshly made, freshly cut, freshly boiled”. The restaurant offers a variety of udon dishes, including traditional options like Kake Udon (plain noodles in broth) and more inventive creations such as Carbonara Udon, which blends Italian flavors with Japanese noodles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9545.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_CzRBpx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9417.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ByKWT9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9710.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_CzRBpx",
+        "column_ByKWT9"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_UpJPxd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gyT8nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>You’re located in Harajuku, such a great place for shopping and meeting independent and creative thinkers. What made you decide to place your restaurant in this area? | 原宿にお店を構えていらっしゃいますね。原宿はショッピングや、独立心がありクリエイティブな人々との出会いに最適な場所です。なぜこのエリアにレストランを出そうと思ったのですか<br/><br/></strong>Our company is a creative agency rooted in Harajuku—it’s where we live and work. We’ve always wanted to create something that originates from this neighborhood. | 僕たちの会社は原宿を生業にしているクリエイティブエージェンシーです。原宿から発信することを考えています。<br/><br/><br/><strong>What is your personal relationship with food and what got you into cooking and serving people? | あなたにとって食との個人的な関係とは？料理を作り、人に提供することに興味を持ったきっかけは何ですか<br/><br/></strong>Food enriches people’s lives. To me, running a restaurant is a way to offer a platform for that kind of experience. | 食は人を豊かにします。飲食とはそのプラットフォームを提供できる手段です。<br/><br/><br/><strong>What would a typical day in the life of Menchirashi look like? | Menchirashiでの一日の過ごし方は、どのような感じでしょうか<br/><br/></strong>Every morning, we carefully prepare the udon soup that will be used that day. We also keep the restaurant clean and all of our staff strive to make sure that our customers are satisfied every day. | 毎日朝から今日使うウドンのスープを丁寧に作っていて。店内も綺麗に掃除して毎日沢山のお客様に満足して貰えるようにスタッフ全員で心がけている。<br/><br/><br/><strong>Your specialty is udon. What do you think makes the perfect bowl? | うどんが専門とのことですが、完璧な一杯とはどのようなものだと思いますか<br/><br/></strong>That’s something our staff and chefs are always thinking about and striving toward. It comes from intentionality and small details in each dish. | 常にそこを意識して現場のスタッフや職人は考えてます。<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gyT8nb"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_6EyeUF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GywfnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9752.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_8KkEkh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9668.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_nyNB3D": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9645.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GywfnC",
+        "column_8KkEkh",
+        "column_nyNB3D"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_8KbrYt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qhVPVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>How big of a role do you see food playing a part of people’s lives? | 食は人々の人生において、どれほど大きな役割を果たすと思いますか？<br/><br/></strong>After experiencing the pandemic, I think it made everyone realised that food is a tool for spending meaningful, joyful time together. | パンデミックを経験し食とは素晴らしい時間を過ごす一つのツールだと皆が確信したと思います。<br/><br/><strong>Why is the preservation of skill, technique and tradition in food important to you? | 料理における技術・技法・伝統の継承が、あなたにとってなぜ重要なのか教えてください。?</strong><br/><br/>I believe Japanese cuisine has the power to reach and resonate with the world. It’s important to preserve timeless craft and also incorporate modern/future ideas. | 日本の食は世界にいけると思います。<br/><br/><br/><strong>What kind of experience can people expect when they come to Menchirashi? | Menchirashiを訪れる人たちは、どのような体験を期待すればよいでしょうか？<br/><br/></strong>We want people to experience a space with meals that elevate traditional culture. Our aim is to share a unique culinary experience from the heart of Menchirashi. | 麺散から発信する古き良き文化から昇華した空間や食事を体験して欲しいです。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qhVPVK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_MhjnP8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QzChz6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9560.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_J4XzG8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9479.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_Dc9rKQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DSC9777.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_QzChz6",
+        "column_J4XzG8",
+        "column_Dc9rKQ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "menchirashi",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/menchirashi\" title=\"Menchirashi\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": false,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Menchirashi",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "rich_text_UpJPxd",
+    "multicolumn_6EyeUF",
+    "rich_text_8KbrYt",
+    "multicolumn_MhjnP8",
+    "featured_collection_gnT46J"
+  ]
+}

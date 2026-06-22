@@ -1,0 +1,444 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".page-width--narrow {max-width: 150.4rem;}",
+        ".main-page-title {display: none !important;}",
+        ".rte h4 {font-size: 1.7rem;}",
+        ".rte h4 > strong {font-weight: 500;}",
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 4.5rem; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": true,
+        "padding_top": 12,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_dH3PAt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_AaEjGc": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Introducing: The Selfridges SS26 Capsule<br/><br/></strong>As we embark on our journey within the landmark which is Selfridges. We introduce a focussed selection of pieces built on the pillars of what we do best. The capsule features the V2 Zip Hoodie in Powder Blue, a all new Bermuda Denim in Stone Wash, Duck Canvas Shorts in Sage and our classic Football Polo in Thyme. Fresh essentials for the season with a twist. The capsule is available exclusively at Selfridges London, Birmingham and Online.<br/><br/>A landmark moment deserves a definitive collection. This capsule delivers elevated seasonal essentials with a twist.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_AaEjGc"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_VgeyHe": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text .grid {max-width: 100.233rem;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/People_Of_London_-_Seventh22777_1-Recoveread.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_TYGXDd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_kHbKV8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>From years of hustle in Camden Market to now debuting in Selfridges. Our founder, Bukki Ojo has been on a journey that beautifully encapsulates the theme of Perseverance<br/><br/></strong>To accompany this capsule, Seventh will have a Pop-up Installation within Selfridges from the 25th of April - 30th of May 2026. Seventh will still be available within the iconic store going forward. This limited edition capsule features all new colour ways applied to signature Seventh silhouettes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_kHbKV8"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_7eXKFN": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text .grid {max-width: 126.433rem;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/SEVENTH_X_SELFIDGES_STORE_50-16-9-rectangle.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "top",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "collage_t3KTbg": {
+      "type": "collage",
+      "blocks": {
+        "image_riWzNQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_X_SELFIDGES_STORE_40.jpg"
+          }
+        },
+        "image_BMiTJQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_X_SELFIDGES_STORE_4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_riWzNQ",
+        "image_BMiTJQ"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".collage {--grid-desktop-horizontal-spacing: 1.6rem; grid-row-gap: 1.6rem;}",
+        ".collage-card img {object-fit: contain; object-position: top;}"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_GhrK87": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NrQXc9": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_m6zfK9": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_tEMiCp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTH_X_SELFIDGES_STORE_42.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_NrQXc9",
+        "column_m6zfK9",
+        "column_tEMiCp"
+      ],
+      "custom_css": [
+        ".page-width {padding: 1.6rem 0 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_khne6w": {
+      "type": "rich-text",
+      "blocks": {
+        "text_DtxqBF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>It felt right to enter with a capsule built from the pieces that put us on the map, the silhouettes London responded to when we first launched five years ago. Reworked through exclusive colourways and elevated finishes.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_DtxqBF"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.2rem; line-height: 1.5; font-weight: 300; margin-top: 1.6rem;}",
+        ".rich-text__text strong {font-weight: 500;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_NKdhH8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jqEtBq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/People_Of_London_-_Seventh22777_1-Recoveredssa.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_qjPbQH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/People_Of_London_-_Seventh22777_1-Recoveredsss.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_6Udqh8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/People_Of_London_-_Seventh22777_1-Recovered.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_C4Ar7J": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Penople_Of_London_-_Seventh22777_1-Recovered.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_jqEtBq",
+        "column_qjPbQH",
+        "column_6Udqh8",
+        "column_C4Ar7J"
+      ],
+      "custom_css": [
+        ".page-width {padding: 3.2rem 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_rzCCWP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xaNiM3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/V2_Zipped_Hoodie_Powder_Blue_31.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_Ma7pc8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bermuda_Jort_Sage_3.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_xaNiM3",
+        "column_Ma7pc8"
+      ],
+      "custom_css": [
+        ".page-width {padding: 3.2rem 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0; max-width: 99.732rem;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".media--portrait {padding-bottom: 150%;}",
+        "@media screen and (max-width: 989px) {.multicolumn .page-width {padding-left: 1.6rem !important; padding-right: 1.6rem !important; }}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_fgYeWV": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "introducing-the-selfridges-capsule-ss26",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/introducing-the-selfridges-capsule-ss26\" title=\"Introducing: The Selfridges Capsule SS26\">Featured collection</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Introducing: The Selfridges Capsule SS26",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_dH3PAt",
+    "image_with_text_VgeyHe",
+    "rich_text_TYGXDd",
+    "image_with_text_7eXKFN",
+    "collage_t3KTbg",
+    "multicolumn_GhrK87",
+    "rich_text_khne6w",
+    "multicolumn_NKdhH8",
+    "multicolumn_rzCCWP",
+    "featured_collection_fgYeWV"
+  ]
+}

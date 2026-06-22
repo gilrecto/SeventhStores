@@ -1,0 +1,351 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.main-page-title {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "fullwidth_wrapper": true,
+        "enable_sidebar": false,
+        "sidebar_title": "",
+        "sidebar": "",
+        "hide_def_contents": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_YMmzAa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LjwpDq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the first time, we stepped foot in North Africa and we’re honoured to present the first ‘Beyond Blood’ segment shot on African soil. Captured in Essaouira, Morocco. Discover our campaign below.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LjwpDq"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_kqFKb6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PNM6Jg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCAN011.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_CzRBpx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCAN005.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_ByKWT9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCAN008.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PNM6Jg",
+        "column_CzRBpx",
+        "column_ByKWT9"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_UpJPxd": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gyT8nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Segment I, featuring our Orb Shell Jacket in Pearled Bone & Denim 410 Bermuda Jeans in Bone Dust:<br/><br/>This shoot wasn’t actually planned. It wasn’t part of the original idea or mood board. But the wind showed up, and we followed where it took us.<br/><br/>As soon as we saw the three moving in synergy, we picked up the camera and captured everything organically, in the moment. Not brothers by blood, but connected through energy and rhythm, they moved with the wind, not against it. The shoot ended up capturing the Orb Shell Jacket in its true form, showing both its beauty and purpose. Made as a traditional windbreaker, the jacket was designed in a clean, minimal way, still windproof, still water-resistant. This moment gave us a rare chance to show the piece not just artistically, but functionally too.<br/><br/>We were honestly stunned at how it all came together. A lot of our strongest shoots seem to happen this way; unplanned, but perfectly aligned.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gyT8nb"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_6EyeUF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GywfnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCANBATCH2001.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_8KkEkh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCANBATCH2006.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "open_new_tab": false
+          }
+        },
+        "column_nyNB3D": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEVENTHSCANBATCH2007.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/stillness-the-first-release",
+            "open_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "column_GywfnC",
+        "column_8KkEkh",
+        "column_nyNB3D"
+      ],
+      "custom_css": [
+        ".page-width {padding: 0 !important;}",
+        ".multicolumn-list {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem; row-gap: 1.6rem; margin: 0 auto; padding: 0;}",
+        ".background-none .multicolumn-card__image-wrapper {margin: 0;}",
+        ".background-none .multicolumn-card__info {padding: 0.8rem 0;}"
+      ],
+      "name": "Images",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_8KbrYt": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qhVPVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Segment II, featuring our Rib Knit Utility Vest & Pull on shorts in Graphite:<br/><br/>Capturing the balance between culture & community was exactly what we envisioned within this segment. Amidst the hustle and bustle of the city we found a spot for the boys to regroup - playing cards and responding to the energy of the Medina via song and dance.<br/><br/>A common theme we observed from one location to another was the connection between each of the boys - through all of our travels and differing landscapes they remained together, bonded as one.<br/><br/>For us, in showcasing our newest product from our upcoming drop - the Knit Rib Utility Vest, it was important to emphasise the cut and adaptability of it on different heights and frames. It’s soft to touch, easy to wear and pairs well with pretty much anything - from the most classic of looks in Morocco, to your go-tos in London.<br/><br/>We really wanted to challenge ourselves stylistically and have our looks reflect the silhouettes and cultural touch points of somewhere so inspirational to us in building this collection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qhVPVK"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "sev_media_banner_c9httf": {
+      "type": "sev_media_banner",
+      "name": "Media Banner",
+      "settings": {
+        "color_scheme": "",
+        "banner_type": "video",
+        "add_overlay": false,
+        "overlay_opacity": 0.5,
+        "enable_anim": false,
+        "video": "shopify://files/videos/Trailer_2.mp4",
+        "mb_video": "shopify://files/videos/TRAILER_MOROCCO_1080x1920.mp4",
+        "banner_link": "",
+        "link_label": "",
+        "content_alignment_h": "ts:md:items-center",
+        "content_alignment_v": "ts:md:justify-center",
+        "text_alignment": "center",
+        "content_alignment_h_mobile": "ts:items-center",
+        "content_alignment_v_mobile": "ts:justify-center",
+        "text_alignment_mobile": "center",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0
+      }
+    },
+    "rich_text_tGbFyQ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_z6yw8p": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For our first moving image piece of the season, we take you to Morocco, somewhere dear to our team. Its warmth and rich horizons were elements that inspired the design and colour palette of our collection. As we present the introduction to a body of work that gives our collection expression and freedom, we aim to answer the questions that circulated our studio - where do we see the collection fitting?<br/><br/>As we grow and widen our collections, it's important we maintain closeness to our core mission and goal which explore themes of family and unity. Through this short film we’re transported to the sand dunes of Essaouira, a city neighbouring the more notable Marrekech, where we run, jump and carefully follow 4 friends navigating the storm of a windy desert to finally find solitude, playfulness and personality within the medina.<br/><br/>Although challenged by their environments and unpredictable forces, the boys remain held together by unbreakable bonds, strength and connection - pillars to brotherhood. They are not joined by blood but by their shared love for one another and experiences together which allow them to move forward together.<br/><br/>Throughout this project we wish to unravel the layers of our creativity and take you on a journey that shows you Morocco through our lens, pulling on differing emotive strings and giving you a sense of proximity to the cultures, places and people that inspire us.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_z6yw8p"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {width: 100%;}",
+        ".rich-text__blocks {max-width: 96rem;}",
+        ".rich-text__text {font-size: 1.3rem; margin-top: 1.6rem;}",
+        ".rich-text__text > *:not(strong) {font-weight: 300;}"
+      ],
+      "name": "Intro Text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "featured_collection_gnT46J": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".collection {padding: 3.2rem 1.6rem;}",
+        ".inline-richtext {font-size: 1.1rem; font-weight: 300;}",
+        ".product-grid {--grid-desktop-horizontal-spacing: 1.6rem; --grid-mobile-horizontal-spacing: 1.6rem;}",
+        ".slider-buttons {position: absolute; top: -6rem; right: 0;}",
+        ".slider-counter {display: none;}",
+        "@media screen and (max-width: 749px) {.grid__item {width: calc(100% - var(--grid-mobile-horizontal-spacing) - 13rem); }}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "knitwear",
+        "products_to_show": 8,
+        "title": "<a href=\"/collections/stillness-the-first-release\" title=\"Stillness: The First Release\">Featured pieces</a>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_label": "Shop Here",
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YMmzAa",
+    "multicolumn_kqFKb6",
+    "rich_text_UpJPxd",
+    "multicolumn_6EyeUF",
+    "rich_text_8KbrYt",
+    "sev_media_banner_c9httf",
+    "rich_text_tGbFyQ",
+    "featured_collection_gnT46J"
+  ]
+}
