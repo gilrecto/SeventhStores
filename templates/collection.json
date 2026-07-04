@@ -36,7 +36,6 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "show_related_swatches": true,
         "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "drawer",

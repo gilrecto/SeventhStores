@@ -106,12 +106,12 @@
 	{%- endif -%}
 
 	:root {
-		--font-body-family: 'Glence', {{ settings.type_body_font.fallback_families }}; {% comment %} {{ settings.type_body_font.family }} {% endcomment %}
+		--font-body-family: 'Glence', Tahoma, Arial, {{ settings.type_body_font.fallback_families }}; {% comment %} {{ settings.type_body_font.family }} {% endcomment %}
 		--font-body-style: {{ settings.type_body_font.style }};
 		--font-body-weight: {{ settings.type_body_font.weight }};
 		--font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-		--font-heading-family: 'Glence', {{ settings.type_header_font.fallback_families }}; {% comment %}  {{ settings.type_header_font.family }} {% endcomment %}
+		--font-heading-family: 'Glence', Tahoma, Arial, {{ settings.type_header_font.fallback_families }}; {% comment %}  {{ settings.type_header_font.family }} {% endcomment %}
 		--font-heading-style: {{ settings.type_header_font.style }};
 		--font-heading-weight: {{ settings.type_header_font.weight }};
 

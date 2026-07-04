@@ -18,7 +18,7 @@
         "add_overlay": false,
         "overlay_opacity": 0,
         "enable_anim": false,
-        "banner_image": "shopify://shop_images/Desktop_Home_New_22_fbb540d8-b2e9-4563-86c0-2d75fd0ff1ae.png",
+        "banner_image": "shopify://shop_images/Desktop_Home_New_14_f721410e-1cac-44c7-af5c-6b3897e9e5e1.png",
         "banner_img_mb": "shopify://shop_images/Homepage_Mobile_39_97a5019c-711d-4d26-bf0d-f52d4b1af031.png",
         "banner_link": "shopify://collections/shop-all",
         "link_label": "Shop Our Collections",
@@ -58,13 +58,13 @@
       "custom_css": [
         ".rich-text__wrapper {max-width: 43rem;}",
         ".rich-text__heading {font-size: 1.8rem;}",
-        ".rich-text__text {font-size: 1.1rem;}"
+        ".rich-text__text {font-size: 1.1rem; font-weight: 300;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
         "full_width": false,
         "padding_top": 60,
         "padding_bottom": 0
@@ -78,7 +78,7 @@
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-VqJUmp\"></div>",
-        "color_scheme": "",
+        "color_scheme": "scheme-4586ab81-6be2-4068-bdeb-85c20fe6db4a",
         "padding_top": 12,
         "padding_bottom": 60
       }

@@ -1269,10 +1269,17 @@
         "default": 40
       },
       {
+        "type": "checkbox",
+        "id": "show_sale_bagde",
+        "label": "Show Sale Badges",
+        "default": true
+      },
+      {
         "type": "color_scheme",
         "id": "sale_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sale_badge_color_scheme.label",
-        "default": "scheme-5"
+        "default": "scheme-5",
+        "visible_if": "{{ settings.show_sale_bagde }}"
       },
       {
         "type": "color_scheme",

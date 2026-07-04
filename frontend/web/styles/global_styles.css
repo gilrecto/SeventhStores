@@ -98,6 +98,10 @@ footer .footer-block__details-content .list-menu__item {
 
 .badge {
 	@apply ts:py-2 ts:px-[0.8rem] ts:text-[1.1rem] ts:font-light;
+	--badge-corner-radius: 0.5rem;
+}
+.card.card--show-alt-img:hover .card__badge {
+	@apply ts:hidden;
 }
 
 /* Custom sort */
