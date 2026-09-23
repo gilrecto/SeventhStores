@@ -1,4 +1,5 @@
 @import '../web/styles/global_styles.css';
+@import '../web/styles/sticky_add_to_cart.css';
 
 @import "tailwindcss" prefix(ts);
 

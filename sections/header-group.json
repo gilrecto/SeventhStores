@@ -18,13 +18,14 @@
           "type": "announcement",
           "settings": {
             "text": "End Of Season Sale | Up To 40% Off Select Items",
-            "link": "shopify://collections/end-of-season-selection-sale"
+            "link": "shopify://collections/shop-all"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "custom_css": [
         ".announcement-bar__message {min-height: 3.4rem; padding: 0.8rem 0; font-size: clamp(1rem, 0.171vw + 0.872rem, 1.2rem); font-weight: 300;}",
         ".announcement-bar__message > svg {display: none;}"

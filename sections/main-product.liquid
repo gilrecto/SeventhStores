@@ -122,7 +122,7 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'breadcrumbs' -%}
-                {% render 'breadcrumb' %}
+                {% render 'breadcrumb', block: block %}
               {%- when 'color_variants' -%}
                  {% render 'colour-group' %}
               {%- when 'text' -%}
@@ -873,6 +873,7 @@
       {{ product | structured_data }}
     </script>
   </div>
+  {%- render 'ts-sticky-add-to-cart', section_id: section.id, product: product -%}
 </product-info>
 
 <script type="application/ld+json" data-creator-name="FeedArmy">
@@ -952,7 +953,15 @@
     {
       "type": "breadcrumbs",
       "name": "Breadcrumbs",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Hide on mobile?",
+          "default": false
+        }
+      ]
     },
     {
       "type": "color_variants",

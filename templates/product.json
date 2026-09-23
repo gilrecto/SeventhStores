@@ -14,7 +14,9 @@
       "blocks": {
         "breadcrumbs_EYDrEz": {
           "type": "breadcrumbs",
-          "settings": {}
+          "settings": {
+            "hide_mobile": true
+          }
         },
         "title": {
           "type": "title",
@@ -146,6 +148,7 @@
         "styled_with_GG6m9F",
         "data_related_products_nFXtyy"
       ],
+      "custom_css": [],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",

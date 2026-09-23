@@ -1,0 +1,64 @@
+{% doc %}
+  Renders the mobile purchase bar for the main product.
+  @param {string} section_id - The main product section ID.
+  @param {product} product - The product displayed by the section.
+{% enddoc %}
+
+<ts-sticky-add-to-cart
+  data-button-id="ProductSubmitButton-{{ section_id }}"
+  class="ts:fixed ts:inset-x-0 ts:bottom-0 ts:z-3 ts:min-[750px]:hidden gradient"
+  hidden
+  inert
+>
+  <div class="page-width ts:py-6! ts:grid ts:gap-[1.2rem]">
+    <div class="ts:grid ts:grid-cols-[minmax(0,1fr)_auto] ts:items-start ts:gap-[1.2rem]">
+      <p class="ts:m-0 ts:text-sm ts:font-medium ts:line-clamp-2" title="{{ product.title | escape }}">
+        {{- product.title | escape -}}
+      </p>
+      <div data-sticky-price class="ts:text-right">
+        {%- render 'price', product: product, use_variant: true, show_badges: false -%}
+      </div>
+    </div>
+    {%- unless product.has_only_default_variant -%}
+      <div data-sticky-options class="ts:grid ts:grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] ts:gap-[0.8rem]">
+        {%- for option in product.options_with_values -%}
+          <div class="ts:min-w-0">
+            <label class="ts:block ts:mb-1 ts:text-xs" for="StickyOption-{{ section_id }}-{{ option.position }}">
+              {{- option.name | escape -}}
+            </label>
+            <div class="select">
+              <select
+                id="StickyOption-{{ section_id }}-{{ option.position }}"
+                class="select__select"
+                data-sticky-option="{{ option.position }}"
+              >
+                {%- for value in option.values -%}
+                  <option value="{{ value.id }}" {% if value.selected %}selected{% endif %}>
+                    {%- if value.available -%}
+                      {{- value | escape -}}
+                    {%- else -%}
+                      {{- 'products.product.value_unavailable' | t: option_value: value -}}
+                    {%- endif -%}
+                  </option>
+                {%- endfor -%}
+              </select>
+              <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endunless -%}
+    <div class="ts:flex ts:items-center ts:gap-[1.2rem]">
+      <button type="button" data-sticky-submit class="button button--full-width button--primary ts:flex-1 ts:min-w-0!" disabled>
+        <span class="ts:flex ts:items-center ts:justify-center ts:gap-2">
+          <span class="svg-wrapper ts:w-[1.3rem]!" aria-hidden="true">
+            {{- 'icon-bag.svg' | inline_asset_content -}}
+          </span>
+          <span data-sticky-label>{{ 'products.product.add_to_cart' | t }}</span>
+        </span>
+        {%- render 'loading-spinner' -%}
+      </button>
+      <div data-sticky-wishlist class="ts:shrink-0" hidden></div>
+    </div>
+  </div>
+</ts-sticky-add-to-cart>

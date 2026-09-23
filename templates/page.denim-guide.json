@@ -19,6 +19,7 @@
         "enable_sidebar": false,
         "sidebar_title": "",
         "sidebar": "",
+        "hide_def_contents": false,
         "padding_top": 64,
         "padding_bottom": 64
       }
@@ -391,7 +392,7 @@
           "settings": {
             "image": "shopify://shop_images/524297835_18513713374060313_4044172678255199825_n_09e0bd64-063e-4bd8-8d29-30bab911f85f.jpg",
             "title": "",
-            "text": "<p>Height: 180cm<br/>Weight: 90kg<br/>Size: Waist 36 Large</p>",
+            "text": "<p>Height: 180cm<br/>Weight: 90kg<br/>Size: Waist 34</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DMn0Ub-KdU-/",
             "open_new_tab": true
@@ -402,7 +403,7 @@
           "settings": {
             "image": "shopify://shop_images/535043531_18525963298051382_7788386551211526275_n.jpg",
             "title": "",
-            "text": "<p>Height : 182cm<br/>Weight: 92kg<br/>Size: XL Waist size: 35in</p>",
+            "text": "<p>Height : 182cm<br/>Weight: 92kg<br/>Size: 34in</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DNjTsFIJoRh/",
             "open_new_tab": true
@@ -413,7 +414,7 @@
           "settings": {
             "image": "shopify://shop_images/523962179_18515844826063320_9194857638950521653_n_70e11e5d-71e8-44c9-8526-9da6650c179e.jpg",
             "title": "",
-            "text": "<p>Height : 188cm<br/>Weight: 85kg<br/>Size: L Waist size: 32in</p>",
+            "text": "<p>Height : 188cm<br/>Weight: 85kg<br/>Size: 32in</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DMpp1l4KN2M/",
             "open_new_tab": true
@@ -424,7 +425,7 @@
           "settings": {
             "image": "shopify://shop_images/564153407_18535469134012051_5908943337028076652_n.jpg",
             "title": "",
-            "text": "<p>Height : 180cm<br/>Weight: 104kg<br/>Size: XL Jeans, L Jacket</p>",
+            "text": "<p>Height : 180cm<br/>Weight: 104kg<br/>Size: 36 Jeans, L Jacket</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DPqfWzAgiuP/",
             "open_new_tab": true
@@ -435,7 +436,7 @@
           "settings": {
             "image": "shopify://shop_images/524286534_18517674334062687_2639494401445533654_n.jpg",
             "title": "",
-            "text": "<p>Height : 178cm<br/>Weight: 80kg<br/>Size: 34 inch waist</p>",
+            "text": "<p>Height : 178cm<br/>Weight: 80kg<br/>Size: 34 </p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DMqEd4GqV1G/",
             "open_new_tab": true
@@ -446,7 +447,7 @@
           "settings": {
             "image": "shopify://shop_images/531536894_18521818672012120_874291762471316095_n.jpg",
             "title": "",
-            "text": "<p>Height : 177cm<br/>Weight: 77kg<br/>Size: M</p>",
+            "text": "<p>Height : 177cm<br/>Weight: 77kg<br/>Size: 32</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DNV3z-gIcV-/",
             "open_new_tab": true
@@ -457,7 +458,7 @@
           "settings": {
             "image": "shopify://shop_images/502052938_17907243750159577_5776879036848261242_n_2265a53d-a585-4fd5-940b-7e93af708ea9.jpg",
             "title": "",
-            "text": "<p>Height : 188cm<br/>Weight: 90kg<br/>Size: L</p>",
+            "text": "<p>Height : 188cm<br/>Weight: 90kg<br/>Size: 34</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DKPSIeixXiZ/",
             "open_new_tab": true
@@ -468,7 +469,7 @@
           "settings": {
             "image": "shopify://shop_images/525735754_17888789829305132_6617403454359332381_n.jpg",
             "title": "",
-            "text": "<p>Height : 185cm<br/>Size: XL</p>",
+            "text": "<p>Height : 185cm<br/>Size: 34</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DMvhbCZMD9p/",
             "open_new_tab": true
@@ -479,7 +480,7 @@
           "settings": {
             "image": "shopify://shop_images/522039295_17887621044305132_3057615955825587619_n_060a4502-7685-48cc-9166-01eed4fa4384.jpg",
             "title": "",
-            "text": "<p>Height : 193cm<br/>Size: XL</p>",
+            "text": "<p>Height : 193cm<br/>Size: 36</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DMYZflbI9AV/",
             "open_new_tab": true
@@ -490,7 +491,7 @@
           "settings": {
             "image": "shopify://shop_images/501948689_18478074721071824_5631867060963261728_n_8651f75a-1336-4e0d-b947-3719cf7a7502.jpg",
             "title": "",
-            "text": "<p>Height : 170cm<br/>Weight: 75kg<br/>Size: S</p>",
+            "text": "<p>Height : 170cm<br/>Weight: 75kg<br/>Size: 28</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DKILV2WIvbd/",
             "open_new_tab": true
@@ -501,7 +502,7 @@
           "settings": {
             "image": "shopify://shop_images/500447952_18504378934005929_5315291821617195508_n_24650cc5-8dc4-4bff-9b2d-23e0e4011ec3.jpg",
             "title": "",
-            "text": "<p>Height : 180cm<br/>Weight: 82kg<br/>Size: M, Waist 32</p>",
+            "text": "<p>Height : 180cm<br/>Weight: 82kg<br/>Size: 30</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DJ9AiBoT3aT/",
             "open_new_tab": true
@@ -512,7 +513,7 @@
           "settings": {
             "image": "shopify://shop_images/543699116_18472691725073667_3761254022249595826_n.jpg",
             "title": "",
-            "text": "<p>Height: 168cm<br/>Weight: 51kg<br/>Size: S, 27 waist</p>",
+            "text": "<p>Height: 168cm<br/>Weight: 51kg<br/>Size: 26</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DOQd6ehkhUp/",
             "open_new_tab": true
@@ -523,7 +524,7 @@
           "settings": {
             "image": "shopify://shop_images/522900819_18050199071626120_5736058782931361572_n_9e5e3cbb-bfe7-41f9-8d93-fe9740788df8.jpg",
             "title": "",
-            "text": "<p>Height: 180cm<br/>Weight: 76kg<br/>Size: L, Waist 33</p>",
+            "text": "<p>Height: 180cm<br/>Weight: 76kg<br/>Size: 34</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DMfrjvcI0O0/",
             "open_new_tab": true
@@ -534,7 +535,7 @@
           "settings": {
             "image": "shopify://shop_images/504325262_18511203040019459_3683523668793199409_n.jpg",
             "title": "",
-            "text": "<p>Height: 173cm<br/>Size: S</p>",
+            "text": "<p>Height: 173cm<br/>Size: 28</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DKl1S44sWnk/",
             "open_new_tab": true
@@ -545,7 +546,7 @@
           "settings": {
             "image": "shopify://shop_images/484168011_18488092774054007_5207776133770970896_n_389b9e2c-6933-46e2-a403-8c290cee4534.jpg",
             "title": "",
-            "text": "<p>Height: 188cm<br/>Weight: 90kg<br/>Size: L</p>",
+            "text": "<p>Height: 188cm<br/>Weight: 90kg<br/>Size: 34</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DHB7ow4tmk4/",
             "open_new_tab": true
@@ -556,7 +557,7 @@
           "settings": {
             "image": "shopify://shop_images/505091086_18330762178207845_8732245815904412623_n_eab79734-ed0d-40b9-b157-d941ba2fd4a3.jpg",
             "title": "",
-            "text": "<p>Height: 180cm<br/>Size: S, Waist 30</p>",
+            "text": "<p>Height: 180cm<br/>Size: 28</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DKpS9yRSD2j/",
             "open_new_tab": true
@@ -567,7 +568,7 @@
           "settings": {
             "image": "shopify://shop_images/549255107_17980256735863534_1203916678979337229_n_a1cfd04d-a279-4262-bc5c-7c92c53bcdeb.jpg",
             "title": "",
-            "text": "<p>Height: 175cm<br/>Weight: 74kg<br/>Size: M, Waist 30/32</p>",
+            "text": "<p>Height: 175cm<br/>Weight: 74kg<br/>Size: 30</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DOp8p9NCI_C/",
             "open_new_tab": true
@@ -578,7 +579,7 @@
           "settings": {
             "image": "shopify://shop_images/539440646_18520404034048839_8594958975377319219_n_7b7fbd3a-0aaa-45ba-b3ae-8de4a73d5445.jpg",
             "title": "",
-            "text": "<p>Height: 175cm<br/>Weight: 68kg<br/>Size: M, Waist 30</p>",
+            "text": "<p>Height: 175cm<br/>Weight: 68kg<br/>Size: 30</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DN3JbJDUsFh/",
             "open_new_tab": true
@@ -589,7 +590,7 @@
           "settings": {
             "image": "shopify://shop_images/491445366_18498700012014245_4891783788962633818_n_a616cac5-82fb-479f-bc51-65ac8286598f.jpg",
             "title": "",
-            "text": "<p>Height: 183cm<br/>Weight: 84kg<br/>Size: L, Waist 33</p>",
+            "text": "<p>Height: 183cm<br/>Weight: 84kg<br/>Size: 32</p>",
             "link_label": "",
             "link": "https://www.instagram.com/p/DI3t0NUsrDi/",
             "open_new_tab": true
