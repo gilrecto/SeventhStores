@@ -152,6 +152,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
+        "enable_sticky_atc": false,
         "media_size": "medium",
         "constrain_to_viewport": false,
         "media_fit": "cover",

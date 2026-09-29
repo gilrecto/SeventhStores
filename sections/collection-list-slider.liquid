@@ -1,0 +1,423 @@
+{{ 'section-collection-list-slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'collection-list-slider.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign rail = section.settings
+  assign collection_count = section.blocks.size
+  assign small_slides = rail.slides_tablet | at_most: 2.5
+  assign large_slides = rail.slides_desktop | at_most: 4.5
+  assign tablet_gap = rail.card_gap | times: 0.75
+  assign mobile_gap = rail.card_gap | times: 0.5
+  assign max_slides = rail.slides_desktop | at_least: rail.slides_tablet | at_least: rail.slides_mobile
+-%}
+
+{%- style -%}
+  #CollectionRail-{{ section.id }} {
+    --rail-mobile: {{ rail.slides_mobile }};
+    --rail-small: {{ small_slides }};
+    --rail-tablet: {{ rail.slides_tablet }};
+    --rail-large: {{ large_slides }};
+    --rail-desktop: {{ rail.slides_desktop }};
+    --rail-gap-mobile: {{ mobile_gap }}px;
+    --rail-gap-tablet: {{ tablet_gap }}px;
+    --rail-gap-desktop: {{ rail.card_gap }}px;
+    --rail-ratio: {{ rail.image_ratio }};
+    --rail-heading-align: {{ rail.heading_alignment }};
+    --rail-top: {{ rail.padding_top }}px;
+    --rail-bottom: {{ rail.padding_bottom }}px;
+    --rail-top-mobile: {{ rail.padding_top_mobile }}px;
+    --rail-bottom-mobile: {{ rail.padding_bottom_mobile }}px;
+  }
+{%- endstyle -%}
+
+{%- capture image_sizes -%}
+  {%- assign image_breakpoints = '1200,992,768,576,0' | split: ',' -%}
+  {%- for breakpoint in image_breakpoints -%}
+    {%- liquid
+      assign image_padding = '8rem'
+      case breakpoint
+        when '1200'
+          assign image_columns = rail.slides_desktop
+          assign image_gap = rail.card_gap
+        when '992'
+          assign image_columns = large_slides
+          assign image_gap = rail.card_gap
+        when '768'
+          assign image_columns = rail.slides_tablet
+          assign image_gap = tablet_gap
+        when '576'
+          assign image_columns = small_slides
+          assign image_gap = mobile_gap
+          assign image_padding = '3rem'
+        else
+          assign image_columns = rail.slides_mobile
+          assign image_gap = mobile_gap
+          assign image_padding = '3rem'
+      endcase
+      if rail.full_width
+        assign image_padding = '0px'
+      endif
+      assign image_gaps = image_columns | minus: 1 | times: image_gap
+    -%}
+    {%- unless forloop.last -%}(min-width: {{ breakpoint }}px) {% endunless -%}
+    calc(({% if rail.full_width %}100vw{% else %}min(100vw, {{ settings.page_width }}px){% endif %} - {{ image_padding }} - {{ image_gaps }}px) / {{ image_columns }}){% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if collection_count > 0 -%}
+  <collection-list-slider
+    id="CollectionRail-{{ section.id }}"
+    class="collection-rail color-{{ rail.color_scheme }} gradient"
+    role="region"
+    {% if rail.title != blank %}
+      aria-labelledby="CollectionRailHeading-{{ section.id }}"
+    {% else %}
+      aria-label="{{ 'general.slider.name' | t | escape }}"
+    {% endif %}
+    aria-roledescription="{{ 'sections.slideshow.carousel' | t | escape }}"
+  >
+    <div class="collection-rail__container{% if rail.full_width %} collection-rail__container--full{% else %} page-width{% endif %}">
+      {%- if rail.title != blank -%}
+        <h2 id="CollectionRailHeading-{{ section.id }}" class="collection-rail__heading inline-richtext {{ rail.heading_size }}">
+          {{ rail.title }}
+        </h2>
+      {%- endif -%}
+
+      <div class="swiper collection-rail__viewport">
+        <ul id="CollectionRailTrack-{{ section.id }}" class="swiper-wrapper collection-rail__track" role="list">
+          {%- assign rendered_index = 0 -%}
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign rendered_index = rendered_index | plus: 1
+              assign card_collection = block.settings.collection
+              assign card_image = block.settings.image | default: card_collection.featured_image
+              assign card_title = 'onboarding.collection_title' | t
+              if card_collection.title != blank
+                assign card_title = card_collection.title
+              endif
+              assign card_alt = card_image.alt | default: card_title
+              assign image_loading = 'lazy'
+              if section.index != blank and section.index <= 2 and rendered_index <= 2
+                assign image_loading = 'eager'
+              endif
+              assign placeholder_index = forloop.index0 | modulo: 4 | plus: 1
+              assign placeholder_image = 'collection-apparel-' | append: placeholder_index
+            -%}
+            <li class="swiper-slide collection-rail__slide" id="CollectionRailSlide-{{ section.id }}-{{ block.id }}" {{ block.shopify_attributes }}>
+              {%- if card_collection != blank -%}
+                <a class="collection-rail__card" href="{{ card_collection.url }}">
+              {%- else -%}
+                <div class="collection-rail__card">
+              {%- endif -%}
+                <div class="collection-rail__media media">
+                  {%- if card_image != blank -%}
+                    {{ card_image | image_url: width: 1500 | image_tag:
+                      widths: '165, 330, 480, 660, 900, 1200, 1500',
+                      sizes: image_sizes,
+                      loading: image_loading,
+                      alt: card_alt
+                    }}
+                  {%- else -%}
+                    {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+                </div>
+                <h3 class="collection-rail__title">
+                  {{ card_title | escape }}
+                  <span class="collection-rail__arrow" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span>
+                </h3>
+              {%- if card_collection != blank -%}
+                </a>
+              {%- else -%}
+                </div>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      {%- if rail.show_navigation or rail.show_pagination or rail.autoplay -%}
+        <div class="collection-rail__controls">
+          {%- if rail.autoplay -%}
+            <button type="button" class="collection-rail__button" data-rail-play aria-controls="CollectionRailTrack-{{ section.id }}" disabled>
+              {{ 'sections.slideshow.play_slideshow' | t }}
+            </button>
+          {%- endif -%}
+          {%- if rail.show_navigation -%}
+            <button type="button" class="collection-rail__button collection-rail__button--prev" data-rail-prev aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="CollectionRailTrack-{{ section.id }}" disabled>
+              <span aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span>
+            </button>
+          {%- endif -%}
+          {%- if rail.show_pagination -%}
+            <div class="collection-rail__pagination" data-rail-pagination aria-live="polite" aria-atomic="true"></div>
+          {%- endif -%}
+          {%- if rail.show_navigation -%}
+            <button type="button" class="collection-rail__button" data-rail-next aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="CollectionRailTrack-{{ section.id }}" disabled>
+              <span aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span>
+            </button>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+    <script type="application/json" data-rail-options>
+      {
+        "navigation": {{ rail.show_navigation | json }},
+        "pagination": {{ rail.show_pagination | json }},
+        "autoplay": {{ rail.autoplay | json }},
+        "delay": {{ rail.autoplay_delay | times: 1000 | json }},
+        "loop": {{ rail.loop | json }},
+        "maxSlides": {{ max_slides | json }},
+        "previousLabel": {{ 'general.slider.previous_slide' | t | json }},
+        "nextLabel": {{ 'general.slider.next_slide' | t | json }},
+        "pauseLabel": {{ 'sections.slideshow.pause_slideshow' | t | json }},
+        "playLabel": {{ 'sections.slideshow.play_slideshow' | t | json }}
+      }
+    </script>
+  </collection-list-slider>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Collection list slider",
+  "tag": "section",
+  "class": "section section-collection-rail",
+  "enabled_on": {
+    "templates": [
+      "index"
+    ]
+  },
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "t:sections.collection-list.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "t:sections.all.heading_size.label",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "text_alignment",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true,
+      "info": "Extend the slider to the edges of the screen."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image ratio",
+      "default": "0.8",
+      "options": [
+        {
+          "value": "0.8",
+          "label": "Portrait (4:5)"
+        },
+        {
+          "value": "0.666667",
+          "label": "Tall portrait (2:3)"
+        },
+        {
+          "value": "1",
+          "label": "Square"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Slider"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "label": "Show navigation arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Show page counter",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": false,
+      "info": "Stops on interaction. Disabled for reduced motion and starts paused in the theme editor."
+    },
+    {
+      "type": "range",
+      "id": "autoplay_delay",
+      "label": "Autoplay delay",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "default": 5,
+      "visible_if": "{{ section.settings.autoplay }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop",
+      "default": false,
+      "info": "Requires at least one more collection than the largest slides-per-view setting, rounded up."
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Card gap",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16,
+      "info": "Tablet uses 75% and mobile uses 50% of this gap."
+    },
+    {
+      "type": "range",
+      "id": "slides_desktop",
+      "label": "Desktop slides per view",
+      "min": 3,
+      "max": 6,
+      "step": 0.1,
+      "default": 5.5
+    },
+    {
+      "type": "range",
+      "id": "slides_tablet",
+      "label": "Tablet slides per view",
+      "min": 2,
+      "max": 5,
+      "step": 0.1,
+      "default": 3.5
+    },
+    {
+      "type": "range",
+      "id": "slides_mobile",
+      "label": "Mobile slides per view",
+      "min": 1.2,
+      "max": 2.5,
+      "step": 0.1,
+      "default": 1.7
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Desktop top spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Desktop bottom spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Mobile top spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Mobile bottom spacing",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "blocks": [
+    {
+      "type": "featured_collection",
+      "name": "t:sections.collection-list.blocks.featured_collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custom image",
+          "info": "Uses the collection featured image when empty."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection list slider",
+      "blocks": [
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        },
+        {
+          "type": "featured_collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

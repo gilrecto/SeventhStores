@@ -873,7 +873,10 @@
       {{ product | structured_data }}
     </script>
   </div>
-  {%- render 'ts-sticky-add-to-cart', section_id: section.id, product: product -%}
+  
+  {%- if section.settings.enable_sticky_atc -%}
+    {%- render 'ts-sticky-add-to-cart', section_id: section.id, product: product -%}
+  {%- endif -%}
 </product-info>
 
 <script type="application/ld+json" data-creator-name="FeedArmy">
@@ -2463,6 +2466,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_atc",
+      "default": true,
+      "label": "Enable sticky add-to-cart"
     },
     {
       "type": "header",

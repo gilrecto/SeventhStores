@@ -14,7 +14,9 @@
       "blocks": {
         "breadcrumbs_EYDrEz": {
           "type": "breadcrumbs",
-          "settings": {}
+          "settings": {
+            "hide_mobile": false
+          }
         },
         "title": {
           "type": "title",
@@ -33,7 +35,7 @@
         "text_block_8pkBqN": {
           "type": "text_block",
           "settings": {
-            "richtext": "<p><strong>Launching Tuesday 8th September 2026 | 6PM BST For Members & 7PM BST For General Release </strong></p><p>Sign up below to be notified</p>",
+            "richtext": "<p><strong>Launching Wednesday 30th September 2026 | 6PM BST For Members & 7PM BST For General Release&nbsp;</strong></p><p>Sign up below to be notified</p>",
             "size": "ts:text-xs!"
           }
         },
@@ -167,6 +169,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
+        "enable_sticky_atc": true,
         "media_size": "medium",
         "constrain_to_viewport": false,
         "media_fit": "cover",

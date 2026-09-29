@@ -11,6 +11,9 @@
   "sections": {
     "sev_media_banner_9JmETy": {
       "type": "sev_media_banner",
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.page-main-banner {height: calc(100dvh - 20vw); } .media > img {object-position: center 20%;}}"
+      ],
       "name": "Media Banner",
       "settings": {
         "color_scheme": "",
@@ -18,9 +21,9 @@
         "add_overlay": false,
         "overlay_opacity": 0,
         "enable_anim": false,
-        "banner_image": "shopify://shop_images/Desktop_Home_New_18_7a942438-7eb7-4b78-b65d-9d126fd76e6a.png",
-        "banner_img_mb": "shopify://shop_images/Homepage_Mobile_15_b3e826e6-5d90-4dba-a45f-18b42a2b7ba1.png",
-        "banner_link": "https://seventhstores.com/collections/shop-all",
+        "banner_image": "shopify://shop_images/A-B_Campaign_Aaron_Website_Desktop.png",
+        "banner_img_mb": "shopify://shop_images/A-B_Campaign_Aaron_Website_Mobile.png",
+        "banner_link": "shopify://collections/aw26",
         "link_label": "Shop Our Collections",
         "content_alignment_h": "ts:md:items-center",
         "content_alignment_v": "ts:md:justify-center",
@@ -32,6 +35,84 @@
         "bottom_spacing": 0,
         "top_spacing_mobile": 0,
         "bottom_spacing_mobile": 0
+      }
+    },
+    "collection_list_slider_t9ztKi": {
+      "type": "collection-list-slider",
+      "blocks": {
+        "featured_collection_ReJx9N": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodies"
+          }
+        },
+        "featured_collection_UMRUUq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "denim"
+          }
+        },
+        "featured_collection_f4DHJF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "knitwear"
+          }
+        },
+        "featured_collection_jQtBgL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coats-jackets"
+          }
+        },
+        "featured_collection_qiq7Pj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tops"
+          }
+        },
+        "featured_collection_GgEzn7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bottoms"
+          }
+        },
+        "featured_collection_aHmGU7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ReJx9N",
+        "featured_collection_UMRUUq",
+        "featured_collection_f4DHJF",
+        "featured_collection_jQtBgL",
+        "featured_collection_qiq7Pj",
+        "featured_collection_GgEzn7",
+        "featured_collection_aHmGU7"
+      ],
+      "name": "Collection list slider",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "full_width": true,
+        "color_scheme": "",
+        "image_ratio": "0.666667",
+        "show_navigation": false,
+        "show_pagination": false,
+        "autoplay": false,
+        "autoplay_delay": 5,
+        "loop": true,
+        "card_gap": 6,
+        "slides_desktop": 5.2,
+        "slides_tablet": 3.5,
+        "slides_mobile": 1.5,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     },
     "rich_text_LwrNB6": {
@@ -86,6 +167,7 @@
   },
   "order": [
     "sev_media_banner_9JmETy",
+    "collection_list_slider_t9ztKi",
     "rich_text_LwrNB6",
     "custom_liquid_b4Bzga"
   ]
