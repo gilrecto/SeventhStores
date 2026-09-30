@@ -61,7 +61,7 @@
         {%- if card_product.featured_media -%}
           <a href="{{ card_product.url | within: collection }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="ts:absolute ts:w-full ts:h-full ts:z-1" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
             <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-              <div class="media media--transparent media--hover-effect">
+              <div class="media{% unless settings.media_background %} media--transparent{% endunless %} media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                 <img
                   srcset="
@@ -607,7 +607,7 @@
           class="card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
         >
           <div
-            class="media media--transparent"
+            class="media{% unless settings.media_background %} media--transparent{% endunless %}"
           >
             {%- if placeholder_image -%}
               {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}

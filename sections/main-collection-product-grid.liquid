@@ -28,6 +28,15 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  {%- if section.settings.use_custom_gap -%}
+    #product-grid {
+      --grid-desktop-horizontal-spacing: {{ section.settings.column_gap_desktop }}px;
+      --grid-desktop-vertical-spacing: {{ section.settings.row_gap_desktop }}px;
+      -grid-mobile-horizontal-spacing: {{ section.settings.column_gap_mobile }}px;
+      --grid-mobile-vertical-spacing: {{ section.settings.row_gap_mobile }}px;
+    }
+  {%- endif -%}
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -148,7 +157,7 @@
           </div>
         {%- else -%}
           <div
-            class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+            class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}{{ section.settings.fluid_section | replace: true, ' page-width-full' | replace: false, '' }}"
           >
             <div class="loading-overlay gradient"></div>
             <ul
@@ -305,13 +314,78 @@
           "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
         }
       ]
-    },    
+    },
+    {
+      "type": "header",
+      "content": "Custom Grid Spacing",
+      "info": "Use custom grid row and column spacings."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_gap",
+      "label": "Grid Spacing",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "column_gap_desktop",
+      "label": "Column Spacing",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 20,
+      "info": "Desktop",
+      "visible_if": "{{ section.settings.use_custom_gap }}"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_desktop",
+      "label": "Row Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 40,
+      "info": "Desktop",
+      "visible_if": "{{ section.settings.use_custom_gap }}"
+    },
+    {
+      "type": "range",
+      "id": "column_gap_mobile",
+      "label": "Column Spacing",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 10,
+      "info": "Mobile",
+      "visible_if": "{{ section.settings.use_custom_gap }}"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_mobile",
+      "label": "Row Spacing",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 30,
+      "info": "Mobile",
+      "visible_if": "{{ section.settings.use_custom_gap }}"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "fluid_section",
+      "label": "Fullwidth Section",
+      "default": false
     },
     {
       "type": "header",

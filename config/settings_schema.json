@@ -520,6 +520,12 @@
         "default": 0
       },
       {
+        "type": "checkbox",
+        "id": "media_background",
+        "label": "Add Media Background",
+        "default": false
+      },
+      {
         "type": "select",
         "id": "card_text_alignment",
         "options": [

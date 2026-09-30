@@ -46,6 +46,7 @@
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
+    "media_background": true,
     "card_text_alignment": "left",
     "card_color_scheme": "scheme-1",
     "card_border_thickness": 0,

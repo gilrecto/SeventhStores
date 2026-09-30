@@ -14,6 +14,7 @@
       "blocks": {
         "breadcrumbs_EYDrEz": {
           "type": "breadcrumbs",
+          "disabled": true,
           "settings": {
             "hide_mobile": true
           }
