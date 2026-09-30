@@ -1,9 +1,41 @@
-{%- assign setting = section.settings -%}
+{%- liquid
+	assign setting = section.settings
+	assign banner_height = setting.banner_height | default: 'large'
+	assign desktop_media_aspect_ratio = 1.777778
+	if setting.banner_type == 'image' and setting.banner_image != blank
+		assign desktop_media_aspect_ratio = setting.banner_image.aspect_ratio
+	elsif setting.banner_type == 'video' and setting.video != blank
+		assign desktop_media_aspect_ratio = setting.video.aspect_ratio
+	endif
+	assign mobile_media_aspect_ratio = 0
+	if setting.banner_type == 'image' and setting.banner_img_mb != blank
+		assign mobile_media_aspect_ratio = setting.banner_img_mb.aspect_ratio
+	elsif setting.banner_type == 'video' and setting.mb_video != blank
+		assign mobile_media_aspect_ratio = setting.mb_video.aspect_ratio
+	endif
+	case banner_height
+		when 'small'
+			assign banner_height_classes = 'ts:h-[28rem] ts:md:h-[42rem]'
+		when 'medium'
+			assign banner_height_classes = 'ts:h-[34rem] ts:md:h-[56rem]'
+		when 'fullscreen'
+			assign banner_height_classes = 'ts:h-[100svh]'
+		when 'custom'
+			assign banner_height_classes = 'ts:h-(--banner-custom-height)'
+		else
+			assign banner_height_classes = 'ts:md:aspect-video ts:aspect-3/4'
+	endcase
+-%}
 
 {% style %}
 	#shopify-section-{{ section.id }} {
 		--text-align: {{ setting.text_alignment_mobile | default: 'center' }};
 		--overlay-opacity: {{ setting.overlay_opacity | default: 0.5 }};
+		--banner-custom-height: {{ setting.custom_height | default: 600 }}px;
+		--desktop-media-aspect-ratio: {{ desktop_media_aspect_ratio }};
+		{% if mobile_media_aspect_ratio > 0 -%}
+			--mobile-media-aspect-ratio: {{ mobile_media_aspect_ratio }};
+		{%- endif %}
 		{% if setting.top_spacing != 0 and setting.top_spacing_mobile != 0 -%}
 			--top-spacing: clamp({{ setting.top_spacing_mobile }}rem, 10vw, {{ setting.top_spacing }}rem);
 		{% else %}
@@ -16,9 +48,9 @@
 		{%- endif -%}
 	}
 
-	{% if section.index == 1 -%}
+	{% if section.index == 1 and banner_height == 'large' -%}
 		@media only screen and (min-width: 1200px) {
-			.page-main-banner {
+			#shopify-section-{{ section.id }} .page-main-banner {
 				height: calc(100dvh - 5.5vw);
 			}
 		}
@@ -30,16 +62,78 @@
 		}
 	}
 
-	{% if setting.banner_img_mb != blank %}
+	@media only screen and (min-width: 768px) and (max-width: 1199px) {
+		#shopify-section-{{ section.id }} .media-banner {
+			height: auto;
+			aspect-ratio: var(--desktop-media-aspect-ratio);
+		}
+	}
+
+	{% if banner_height == 'fullscreen' %}
+		@media only screen and (min-width: 1200px) {
+			#shopify-section-{{ section.id }} .media-banner {
+				height: max(0px, calc(100dvh - var(--banner-header-height, var(--header-height, 0px))));
+			}
+		}
+	{% endif %}
+
+	{% if mobile_media_aspect_ratio > 0 %}
 		@media only screen and (max-width: 767px) {
-			.media-banner {
-				aspect-ratio: {{ setting.banner_img_mb.aspect_ratio }} !important;
+			#shopify-section-{{ section.id }} .media-banner {
+				height: auto;
+				aspect-ratio: var(--mobile-media-aspect-ratio);
 			}
 		}
 	{% endif %}
 {% endstyle %}
 
-<div class="color-{{ section.settings.color_scheme }} media-banner ts:relative ts:w-full ts:md:aspect-video ts:aspect-3/4 ts:overflow-hidden ts:grid ts:grid-rows-1 ts:grid-cols-1{% if section.index == 1 %} page-main-banner{% endif %}">
+<script>
+  if (!customElements.get('media-banner-height')) {
+    customElements.define('media-banner-height', class extends HTMLElement {
+      connectedCallback() {
+        this.section = this.closest('.shopify-section');
+        this.controller = new AbortController();
+        this.headerSelector = '.shopify-section-group-header-group.section-header, .shopify-section-group-header-group.announcement-bar-section';
+        this.measure = () => {
+          if (!this.isConnected) return;
+          const height = [...document.querySelectorAll(this.headerSelector)].reduce((total, element) => {
+            if (!element.getClientRects().length) return total;
+            const style = getComputedStyle(element);
+            return total + element.getBoundingClientRect().height + parseFloat(style.marginTop) + parseFloat(style.marginBottom);
+          }, 0);
+          this.section.style.setProperty('--banner-header-height', height + 'px');
+        };
+        this.observer = new ResizeObserver(this.measure);
+        this.observeHeaders = () => {
+          this.observer.disconnect();
+          document.querySelectorAll(this.headerSelector).forEach(element => this.observer.observe(element));
+          this.measure();
+        };
+        const refresh = () => {
+          cancelAnimationFrame(this.frame);
+          this.frame = requestAnimationFrame(() => this.observeHeaders());
+        };
+        const options = { signal: this.controller.signal };
+        window.addEventListener('resize', this.measure, options);
+        document.addEventListener('shopify:section:load', refresh, options);
+        document.addEventListener('shopify:section:unload', refresh, options);
+        this.observeHeaders();
+      }
+
+      disconnectedCallback() {
+        cancelAnimationFrame(this.frame);
+        this.observer.disconnect();
+        this.controller.abort();
+      }
+    });
+  }
+</script>
+
+{%- if banner_height == 'fullscreen' -%}
+  <media-banner-height hidden></media-banner-height>
+{%- endif -%}
+
+<div class="color-{{ section.settings.color_scheme }} media-banner ts:relative ts:w-full {{ banner_height_classes }} ts:overflow-hidden ts:grid ts:grid-rows-1 ts:grid-cols-1{% if section.index == 1 and banner_height == 'large' %} page-main-banner{% endif %}">
 	{%- if setting.add_overlay -%}
 		<div class="overlay ts:relative ts:z-1 ts:row-span-full ts:col-span-full ts:bg-black ts:opacity-(--overlay-opacity) ts:pointer-events:none">&nbsp;</div>
 	{%- endif -%}
@@ -60,13 +154,13 @@
 		{%- endif -%}
 	{%- endfor -%}
 
-	<div class="banner-media banner-media--{{ setting.banner_type }} ts:relative ts:w-full ts:h-auto ts:row-span-full ts:col-span-full ts:pointer-events:none">
+	<div class="banner-media banner-media--{{ setting.banner_type }} ts:relative ts:w-full ts:h-full ts:min-h-0 ts:row-span-full ts:col-span-full ts:pointer-events:none">
 		{%- if setting.banner_type == 'video' and setting.video != blank -%}
 			{%- if setting.poster != blank -%}
 				{% assign poster = setting.poster | image_url: width: setting.poster.width %}
 			{%- endif -%}
 			{%- assign video_source = setting.video.sources[1].url -%}
-			<video class="lazy video-player ts:w-full ts:h-full ts:object-cover" autoplay muted loop playsinline poster="{{ poster }}">
+			<video class="lazy video-player ts:block ts:w-full ts:h-full ts:object-cover" autoplay muted loop playsinline poster="{{ poster }}">
 				<source data-src="{{ video_source }}" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -74,7 +168,7 @@
 			{%- liquid
 				assign image = setting.banner_image
 				assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-				assign image_class = 'motion-reduce ts:w-full ts:max-w-full ts:h-auto'
+				assign image_class = 'motion-reduce ts:w-full ts:max-w-full ts:h-full ts:object-cover'
 				assign fetch_priority = 'auto'
 				assign mobile_image = image | image_url: width: image.width
 
@@ -265,6 +359,46 @@
 					}
 				],
 				"default": "image"
+			},
+			{
+				"type": "select",
+				"id": "banner_height",
+				"label": "Banner height",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					},
+					{
+						"value": "fullscreen",
+						"label": "Fullscreen"
+					},
+					{
+						"value": "custom",
+						"label": "Custom"
+					}
+				],
+				"default": "large",
+				"info": "Large keeps the existing responsive banner height."
+			},
+			{
+				"type": "range",
+				"id": "custom_height",
+				"label": "Custom height",
+				"min": 200,
+				"max": 1200,
+				"step": 20,
+				"unit": "px",
+				"default": 600,
+				"visible_if": "{{ section.settings.banner_height == 'custom' }}"
 			},
 			{
         "type": "checkbox",

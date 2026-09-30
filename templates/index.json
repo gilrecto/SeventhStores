@@ -11,13 +11,13 @@
   "sections": {
     "sev_media_banner_9JmETy": {
       "type": "sev_media_banner",
-      "custom_css": [
-        "@media only screen and (min-width: 1200px) {.page-main-banner {height: calc(100dvh - 20vw); } .media > img {object-position: center 20%;}}"
-      ],
+      "custom_css": [],
       "name": "Media Banner",
       "settings": {
         "color_scheme": "",
         "banner_type": "image",
+        "banner_height": "fullscreen",
+        "custom_height": 600,
         "add_overlay": false,
         "overlay_opacity": 0,
         "enable_anim": false,
